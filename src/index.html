@@ -3,17 +3,253 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/bootstrap-grid.css">
+        <link rel="stylesheet" href="fonts/bwsurco/bwsurco.css">
+        <link rel="stylesheet" href="fonts/geometria/geometria.css">
+        <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="css/style.css">
+        <title>PSN</title>
     </head>
     <body>
-        <header class="header"></header>
+        <header class="header">
+            <div class="header__top-line">
+                <div class="header__extra-links">
+                    <a href="#" class="psn">PSN GROUP</a>
+                    <a href="#" class="online-camera">on-line камера</a>
+                </div>
+            </div>
+            <div class="header__bottom-line">
+                <div class="header__logo"></div>
+                <div class="header__nav">
+                    <div class="header__nav__control"><div class="burger-btn"><span></span></div></div>
+                    <ul class="top-menu">
+                        <li class="top-level">
+                            <a href="#" class="nested">о проекте</a>
+                            <ul class="sub-menu">
+                                <li class="sub-level">О жилом квартале</li>
+                                <li class="sub-level">План ЖК</li>
+                                <li class="sub-level">Инфраструктура</li>
+                                <li class="sub-level">Панорама</li>
+                                <li class="sub-level">Панорама</li>
+                            </ul>
+                        </li>
+                        <li class="top-level"><a href="#" class="nested">выбор квартир</a></li>
+                        <li class="top-level"><a href="#" class="nested">условия покупки</a></li>
+                        <li class="top-level"><a href="#">новости</a></li>
+                        <li class="top-level"><a href="#">офис продаж</a></li>
+                    </ul>
+                </div>
+                <div class="header__contact">
+                    <div class="phone dark-green">
+                        <span class="code">+7 (495) </span>
+                        <span class="number">800 41 48</span>
+                    </div>
+                    <a href="#" class="btn-default btn-green">Заказать звонок</a>
+                    <a href="#" class="email"></a>
+                </div>
+            </div>
+        </header>
 
+        <div class="content">
+            <div class="main-page">
+                <div class="slider-over">
+                    <div class="main-slider">
+                        <div class="main-slider-item" style="background-image: url(img/main-slider-render-1.jpg);">
+                            <div class="video">
+                                <div class="video-wrapper"><video src="/video/video-main.mp4" id="video-main"></video></div>
+                                <div class="btn-video"><a href="#"><div class="btn-video-icon"></div><div class="btn-video-title">Посмотреть видео</div></a></div>
+                                <div class="btn-stop"><a href="#"></a></div>
+                                <div class="btn-mute"><a href="#"></a></div>
+                            </div>
+                        </div>
+                        <div class="main-slider-item" style="background-image: url(img/main-slider-render-2.jpg);"></div>
+                    </div>
+                </div>
+                <div class="green-bar">
+                    <div class="green-bar__content">
+                        <div class="green-bar__pattern pattern-2"></div>
+                        <div class="action green-bar__action">
+                            <div class="action__date">до 11.09.16</div>
+                            <div class="action__main-line">Клубная карта</div>
+                            <div class="action__extra-line">в подарок</div>
+                        </div>
+                        <div class="green-bar__pattern pattern-3"></div>
+                        <div class="action green-bar__action">
+                            <div class="action__date">до 30.09.16</div>
+                            <div class="action__main-line">Скидка на 2 этаж</div>
+                            <div class="action__extra-line">до 20 %</div>
+                        </div>
+                        <div class="green-bar__pattern pattern-4"></div>
+                        <div class="action green-bar__action">
+                            <div class="action__date">до 30.09.16</div>
+                            <div class="action__main-line">Бонусы за скорость</div>
+                            <div class="action__extra-line">cкидки до 20 %</div>
+                        </div>
+                        <div class="green-bar__pattern pattern-5"></div>
+                    </div>
+                </div>
+                <div class="wrapper-inner">
+                    <div class="sign-in">
+                        <a href="#" class="dark-green">Подписаться на новости и акции</a><span class="envelope"></span>
+                    </div>
+                    <div class="info-block info-block--main">
+                        <h2 class="dark-green">Гринада – новый жилой квартал комфорткласса</h2>
+                        <div class="info-block__img" style="background-image: url(img/main/family-circle.png);"></div>
+                        <div class="info-block__txt">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div class="info-block info-block--hor">
+                        <div class="info-block__txt-over">
+                            <div class="info-block__txt">
+                                <h2>Семья</h2>
+                                <h5>Здесь не живут — здесь цветут</h5>
+                                <p>
+                                    Общее озеленение территории с организацией детских и спортивных площадок,
+                                    пешеходных и велосипедных дорожек, зон для спокойного отдыха.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-block__img" style="background-image: url(img/main/family.jpg);"></div>
+                    </div>
+                    <div class="info-block--vert__over">
+                        <div class="info-block info-block--vert">
+                            <div class="info-block__txt-over">
+                                <div class="info-block__txt">
+                                    <h2>Инфраструктура</h2>
+                                    <h5>Все необходимое — рядом</h5>
+                                    <p>
+                                        На первых этажах комплекса заработают многочисленные
+                                        и необходимые социальные учреждения: магазины, аптеки,
+                                        столовые, кафе и рестораны, отделения банков и т.д.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info-block__img" style="background-image: url(img/main/infrastructura.jpg);"></div>
+                        </div>
+                        <div class="info-block info-block--vert">
+                            <div class="info-block__txt-over">
+                                <div class="info-block__txt">
+                                    <h2>Уютная среда</h2>
+                                    <h5>Все необходимое — рядом</h5>
+                                    <p>
+                                        У современных градостроителей накопился огромный опыт благоустройства,
+                                        создания комфортной среды обитания для жизни.
+                                        Уютной, надежной, безопасной для рождения и воспитания детей.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info-block__img" style="background-image: url(img/main/sreda.jpg);"></div>
+                        </div>
+                    </div>
+                    <div class="info-block info-block--hor">
+                        <div class="info-block__txt-over">
+                            <div class="info-block__txt">
+                                <h2>Дом</h2>
+                                <h5>Всегда приятно возвращаться</h5>
+                                <p>
+                                    В проекте учтены все аспекты жизни
+                                    человека – мы позаботились о том, чтобы вам было комфортно жить здесь.
+                                    Наш жилой комплекс создан для того, чтобы сделать мир чуточку лучше.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-block__img" style="background-image: url(img/main/home.jpg);"></div>
+                    </div>
+                    <div class="show-more">
+                        <a href="#" class="btn-default btn-green">Показать еще</a>
+                    </div>
+                </div>
+                <div class="main-offer">
+                    <h2>Предложение дня</h2>
+                    <div class="main-offer__content">
+                        <div class="main-offer__item">
+                            <div class="main-offer__graphics main-offer__plan" style="background-image: url(/img/main/flat-plan.png);"></div>
+                            <div class="main-offer__graphics main-offer__img" style="background-image: url(/img/main/flat-img.jpg);"></div>
+                            <div class="main-offer__info">
+                            <div class="room-count light-green">1-комнатная</div>
+                            <div class="price">12 460 000 р.</div>
+                            <div class="params">
+                                <div class="param">
+                                    <div class="param__name">Этаж</div>
+                                    <div class="param__value">8</div>
+                                </div>
+                                <div class="param">
+                                    <div class="param__name">Площадь</div>
+                                    <div class="param__value">40 м<sup>2</sup></div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-default btn-medium btn-green">Карточка квартиры</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="wrapper-outer">
+                <div class="footer__menu">
+                    <ul>
+                        <li class="top-level"><a href="#">О проекте</a></li>
+                        <li class="sub-level"><a href="#">О проекте</a></li>
+                        <li class="sub-level"><a href="#">План проекта</a></li>
+                        <li class="sub-level"><a href="#">Инфтраструктура</a></li>
+                        <li class="sub-level"><a href="#">Документация проекта</a></li>
+                        <li class="sub-level"><a href="#">О застройщике</a></li>
+                        <li class="sub-level"><a href="#">Участники проекта</a></li>
+                        <li class="sub-level"><a href="#">Участники проекта</a></li>
+                        <li class="sub-level"><a href="#">История района</a></li>
+                    </ul>
+                    <ul>
+                        <li class="top-level"><a href="#">выбрать квартиру</a></li>
+                        <li class="sub-level"><a href="#">Генплан</a></li>
+                        <li class="sub-level"><a href="#">Выбрать по параметрам</a></li>
+                        <li class="sub-level"><a href="#">Выбрать по планировке</a></li>
+                        <li class="sub-level"><a href="#">Выбрать машиноместо</a></li>
+                        <li class="sub-level"><a href="#">Коммерческие помещения</a></li>
+                    </ul>
+                    <ul>
+                        <li class="top-level"><a href="#">УСловия покупки</a></li>
+                        <li class="sub-level"><a href="#">Ипотека</a></li>
+                        <li class="sub-level"><a href="#"></a>Акции</li>
+                        <li class="sub-level"><a href="#">Новости проекта</a></li>
+                        <li class="sub-level"><a href="#">Новости компании</a></li>
+                    </ul>
+                    <ul>
+                        <li class="top-level">Контакты офиса продаж</li>
+                        <li class="sub-level">Москва, Феодосийская ул. дом 1</li>
+                        <li class="phone">
+                            <span class="code">+7 (495) </span>
+                            <span class="number">133 45 56</span>
+                        </li>
+                        <li><a href="#" class="btn-default btn-green">Заказать звонок</a></li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <div class="footer__social footer__socials--fb"></div>
+                    <div class="footer__social footer__socials--tw"></div>
+                    <div class="footer__social footer__socials--vk"></div>
+                    <div class="footer__social footer__socials--ins"></div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__copyright">© Девелопер проекта: ГРУППА ПСН 2107 <span class="dev-logo"></span></div>
+                    <a href="#" class="footer__pdf">Проектная декларация ООО&nbsp;«Феодосийская»&nbsp;[&nbsp;PDF.&nbsp;3&nbsp;мб&nbsp;]</a>
+                    <a href="#" class="footer__politics">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="footer-pattern"></div>
+        </footer>
 
         <script src="lib/jquery/dist/jquery.min.js"></script>
         <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="lib/owl.carousel/dist/owl.carousel.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

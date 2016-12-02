@@ -1,0 +1,30 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49.719" height="50" viewBox="0 0 49.719 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="29.188" y="611.5" width="49.719" height="50" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#c6c6c5"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="48.656" y="625.125" width="10.563" height="21.219" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#232323"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Ellipse_1_copy_3_копия" data-name="Ellipse 1 copy 3 копия" class="cls-1" d="M54.057,611.5a25,25,0,1,1-24.854,25A24.928,24.928,0,0,1,54.057,611.5Z" transform="translate(-29.188 -611.5)"/>
+  <path class="cls-2" d="M58.811,625.139l-2.528,0c-2.841,0-4.676,2.048-4.676,5.219v2.4H49.064a0.417,0.417,0,0,0-.4.434v3.486a0.416,0.416,0,0,0,.4.432h2.542v8.8a0.416,0.416,0,0,0,.4.432h3.317a0.416,0.416,0,0,0,.4-0.432v-8.8H58.69a0.416,0.416,0,0,0,.4-0.432v-3.486a0.451,0.451,0,0,0-.116-0.305,0.382,0.382,0,0,0-.282-0.129H55.718v-2.039c0-.98.215-1.477,1.389-1.477h1.7a0.415,0.415,0,0,0,.4-0.432v-3.237A0.418,0.418,0,0,0,58.811,625.139Z" transform="translate(-29.188 -611.5)"/>
+</svg>

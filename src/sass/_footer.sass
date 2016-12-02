@@ -1,0 +1,181 @@
+/*-------------FOOTER-------*/
+.footer
+  background-color: #2a2930
+  color: #7a797e
+  padding: 30px 40px
+  position: relative
+  .dev-logo
+    display: inline-block
+    width: 55px
+    height: 24px
+    vertical-align: middle
+    margin-left: 10px
+    background-image: url(/img/dev_logo.png)
+    background-size: contain
+    background-repeat: no-repeat
+.footer-pattern
+  height: 50px
+  background: url(/img/footer_pattern.png) center left
+  background-size: contain
+  opacity: 0.3
+  background-repeat-y: no-repeat
+  position: absolute
+  bottom: 30px
+  left: 0
+  right: 0
+.footer__menu
+  font-size: 0
+  line-height: 1
+  display: flex
+  ul
+    display: inline-block
+    vertical-align: top
+    li
+      padding-bottom: 10px
+    &:nth-child(1), &:nth-child(2)
+      min-width: 220px
+      width: 29%
+    &:nth-child(3)
+      min-width: 220px
+      width: 22%
+    &:nth-child(4)
+      width: 20%
+      min-width: 230px
+  .top-level
+    font-size: 12px
+    text-transform: uppercase
+    font-weight: 500
+    color: #fff
+    a
+      color: #fff
+  .sub-level
+    font-size: 14px
+    color: #7a797e
+    a
+      color: #7a797e
+  .phone
+    padding: 10px 0 15px
+    font-size: 16px
+    .number
+      color: #fff
+  .btn-default
+    color: #fff
+.footer__socials
+  width: 20%
+  display: flex
+  margin-left: auto
+.footer__social
+  width: 28px
+  height: 28px
+  margin-right: 20px
+  background-repeat: no-repeat
+  background-size: contain
+  opacity: 0.3
+.footer__socials--fb
+  background-image: url(/img/icon-fb.svg)
+.footer__socials--tw
+  background-image: url(/img/icon-tw.svg)
+.footer__socials--vk
+  background-image: url(/img/icon-vk.svg)
+.footer__socials--ins
+  background-image: url(/img/icon-ins.svg)
+.footer__info
+  display: flex
+  padding: 25px 0 80px
+  a
+    color: #fff
+    font-size: 14px
+.footer__copyright
+  font-size: 12px
+  width: 29%
+  min-width: 320px
+  white-space: nowrap
+.footer__pdf
+  width: 51%
+.footer__politics
+  white-space: nowrap
+@media screen and (max-width: 1200px)
+  .footer-pattern
+    background-size: cover
+@media screen and (max-width: 1024px)
+  .footer__menu
+    flex-wrap: wrap
+    ul
+      &:nth-child(4)
+        width: 100%
+        margin-left: 50%
+        padding: 40px 20px 0
+  .footer__socials
+    margin-left: 0
+    width: auto
+  .footer__info
+    flex-wrap: wrap
+    padding: 25px 0 35px
+    position: relative
+    width: 50%
+    bottom: 167px
+  .footer__copyright
+    position: absolute
+    bottom: -60px
+    left: 100%
+    padding-left: 20px
+    width: auto
+  .footer__pdf
+    width: auto
+    max-width: 260px
+    padding-top: 10px
+    line-height: 19px
+  .footer__politics
+    position: absolute
+    top: 0
+@media screen and (max-width: 736px)
+  .footer
+    padding: 40px 30px 100px
+  .footer__menu
+    padding-bottom: 340px
+    .top-level
+      font-size: 20px
+    .sub-level
+      display: none
+    ul
+      li
+        padding-bottom: 20px
+      &:nth-child(4)
+        width: 100%
+        margin-left: 0
+        padding: 30px 0 0
+        .top-level
+          padding-bottom: 10px
+        .sub-level
+          font-size: 20px
+          display: block
+          padding-bottom: 10px
+    .phone
+      padding: 10px 0 15px
+      font-size: 20px
+  .footer__socials
+    position: absolute
+    bottom: 200px
+  .footer__social
+    width: 50px
+    height: 50px
+    margin-right: 35px
+  .footer__info
+    padding: 0
+    position: absolute
+    width: auto
+    bottom: 250px
+    a
+      font-size: 20px
+      line-height: 30px
+      padding: 0 0 25px
+      max-width: none
+  .footer__copyright
+    bottom: -130px
+    left: 0
+    padding-left: 0
+    width: auto
+    font-size: 15px
+  .footer__politics
+    position: static
+/*---------END FOOTER-------*/

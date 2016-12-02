@@ -1,0 +1,206 @@
+/*---------HEADER-------*/
+.header
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  z-index: 999
+  padding: 35px 40px 0
+  background-color: #fff
+  line-height: 1
+  height: 100px
+  .email
+    width: 20px
+    height: 14px
+    background-image: url(/img/envelope-green.svg)
+.header__extra-links
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 260px
+  margin-left: auto
+  padding-right: 40px
+  a
+    color: #8d8a8a
+  .psn
+    font-size: 11px
+  .online-camera
+    font-size: 12px
+    &::after
+      content: ''
+      display: inline-block
+      width: 19px
+      height: 18px
+      background-image: url(/img/videocam.png)
+      vertical-align: middle
+      margin-left: 10px
+.header__top-line
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  height: 35px
+  background-color: #f7f7f7
+  background-image: url(/img/header-pattern.png)
+.header__bottom-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+.nested
+  &::after
+    content: ''
+    display: inline-block
+    vertical-align: middle
+    background-size: contain
+.header__nav
+  width: 860px
+  .top-menu
+    display: flex
+    justify-content: space-between
+    padding: 0 20px
+  .top-level
+    a
+      font-size: 15px
+      color: #000
+      text-transform: uppercase
+      text-decoration: none
+      font-weight: 600
+      font-family: bw_surco, sans-serif
+      &.nested
+        &::after
+          width: 6px
+          height: 6px
+          background-image: url(/img/small-cross-green.svg)
+          margin-left: 5px
+          margin-bottom: 3px
+  .sub-menu
+    padding-top: 20px
+    display: none
+  .sub-level
+    font-size: 18px
+    padding-bottom: 25px
+    font-weight: 500
+.header__nav__control
+  display: none
+  height: 70px
+  background-color: #ededed
+  position: relative
+.phone
+  .code
+    font-weight: 300
+  .number
+    font-weight: 500
+.header__contact
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 380px
+  min-width: 380px
+  .phone
+    font-size: 20px
+.header__logo
+  width: 139px
+  min-width: 139px
+  height: 40px
+  background-image: url(/img/logo.png)
+  background-repeat: no-repeat
+  background-position: center
+  margin-top: -10px
+.burger-btn
+  span, &::before, &::after
+    height: 3px
+    left: 0
+    right: 0
+    position: absolute
+    background-color: #999999
+    border-radius: 2px
+    content: ''
+.burger-btn
+  position: absolute
+  width: 40px
+  height: 30px
+  cursor: pointer
+  left: 100%
+  margin-left: 15px
+  span
+    top: 0
+    bottom: 0
+    margin: auto
+  &::before
+    top: 0
+  &::after
+    bottom: 0
+@media screen and (max-width: 1340px)
+  .header
+    height: 140px
+    padding: 0
+  .header__nav
+    position: absolute
+    left: 0
+    top: 0
+    width: 50%
+    background-color: #fff
+    transform: translate(-100%, 0)
+    transition: all 0.5s ease
+    .top-menu
+      padding: 70px 50px
+      width: 100%
+      display: block
+    .top-level
+      padding-bottom: 35px
+      a
+        font-size: 20px
+        &.nested
+          &::after
+            width: 8px
+            height: 8px
+            margin-bottom: 5px
+    &.open
+      height: 100vh
+      transform: translate(0, 0)
+      .header__nav__control
+        width: 100%
+      .burger-btn
+        left: auto
+        right: 20px
+        span, &::before, &::after
+          background-color: $lightGreen
+    .top-level
+      &.open
+        padding-bottom: 20px
+        .sub-menu
+          display: block
+  .header__nav__control
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  .header__top-line
+    display: none
+  .header__bottom-line
+    flex-wrap: wrap
+  .header__logo
+    height: 70px
+    width: 100%
+    margin: 0
+    background-image: url(/img/logo-mobile.png)
+  .header__contact
+    height: 70px
+    justify-content: center
+    width: 100%
+    background-color: #f7f7f7
+    .phone
+      font-size: 24px
+      padding-right: 25px
+    .btn-default
+      font-size: 18px
+    .email
+      margin-left: 10px
+@media screen and (max-width: 736px)
+  .header__contact
+    .email
+      display: none
+  .header__nav
+    width: 85%
+/*---------END HEADER-------*/

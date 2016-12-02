@@ -1,0 +1,252 @@
+.slider-over
+  position: relative
+.main-slider
+  .video
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+  .video-wrapper
+    display: none
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+  .btn-video
+    position: absolute
+    right: 50px
+    bottom: 50px
+    color: #FFF
+    width: 150px
+    text-align: center
+  .btn-video-icon
+    width: 100px
+    height: 100px
+    background-image: url(/img/play.svg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    margin: 0 auto
+  .btn-video-title
+    color: #FFF
+    text-decoration: none
+    font-size: 20px
+    font-weight: 500
+    line-height: 24px
+  .video .btn-stop
+    display: none
+    background-image: url(/img/video_close.svg)
+    width: 50px
+    height: 50px
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    top: 50px
+    right: 50px
+  .video .btn-mute
+    background-image: url(/img/video_mute.svg)
+    width: 50px
+    height: 50px
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    bottom: 50px
+    right: 50px
+    display: none
+  .owl-nav
+    position: absolute
+    width: 100%
+    top: 50%
+    padding: 0 30px
+    margin-top: -100px
+  .owl-prev , .owl-next
+    &::before
+      content: ''
+      width: 60px
+      height: 100px
+      background-image: url(/img/arrows.png)
+      background-repeat: no-repeat
+  .owl-prev
+    &::before
+      float: left
+      background-position: center left
+  .owl-next
+    &::before
+      float: right
+      background-position: center right
+  .owl-dots
+    position: absolute
+    text-align: center
+    bottom: 30px
+    left: 0
+    right: 0
+  .owl-dot
+    display: inline-block
+    width: 10px
+    height: 10px
+    background-color: rgba(255,255,255,0.7)
+    border-radius: 50%
+    margin: 0 10px
+    &.active
+      background-color: rgba(255,255,255,1)
+.main-slider-item
+  height: 0
+  padding: 0 0 41.5% 0
+  width: 100%
+  background-repeat: no-repeat
+  background-position: bottom center
+  background-size: cover
+.green-bar
+  height: 135px
+  background-color: #95d600
+  padding: 0 40px
+  color: #fff
+.green-bar__content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 100%
+.green-bar__action
+  .action__date
+    color: #ffdc3e
+.green-bar__pattern
+  width: 90px
+  height: 80px
+  position: relative
+.sign-in
+  padding: 40px 0 90px
+  text-align: center
+  a
+    border-bottom: 1px dashed $darkGreen
+    padding-bottom: 3px
+    &:hover
+      border-bottom-color: transparent
+  .envelope
+    display: inline-block
+    vertical-align: middle
+    width: 20px
+    height: 14px
+    background-image: url(/img/envelope-dark-green.svg)
+    margin-left: 10px
+.info-block
+  box-shadow: 0 0 35px rgba(0,0,0,0.06)
+  margin-bottom: 50px
+  h2
+    padding-bottom: 10px
+  h5
+    color: #595959
+  .info-block__txt-over
+    padding: 50px 90px 40px
+  .info-block__img
+    min-height: 340px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+  .info-block__txt
+    max-width: 425px
+.info-block--main
+  box-shadow: none
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding-left: 40px
+  padding-bottom: 120px
+  h2
+    max-width: 270px
+  .info-block__img
+    width: 444px
+    height: 444px
+  .info-block__txt
+    max-width: 350px
+.info-block--hor
+  display: flex
+  .info-block__txt-over
+    width: 50%
+  .info-block__img
+    width: 50%
+.info-block--vert__over
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+.info-block--vert
+  max-width: 600px
+  &:nth-child(2)
+    margin-top: 100px
+.show-more
+  text-align: center
+  .btn-default
+    font-size: 18px
+    border-radius: 20px
+.main-offer
+  padding-top: 80px
+  padding-bottom: 70px
+  h2
+    text-align: center
+    padding-bottom: 50px
+    position: relative
+    z-index: 1
+.main-offer__item
+  position: relative
+  display: flex
+.main-offer__graphics
+  background-repeat: no-repeat
+  background-position: center
+.main-offer__plan
+  width: 50%
+  background-color: #f2f2f2
+  background-position: 30% center
+.main-offer__img
+  width: 50%
+  min-height: 449px
+  background-size: cover
+.main-offer__info
+  width: 600px
+  height: 600px
+  background-color: #fff
+  border-radius: 50%
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  line-height: 1
+  padding-top: 110px
+  .params
+    display: flex
+    justify-content: center
+    padding: 40px 0
+  .param
+    padding: 0 50px
+    position: relative
+    &:first-child
+      &::after
+        content: ''
+        position: absolute
+        width: 49px
+        height: 84px
+        background-image: url(/img/separator_gray.png)
+        background-repeat: no-repeat
+        left: 100%
+        top: -5px
+        transform: translateX(-50%)
+  .param__name
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: 600
+    padding-bottom: 25px
+  .param__value
+    font-size: 30px
+    sup
+      font-size: 15px
+  .room-count
+    font-size: 40px
+    font-weight: 500
+    font-family: bw_surco, sans-serif
+    padding-bottom: 20px
+  .price
+    font-size: 40px
+    font-weight: 500
