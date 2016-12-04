@@ -128,6 +128,7 @@
   .footer__politics
     position: absolute
     top: 0
+    left: 0
 @media screen and (max-width: 736px)
   .footer
     padding: 40px 30px 100px
@@ -179,3 +180,116 @@
   .footer__politics
     position: static
 /*---------END FOOTER-------*/
+
+
+
+/*---------ACTIONS MODAL---------*/
+.actions-modal
+  position: fixed
+  right: 0
+  top: 100px
+  width: 300px
+  background-color: $orange
+  z-index: 999
+  height: 664px
+  transform: translateX(100%)
+  transition: all 0.3s ease
+  &.open
+    transform: translateX(0)
+    .actions-modal__controls
+      display: flex
+    .actions-modal__tip
+      display: none
+  .actions-modal__content
+    height: 660px
+    overflow: hidden
+  .actions-modal__item
+    color: #fff
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    height: 166px
+    align-content: center
+    .action__date
+      color: #ffd100
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 20px
+      right: 20px
+      height: 3px
+      background-color: $lightOrange
+      border-radius: 2px
+    &::before
+      content: ''
+      display: none
+      width: 135px
+      height: 135px
+      background-color: $lightOrange
+      opacity: 0.5
+      border-radius: 50%
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: -1
+    &:hover
+      &::before
+        display: block
+.actions-modal__controls
+  display: none
+  position: absolute
+  right: 100%
+  top: 70px
+  width: 80px
+  height: 240px
+  background-color: $lightOrange
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  padding: 30px 0 25px
+  .btn-close
+    width: 28px
+    height: 28px
+    background-image: url(/img/btn-close-white.svg)
+    cursor: pointer
+  .arrows
+    height: 100px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: -3px
+      right: -3px
+      height: 3px
+      border-radius: 2px
+      background-color: $orange
+  .arrow
+    width: 28px
+    height: 16px
+    cursor: pointer
+    &.prev
+      background-image: url(/img/arrow-up-white.svg)
+    &.next
+      background-image: url(/img/arrow-down-white.svg)
+.actions-modal__tip
+  position: absolute
+  right: 100%
+  top: 70px
+  width: 80px
+  height: 80px
+  background-color: $orange
+  background-image: url(/img/percent.png)
+  font-size: 18px
+  color: #fff
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+/*-------END ACTIONS MODAL-------*/

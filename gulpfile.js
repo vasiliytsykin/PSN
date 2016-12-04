@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 function sassToCss(inPath, outPath) {
     return gulp.src(inPath)
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest(outPath))
         .pipe(browserSync.stream());
