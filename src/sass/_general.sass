@@ -12,6 +12,20 @@ body
   margin: 0
   padding: 0
   font-family: geometria, sans-serif
+  position: relative
+  &.global-menu-open
+    overflow: hidden
+.shade
+  position: absolute
+  top: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0)
+  z-index: 1000
+  transition: all 0.5s ease
+  &.on
+    bottom: 0
+    right: 0
+    background-color: rgba(0, 0, 0, 0.5)
 
 h1,h2,h3,h4,h5,h6
   font-weight: 500

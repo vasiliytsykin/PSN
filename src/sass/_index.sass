@@ -183,6 +183,8 @@
   .info-block__txt
     max-width: 425px
     font-size: 16px
+    position: relative
+    z-index: 1
 .info-block--main
   box-shadow: none
   display: flex
@@ -213,8 +215,11 @@
   display: flex
   justify-content: space-between
   align-items: flex-start
+  margin: 0 -20px
 .info-block--vert
   max-width: 600px
+  margin-left: 20px
+  margin-right: 20px
   &:nth-child(2)
     margin-top: 100px
 .show-more
@@ -384,6 +389,9 @@
     width: 431px
     height: 154px
     background-image: url(/img/wave-green-left.png)
+@media screen and (max-width: 1200px)
+  .info-block--main
+    flex-wrap: wrap
 @media screen and (max-width: 1024px)
   .main-slider
     .btn-video
@@ -450,6 +458,8 @@
         width: 100%
     .info-block--vert
       max-width: none
+      margin-left: 0
+      margin-right: 0
       &:nth-child(2)
         margin-top: 0
     .circle

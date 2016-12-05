@@ -57,19 +57,64 @@ function playMainVideo() {
     });
 }
 
+function removeShade() {
+    $('.shade').removeClass('on');
+    $('.global-menu').removeClass('open')
+    $('body').removeClass('global-menu-open');
+}
+
+function handleBenefits(width) {
+    var benefits = $('.main-page .benefit-list');
+    var verticalBlocks = $('.main-page .benefit-list .info-block--vert');
+    var verticalBlocksWrapper = 'info-block--vert__over';
+
+    if(width <= 1024)
+    {
+        verticalBlocks.unwrap('.' + verticalBlocksWrapper);
+        var stagePadding = Math.floor(0.15 * width);
+        var margin = Math.floor(0.05 * width);
+        engageCarousel(benefits, {
+            items:1,
+            responsive: {
+                0: {
+                    dots: true
+                },
+                768: {
+                    dots: false,
+                    margin: margin,
+                    stagePadding: stagePadding
+                }
+            }
+        });
+    }
+    else
+    {
+        destroyOwlCarousel(benefits);
+        if(!verticalBlocks.parent('.' + verticalBlocksWrapper).length)
+            verticalBlocks.wrapAll('<div class="' + verticalBlocksWrapper + '"></div>');
+    }
+}
+
 $(function () {
 
 
     $('.burger-btn').on('click', function () {
 
-        $(this).closest('.header__nav').toggleClass('open');
+        $('.global-menu').toggleClass('open');
+        $('.shade').toggleClass('on');
+        $('body').toggleClass('global-menu-open');
         $('.top-level').removeClass('open');
 
     });
 
-    $('.header__nav .nested').on('click', function () {
+    $('.shade').on('click', function () {
+        $('.burger-btn').click();
+    });
+
+    $('.global-menu .nested').on('click', function () {
 
         $(this).closest('.top-level').toggleClass('open');
+        return false;
 
     });
 
@@ -113,35 +158,9 @@ $(function () {
     $(window).on('resize', function () {
 
         var width = $(window).width();
-        var benefits = $('.main-page .benefit-list');
-        var verticalBlocks = $('.main-page .benefit-list .info-block--vert');
-        var verticalBlocksWrapper = 'info-block--vert__over';
-
-        if(width <= 1024)
-        {
-            verticalBlocks.unwrap('.' + verticalBlocksWrapper);
-            var stagePadding = Math.floor(0.15 * width);
-            var margin = Math.floor(0.05 * width);
-            engageCarousel(benefits, {
-                items:1,
-                responsive: {
-                    0: {
-                        dots: true
-                    },
-                    768: {
-                        dots: false,
-                        margin: margin,
-                        stagePadding: stagePadding
-                    }
-                }
-            });
-        }
-        else
-        {
-            destroyOwlCarousel(benefits);
-            if(!verticalBlocks.parent('.' + verticalBlocksWrapper).length)
-                verticalBlocks.wrapAll('<div class="' + verticalBlocksWrapper + '"></div>');
-        }
+        handleBenefits(width);
+        if(width > 1340)
+            removeShade();
 
     }).resize();
 

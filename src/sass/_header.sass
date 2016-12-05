@@ -75,18 +75,6 @@
           background-image: url(/img/small-cross-green.svg)
           margin-left: 5px
           margin-bottom: 3px
-  .sub-menu
-    padding-top: 20px
-    display: none
-  .sub-level
-    font-size: 18px
-    padding-bottom: 25px
-    font-weight: 500
-.header__nav__control
-  display: none
-  height: 70px
-  background-color: #ededed
-  position: relative
 .phone
   .code
     font-weight: 300
@@ -100,15 +88,86 @@
   min-width: 380px
   .phone
     font-size: 20px
-.header__contact--mobile
-  padding: 0 50px
+.global-menu
   display: none
+  position: fixed
+  left: 0
+  top: 0
+  width: 50%
+  background-color: #fff
+  transform: translate(-100%, 0)
+  transition: all 0.5s ease
+  z-index: 999
+  .top-menu
+    padding: 70px 50px
+    width: 100%
+  .top-level
+    padding-bottom: 35px
+    a
+      font-size: 20px
+      color: #000
+      text-transform: uppercase
+      text-decoration: none
+      font-weight: 600
+      font-family: bw_surco, sans-serif
+      &.nested
+        &::after
+          width: 8px
+          height: 8px
+          margin-left: 5px
+          background-image: url(/img/small-cross-green.svg)
+          margin-bottom: 5px
+  &.open
+    height: 100%
+    transform: translate(0, 0)
+    z-index: 1000
+    .global-menu__control
+      width: 100%
+      position: fixed
+    .burger-btn
+      left: auto
+      right: 20px
+      span, &::before, &::after
+        background-color: $lightGreen
+  .top-level
+    &.open
+      padding-bottom: 20px
+      .sub-menu
+        display: block
+      a
+        &.nested
+          &::after
+            background-image: url(/img/small-minus-green.svg)
+  .sub-menu
+    padding-top: 20px
+    display: none
+  .sub-level
+    padding-bottom: 25px
+    a
+      font-size: 18px
+      font-weight: 500
+      text-transform: none
+      font-family: geometria, sans-serif
+.global-menu__control
+  height: 70px
+  background-color: #ededed
+  position: relative
+.global-menu__content
+  margin-top: 70px
+  padding-bottom: 50px
+  height: 100%
+  overflow: auto
+.global-menu__contact
+  padding: 0 50px 50px
   .address
     font-size: 20px
     line-height: 30px
     color: #999999
   .phone
     padding: 10px 0 20px
+    font-size: 24px
+  .btn-default
+    font-size: 18px
 .header__logo
   width: 139px
   min-width: 139px
@@ -148,43 +207,7 @@
     height: 140px
     padding: 0
   .header__nav
-    position: fixed
-    left: 0
-    top: 0
-    width: 50%
-    background-color: #fff
-    transform: translate(-100%, 0)
-    transition: all 0.5s ease
-    .top-menu
-      padding: 70px 50px
-      width: 100%
-      display: block
-    .top-level
-      padding-bottom: 35px
-      a
-        font-size: 20px
-        &.nested
-          &::after
-            width: 8px
-            height: 8px
-            margin-bottom: 5px
-    &.open
-      height: 100vh
-      transform: translate(0, 0)
-      .header__nav__control
-        width: 100%
-      .burger-btn
-        left: auto
-        right: 20px
-        span, &::before, &::after
-          background-color: $lightGreen
-    .top-level
-      &.open
-        padding-bottom: 20px
-        .sub-menu
-          display: block
-  .header__nav__control
-    display: block
+    display: none
   .header__top-line
     display: none
   .header__bottom-line
@@ -192,15 +215,13 @@
   .header__logo
     height: 70px
     width: 100%
-    margin: 0
+    margin: 0 0 0 -10px
     background-image: url(/img/logo-mobile.png)
   .header__contact
     height: 70px
     justify-content: center
     width: 100%
     background-color: #f7f7f7
-  .header__contact--mobile
-    display: block
   .header
     .phone
       font-size: 24px
@@ -209,10 +230,12 @@
       font-size: 18px
     .email
       margin-left: 10px
+  .global-menu
+    display: block
 @media screen and (max-width: 736px)
   .header__contact
     .email
       display: none
-  .header__nav
+  .global-menu
     width: 85%
 /*---------END HEADER-------*/
