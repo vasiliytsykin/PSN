@@ -100,6 +100,15 @@
   min-width: 380px
   .phone
     font-size: 20px
+.header__contact--mobile
+  padding: 0 50px
+  display: none
+  .address
+    font-size: 20px
+    line-height: 30px
+    color: #999999
+  .phone
+    padding: 10px 0 20px
 .header__logo
   width: 139px
   min-width: 139px
@@ -139,7 +148,7 @@
     height: 140px
     padding: 0
   .header__nav
-    position: absolute
+    position: fixed
     left: 0
     top: 0
     width: 50%
@@ -190,6 +199,9 @@
     justify-content: center
     width: 100%
     background-color: #f7f7f7
+  .header__contact--mobile
+    display: block
+  .header
     .phone
       font-size: 24px
       padding-right: 25px

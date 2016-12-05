@@ -224,9 +224,8 @@
       border-radius: 2px
     &::before
       content: ''
-      display: none
-      width: 135px
-      height: 135px
+      width: 0
+      height: 0
       background-color: $lightOrange
       opacity: 0.5
       border-radius: 50%
@@ -235,9 +234,11 @@
       left: 50%
       transform: translate(-50%, -50%)
       z-index: -1
+      transition: 0.3s
     &:hover
       &::before
-        display: block
+        width: 135px
+        height: 135px
 .actions-modal__controls
   display: none
   position: absolute
@@ -292,4 +293,13 @@
   display: flex
   justify-content: center
   align-items: center
+@media screen and (max-width: 1024px)
+  .actions-modal
+    top: 0
+  .actions-modal__tip
+    top: 0
+    width: 72px
+    height: 70px
+  .actions-modal__controls
+    top: 0
 /*-------END ACTIONS MODAL-------*/

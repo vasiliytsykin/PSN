@@ -1,3 +1,5 @@
+.main-page
+  overflow: hidden
 .slider-over
   position: relative
 .main-slider
@@ -7,6 +9,18 @@
     position: absolute
     left: 0
     top: 0
+    .btn-video, .btn-stop, .btn-mute
+      cursor: pointer
+    &.play
+      .video-wrapper
+        display: block
+      .btn-video
+        display: none
+      .btn-stop, .btn-mute
+        display: block
+    &.muted
+      .btn-mute
+        background-image: url(/img/video_unmute.svg)
   .video-wrapper
     display: none
     position: absolute
@@ -118,20 +132,21 @@
   .action__date
     color: #ffdc3e
   &::after
-    display: none
     content: ''
     position: absolute
     z-index: -1
-    width: 165px
-    height: 165px
+    width: 0
+    height: 0
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
     border-radius: 50%
     background-color: $orange
+    transition: 0.3s
   &:hover
     &::after
-      display: block
+      width: 165px
+      height: 165px
 .green-bar__pattern
   width: 90px
   height: 80px
@@ -167,6 +182,7 @@
     background-position: center
   .info-block__txt
     max-width: 425px
+    font-size: 16px
 .info-block--main
   box-shadow: none
   display: flex
@@ -174,13 +190,19 @@
   align-items: center
   padding-left: 40px
   padding-bottom: 120px
+  position: relative
   h2
     max-width: 270px
+    padding-top: 40px
   .info-block__img
     width: 444px
     height: 444px
   .info-block__txt
     max-width: 350px
+    font-weight: 500
+  .wave-left
+    top: -10px
+    left: -170px
 .info-block--hor
   display: flex
   .info-block__txt-over
@@ -291,16 +313,6 @@
       transform: translateX(-50%)
 .main-offer
   position: relative
-  .owl-dot
-    width: 10px
-    height: 10px
-    background-color: $lightGreen
-    opacity: 0.5
-    border-radius: 50%
-    display: inline-block
-    margin: 0 10px
-    &.active
-      opacity: 1
   .owl-dots
     position: absolute
     bottom: 60px
@@ -321,6 +333,57 @@
       font-size: 15px
       &:hover
         border-bottom-color: transparent
+.big-pattern
+  position: absolute
+.benefits
+  position: relative
+  .info-block__img
+    position: relative
+    z-index: 1
+  .big-pattern
+    width: 520px
+    right: -120px
+    top: 250px
+  .circle
+    &:nth-child(1)
+      right: -350px
+      top: 200px
+    &:nth-child(2)
+      left: -370px
+      top: 300px
+  .wave-right
+    bottom: -300px
+    right: -170px
+.benefit-list
+  opacity: 0.99
+.main-offer, .benefits
+  .owl-dot
+    width: 10px
+    height: 10px
+    background-color: $lightGreen
+    opacity: 0.5
+    border-radius: 50%
+    display: inline-block
+    margin: 0 10px
+    &.active
+      opacity: 1
+.big-figure
+  position: absolute
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+  &.circle
+    width: 500px
+    height: 500px
+    background-image: url(/img/circle-yellow.svg)
+  &.wave-right
+    width: 630px
+    height: 300px
+    background-image: url(/img/wave-green-right.png)
+  &.wave-left
+    width: 431px
+    height: 154px
+    background-image: url(/img/wave-green-left.png)
 @media screen and (max-width: 1024px)
   .main-slider
     .btn-video
@@ -340,11 +403,16 @@
     &:last-child
       display: none
   .info-block--main
-    max-width: 70%
-    margin: 0 auto
+    padding: 0 15% 100px
     flex-wrap: wrap
-    padding-left: 0
-    padding-bottom: 100px
+    align-items: flex-start
+    h2
+      padding-top: 30px
+    .wave-left
+      width: 265px
+      height: 95px
+      left: 0
+      top: 30%
     .info-block__img
       width: 314px
       height: 314px
@@ -355,15 +423,24 @@
       padding-top: 45px
   .benefits
     padding-bottom: 50px
+    .big-pattern
+      top: auto
+      right: auto
+      left: -270px
+      bottom: -20px
     .owl-stage
       display: flex
       padding-top: 35px
+      font-size: 0
     .info-block
       height: 100%
+      width: 100%
       display: flex
-      flex-direction: column
-      justify-content: space-between
+      flex-wrap: wrap
       margin-bottom: 0
+    .info-block__img
+      width: 100%
+      align-self: flex-end
     .info-block__txt-over
       padding: 50px 40px 40px
     .info-block--hor
@@ -375,6 +452,16 @@
       max-width: none
       &:nth-child(2)
         margin-top: 0
+    .circle
+      width: 312px
+      height: 312px
+      &:nth-child(1)
+        right: -100px
+        top: 360px
+      &:nth-child(2)
+        display: none
+    .wave-right
+      display: none
   .show-more
     display: none
   .main-offer
@@ -397,3 +484,79 @@
   .benefits
     .info-block__img
       min-height: 300px
+@media screen and (max-width: 736px)
+  .main-slider-item
+    padding: 0 0 415px 0
+  .green-bar__action
+    &:nth-child(4)
+      display: none
+  .green-bar__pattern
+    &:nth-child(5)
+      display: none
+  .info-block--main
+    max-width: 100%
+    padding: 0
+    h2
+      padding-bottom: 35px
+      max-width: none
+    .info-block__img
+      width: 355px
+      height: 355px
+      margin: 0 auto
+    .info-block__txt
+      font-size: 20px
+      padding-top: 35px
+    .wave-left
+      display: none
+  .main-offer, .benefits
+    .owl-dot
+      width: 15px
+      height: 15px
+      margin: 0 15px
+  .benefits
+    margin: 0 -30px
+    padding-bottom: 35px
+    padding-top: 230px
+    width: auto
+    .big-pattern
+      top: -50px
+      right: -120px
+      left: auto
+      bottom: auto
+    .info-block
+      box-shadow: none
+    .info-block__img
+      min-height: 275px
+    .info-block__txt-over
+      padding: 50px 50px 0
+    .owl-dots
+      text-align: center
+      line-height: 1
+      padding: 30px 0
+    .circle:nth-child(1)
+      width: 500px
+      height: 500px
+      right: -350px
+      top: 72%
+  .main-offer
+    padding-top: 0
+    padding-bottom: 90px
+    .owl-dots
+      left: 0
+      bottom: -55px
+    .show-all
+      left: 0
+      bottom: 0
+  .main-offer__item
+    flex-wrap: wrap
+  .main-offer__plan
+    display: none
+  .main-offer__img
+    display: block
+    width: 100%
+    min-height: 300px
+    order: 0
+  .main-offer__info
+    width: 100%
+    order: 1
+    padding-top: 30px
