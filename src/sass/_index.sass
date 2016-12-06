@@ -1,572 +1,525 @@
 .main-page
   overflow: hidden
-.slider-over
-  position: relative
-.main-slider
-  .video
-    width: 100%
-    height: 100%
-    position: absolute
-    left: 0
-    top: 0
-    .btn-video, .btn-stop, .btn-mute
-      cursor: pointer
-    &.play
-      .video-wrapper
-        display: block
-      .btn-video
-        display: none
-      .btn-stop, .btn-mute
-        display: block
-    &.muted
-      .btn-mute
-        background-image: url(/img/video_unmute.svg)
-  .video-wrapper
-    display: none
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%,-50%)
-    width: 100%
-  .btn-video
-    position: absolute
-    right: 50px
-    bottom: 50px
-    color: #FFF
-    width: 150px
-    text-align: center
-  .btn-video-icon
-    width: 100px
-    height: 100px
-    background-image: url(/img/play.svg)
-    background-repeat: no-repeat
-    background-position: center
-    background-size: contain
-    margin: 0 auto
-  .btn-video-title
-    color: #FFF
-    text-decoration: none
-    font-size: 20px
-    font-weight: 500
-    line-height: 24px
-  .video .btn-stop
-    display: none
-    background-image: url(/img/video_close.svg)
-    width: 50px
-    height: 50px
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
-    position: absolute
-    top: 50px
-    right: 50px
-  .video .btn-mute
-    background-image: url(/img/video_mute.svg)
-    width: 50px
-    height: 50px
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
-    position: absolute
-    bottom: 50px
-    right: 50px
-    display: none
-  .owl-nav
-    position: absolute
-    width: 100%
-    top: 50%
-    padding: 0 30px
-    margin-top: -100px
-  .owl-prev , .owl-next
-    &::before
-      content: ''
-      width: 60px
-      height: 100px
-      background-image: url(/img/arrows.png)
-      background-repeat: no-repeat
-  .owl-prev
-    &::before
-      float: left
-      background-position: center left
-  .owl-next
-    &::before
-      float: right
-      background-position: center right
-  .owl-dots
-    position: absolute
-    text-align: center
-    bottom: 30px
-    left: 0
-    right: 0
-  .owl-dot
-    display: inline-block
-    width: 10px
-    height: 10px
-    background-color: rgba(255,255,255,0.7)
-    border-radius: 50%
-    margin: 0 10px
-    &.active
-      background-color: rgba(255,255,255,1)
-.main-slider-item
-  height: 0
-  padding: 0 0 41.5% 0
-  width: 100%
-  background-repeat: no-repeat
-  background-position: bottom center
-  background-size: cover
-.green-bar
-  height: 135px
-  background-color: #95d600
-  padding: 0 40px
-  color: #fff
-  overflow: hidden
-.green-bar__content
-  display: flex
-  justify-content: space-between
-  align-items: center
-  height: 100%
-.green-bar__action
-  color: #fff
-  position: relative
-  z-index: 0
-  .action__date
-    color: #ffdc3e
-  &::after
-    content: ''
-    position: absolute
-    z-index: -1
-    width: 0
-    height: 0
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    border-radius: 50%
-    background-color: $orange
-    transition: 0.3s
-  &:hover
-    &::after
-      width: 165px
-      height: 165px
-.green-bar__pattern
-  width: 90px
-  height: 80px
-  position: relative
-.sign-in
-  padding: 40px 0 90px
-  text-align: center
-  a
-    border-bottom: 1px dashed $darkGreen
-    padding-bottom: 3px
-    &:hover
-      border-bottom-color: transparent
-  .envelope
-    display: inline-block
-    vertical-align: middle
-    width: 20px
-    height: 14px
-    background-image: url(/img/envelope-dark-green.svg)
-    margin-left: 10px
-.info-block
-  box-shadow: 0 0 35px rgba(0,0,0,0.06)
-  margin-bottom: 50px
-  h2
-    padding-bottom: 10px
-  h5
-    color: #595959
-  .info-block__txt-over
-    padding: 50px 90px 40px
-  .info-block__img
-    min-height: 340px
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
-  .info-block__txt
-    max-width: 425px
-    font-size: 16px
+  .slider-over
     position: relative
-    z-index: 1
-.info-block--main
-  box-shadow: none
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding-left: 40px
-  padding-bottom: 120px
-  position: relative
-  h2
-    max-width: 270px
-    padding-top: 40px
-  .info-block__img
-    width: 444px
-    height: 444px
-  .info-block__txt
-    max-width: 350px
-    font-weight: 500
-  .wave-left
-    top: -10px
-    left: -170px
-.info-block--hor
-  display: flex
-  .info-block__txt-over
-    width: 50%
-  .info-block__img
-    width: 50%
-.info-block--vert__over
-  display: flex
-  justify-content: space-between
-  align-items: flex-start
-  margin: 0 -20px
-.info-block--vert
-  max-width: 600px
-  margin-left: 20px
-  margin-right: 20px
-  &:nth-child(2)
-    margin-top: 100px
-.show-more
-  text-align: center
-  .btn-default
-    font-size: 18px
-    border-radius: 20px
-.main-offer
-  padding-top: 80px
-  margin-bottom: 70px
-  h2
-    text-align: center
-    padding-bottom: 50px
-    position: relative
-    z-index: 1
-.main-offer__item
-  position: relative
-  display: flex
-.main-offer__graphics
-  background-repeat: no-repeat
-  background-position: center
-.main-offer__plan
-  width: 50%
-  background-color: #f2f2f2
-  background-position: 30% center
-  min-height: 449px
-.main-offer__img
-  width: 50%
-  min-height: 449px
-  background-size: cover
-.main-offer__info
-  width: 600px
-  height: 600px
-  background-color: #fff
-  border-radius: 50%
-  position: absolute
-  left: 50%
-  top: 50%
-  transform: translate(-50%, -50%)
-  text-align: center
-  line-height: 1
-  padding-top: 110px
-  .params
-    display: flex
-    justify-content: center
-    padding: 40px 0
-  .param
-    padding: 0 50px
-    position: relative
-    &:first-child
-      &::after
-        content: ''
-        position: absolute
-        width: 49px
-        height: 84px
-        background-image: url(/img/separator_gray.png)
-        background-repeat: no-repeat
-        left: 100%
-        top: -5px
-        transform: translateX(-50%)
-  .param__name
-    font-size: 18px
-    text-transform: uppercase
-    font-weight: 600
-    padding-bottom: 25px
-  .param__value
-    font-size: 30px
-    sup
-      font-size: 15px
-  .room-count
-    font-size: 40px
-    font-weight: 500
-    font-family: bw_surco, sans-serif
-    padding-bottom: 20px
-  .price
-    font-size: 40px
-    font-weight: 500
-.scroll-top
-  text-align: center
-  margin-bottom: 30px
-  a
-    display: inline-block
-    font-size: 15px
-    text-transform: uppercase
-    color: $lightGreen
-    position: relative
-    font-weight: 500
-    &::before
-      position: absolute
-      content: ''
-      top: -10px
-      width: 90px
-      height: 15px
-      background-image: url(/img/scroll_down_up.svg)
-      left: 50%
-      transform: translateX(-50%)
-.main-offer
-  position: relative
-  .owl-dots
-    position: absolute
-    bottom: 60px
-    line-height: 1
-    left: 0
-    right: 0
-    text-align: center
-  .show-all
-    position: absolute
-    left: 0
-    right: 0
-    bottom: 30px
-    text-align: center
-    line-height: 1
-    z-index: 1
-    a
-      border-bottom: 1px solid $darkGreen
-      font-size: 15px
-      &:hover
-        border-bottom-color: transparent
-.big-pattern
-  position: absolute
-.benefits
-  position: relative
-  .info-block__img
-    position: relative
-    z-index: 1
-  .big-pattern
-    width: 520px
-    right: -120px
-    top: 250px
-  .circle
-    &:nth-child(1)
-      right: -350px
-      top: 200px
-    &:nth-child(2)
-      left: -370px
-      top: 300px
-  .wave-right
-    bottom: -300px
-    right: -170px
-.benefit-list
-  opacity: 0.99
-.main-offer, .benefits
-  .owl-dot
-    width: 10px
-    height: 10px
-    background-color: $lightGreen
-    opacity: 0.5
-    border-radius: 50%
-    display: inline-block
-    margin: 0 10px
-    &.active
-      opacity: 1
-.big-figure
-  position: absolute
-  background-repeat: no-repeat
-  background-position: center
-  background-size: contain
-  &.circle
-    width: 500px
-    height: 500px
-    background-image: url(/img/circle-yellow.svg)
-  &.wave-right
-    width: 630px
-    height: 300px
-    background-image: url(/img/wave-green-right.png)
-  &.wave-left
-    width: 431px
-    height: 154px
-    background-image: url(/img/wave-green-left.png)
-@media screen and (max-width: 1200px)
-  .info-block--main
-    flex-wrap: wrap
-@media screen and (max-width: 1024px)
   .main-slider
+    .video
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      .btn-video, .btn-stop, .btn-mute
+        cursor: pointer
+      &.play
+        .video-wrapper
+          display: block
+        .btn-video
+          display: none
+        .btn-stop, .btn-mute
+          display: block
+      &.muted
+        .btn-mute
+          background-image: url(/img/video_unmute.svg)
+    .video-wrapper
+      display: none
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 100%
     .btn-video
+      position: absolute
+      right: 50px
+      bottom: 50px
+      color: #FFF
+      width: 150px
+      text-align: center
+    .btn-video-icon
+      width: 100px
+      height: 100px
+      background-image: url(/img/play.svg)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: contain
+      margin: 0 auto
+    .btn-video-title
+      color: #FFF
+      text-decoration: none
+      font-size: 20px
+      font-weight: 500
+      line-height: 24px
+    .video .btn-stop
+      display: none
+      background-image: url(/img/video_close.svg)
+      width: 50px
+      height: 50px
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      position: absolute
+      top: 50px
+      right: 50px
+    .video .btn-mute
+      background-image: url(/img/video_mute.svg)
+      width: 50px
+      height: 50px
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+      position: absolute
+      bottom: 50px
+      right: 50px
       display: none
     .owl-nav
-      margin-top: -50px
+      transform: translate(0, -100%)
+    .owl-dots
+      bottom: 30px
   .main-slider-item
-    padding: 0 0 395px 0
-  .sign-in
-    padding-bottom: 60px
+    height: 0
+    padding: 0 0 41.5% 0
+    width: 100%
+    background-repeat: no-repeat
+    background-position: bottom center
+    background-size: cover
   .green-bar
-    padding: 0
+    height: 135px
+    background-color: #95d600
+    padding: 0 40px
+    color: #fff
+    overflow: hidden
+  .green-bar__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
   .green-bar__action
-    &:nth-last-child(2)
-      display: none
+    color: #fff
+    position: relative
+    z-index: 0
+    .action__date
+      color: #ffdc3e
+    &::after
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 0
+      height: 0
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      border-radius: 50%
+      background-color: $orange
+      transition: 0.3s
+    &:hover
+      &::after
+        width: 165px
+        height: 165px
   .green-bar__pattern
-    &:last-child
-      display: none
+    width: 90px
+    height: 80px
+    position: relative
+  .sign-in
+    padding: 40px 0 90px
+    text-align: center
+    a
+      border-bottom: 1px dashed $darkGreen
+      padding-bottom: 3px
+      &:hover
+        border-bottom-color: transparent
+    .envelope
+      display: inline-block
+      vertical-align: middle
+      width: 20px
+      height: 14px
+      background-image: url(/img/envelope-dark-green.svg)
+      margin-left: 10px
+  .info-block
+    box-shadow: 0 0 35px rgba(0,0,0,0.06)
+    margin-bottom: 50px
+    h2
+      padding-bottom: 10px
+    h5
+      color: #595959
+    .info-block__txt-over
+      padding: 50px 90px 40px
+    .info-block__img
+      min-height: 340px
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+    .info-block__txt
+      max-width: 425px
+      font-size: 16px
+      position: relative
+      z-index: 1
   .info-block--main
-    padding: 0 15% 100px
-    flex-wrap: wrap
+    box-shadow: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-left: 40px
+    padding-bottom: 120px
+    position: relative
+    h2
+      max-width: 270px
+      padding-top: 40px
+    .info-block__img
+      width: 444px
+      height: 444px
+    .info-block__txt
+      max-width: 350px
+      font-weight: 500
+    .wave-left
+      top: -10px
+      left: -170px
+  .info-block--hor
+    display: flex
+    .info-block__txt-over
+      width: 50%
+    .info-block__img
+      width: 50%
+  .info-block--vert__over
+    display: flex
+    justify-content: space-between
     align-items: flex-start
-    h2
-      padding-top: 30px
-    .wave-left
-      width: 265px
-      height: 95px
-      left: 0
-      top: 30%
-    .info-block__img
-      width: 314px
-      height: 314px
-      min-height: 0
-      margin-right: -55px
-    .info-block__txt
-      max-width: 100%
-      padding-top: 45px
-  .benefits
-    padding-bottom: 50px
-    .big-pattern
-      top: auto
-      right: auto
-      left: -270px
-      bottom: -20px
-    .owl-stage
-      display: flex
-      padding-top: 35px
-      font-size: 0
-    .info-block
-      height: 100%
-      width: 100%
-      display: flex
-      flex-wrap: wrap
-      margin-bottom: 0
-    .info-block__img
-      width: 100%
-      align-self: flex-end
-    .info-block__txt-over
-      padding: 50px 40px 40px
-    .info-block--hor
-      .info-block__img
-        width: 100%
-      .info-block__txt-over
-        width: 100%
-    .info-block--vert
-      max-width: none
-      margin-left: 0
-      margin-right: 0
-      &:nth-child(2)
-        margin-top: 0
-    .circle
-      width: 312px
-      height: 312px
-      &:nth-child(1)
-        right: -100px
-        top: 360px
-      &:nth-child(2)
-        display: none
-    .wave-right
-      display: none
+    margin: 0 -20px
+  .info-block--vert
+    max-width: 600px
+    margin-left: 20px
+    margin-right: 20px
+    &:nth-child(2)
+      margin-top: 100px
   .show-more
-    display: none
+    text-align: center
+    .btn-default
+      font-size: 18px
+      border-radius: 20px
   .main-offer
+    padding-top: 80px
+    margin-bottom: 70px
     h2
-      display: none
-    .show-all
-      left: 50%
-    .owl-dots
-      left: 50%
-  .main-offer__img
-    display: none
-  .main-offer__info
+      text-align: center
+      padding-bottom: 50px
+      position: relative
+      z-index: 1
+  .main-offer__item
+    position: relative
+    display: flex
+  .main-offer__graphics
+    background-repeat: no-repeat
+    background-position: center
+  .main-offer__plan
     width: 50%
-    height: auto
-    position: static
-    transform: none
-    border-radius: 0
-    padding-top: 50px
-@media screen and (max-width: 768px)
-  .benefits
-    .info-block__img
-      min-height: 300px
-@media screen and (max-width: 736px)
-  .main-slider-item
-    padding: 0 0 415px 0
-  .green-bar__action
-    &:nth-child(4)
-      display: none
-  .green-bar__pattern
-    &:nth-child(5)
-      display: none
-  .info-block--main
-    max-width: 100%
-    padding: 0
-    h2
-      padding-bottom: 35px
-      max-width: none
-    .info-block__img
-      width: 355px
-      height: 355px
-      margin: 0 auto
-    .info-block__txt
-      font-size: 20px
-      padding-top: 35px
-    .wave-left
-      display: none
-  .main-offer, .benefits
-    .owl-dot
-      width: 15px
-      height: 15px
-      margin: 0 15px
-  .benefits
-    margin: 0 -30px
-    padding-bottom: 35px
-    padding-top: 230px
-    width: auto
-    .big-pattern
-      top: -50px
-      right: -120px
-      left: auto
-      bottom: auto
-    .info-block
-      box-shadow: none
-    .info-block__img
-      min-height: 275px
-    .info-block__txt-over
-      padding: 50px 50px 0
+    background-color: #f2f2f2
+    background-position: 30% center
+    min-height: 449px
+  .main-offer__img
+    width: 50%
+    min-height: 449px
+    background-size: cover
+  .main-offer__info
+    width: 600px
+    height: 600px
+    background-color: #fff
+    border-radius: 50%
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    line-height: 1
+    padding-top: 110px
+    .params
+      display: flex
+      justify-content: center
+      padding: 40px 0
+    .param
+      padding: 0 50px
+      position: relative
+      &:first-child
+        &::after
+          content: ''
+          position: absolute
+          width: 49px
+          height: 84px
+          background-image: url(/img/separator_gray.png)
+          background-repeat: no-repeat
+          left: 100%
+          top: -5px
+          transform: translateX(-50%)
+    .param__name
+      font-size: 18px
+      text-transform: uppercase
+      font-weight: 600
+      padding-bottom: 25px
+    .param__value
+      font-size: 30px
+      sup
+        font-size: 15px
+    .room-count
+      font-size: 40px
+      font-weight: 500
+      font-family: bw_surco, sans-serif
+      padding-bottom: 20px
+    .price
+      font-size: 40px
+      font-weight: 500
+  .main-offer
+    position: relative
     .owl-dots
+      position: absolute
+      bottom: 60px
+      line-height: 1
+      left: 0
+      right: 0
+      text-align: center
+    .show-all
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 30px
       text-align: center
       line-height: 1
-      padding: 30px 0
-    .circle:nth-child(1)
+      z-index: 1
+      a
+        border-bottom: 1px solid $darkGreen
+        font-size: 15px
+        &:hover
+          border-bottom-color: transparent
+  .big-pattern
+    position: absolute
+  .benefits
+    position: relative
+    .info-block__img
+      position: relative
+      z-index: 1
+    .big-pattern
+      width: 520px
+      right: -120px
+      top: 250px
+    .circle
+      &:nth-child(1)
+        right: -350px
+        top: 200px
+      &:nth-child(2)
+        left: -370px
+        top: 300px
+    .wave-right
+      bottom: -300px
+      right: -170px
+  .benefit-list
+    opacity: 0.99
+  .main-offer, .benefits
+    .owl-dot
+      width: 10px
+      height: 10px
+      background-color: $lightGreen
+      opacity: 0.5
+      border-radius: 50%
+      display: inline-block
+      margin: 0 10px
+      &.active
+        opacity: 1
+  .big-figure
+    position: absolute
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    &.circle
       width: 500px
       height: 500px
-      right: -350px
-      top: 72%
-  .main-offer
-    padding-top: 0
-    padding-bottom: 90px
-    .owl-dots
-      left: 0
-      bottom: -55px
-    .show-all
-      left: 0
-      bottom: 0
-  .main-offer__item
-    flex-wrap: wrap
-  .main-offer__plan
-    display: none
-  .main-offer__img
-    display: block
-    width: 100%
-    min-height: 300px
-    order: 0
-  .main-offer__info
-    width: 100%
-    order: 1
-    padding-top: 30px
+      background-image: url(/img/circle-yellow.svg)
+    &.wave-right
+      width: 630px
+      height: 300px
+      background-image: url(/img/wave-green-right.png)
+    &.wave-left
+      width: 431px
+      height: 154px
+      background-image: url(/img/wave-green-left.png)
+@media screen and (max-width: 1200px)
+  .main-page
+    .info-block--main
+      flex-wrap: wrap
+@media screen and (max-width: 1024px)
+  .main-page
+    .main-slider
+      .btn-video
+        display: none
+      .owl-nav
+        transform: translate(0, -50%)
+    .main-slider-item
+      padding: 0 0 395px 0
+    .sign-in
+      padding-bottom: 60px
+    .green-bar
+      padding: 0
+    .green-bar__action
+      &:nth-last-child(2)
+        display: none
+    .green-bar__pattern
+      &:last-child
+        display: none
+    .info-block--main
+      padding: 0 15% 100px
+      flex-wrap: wrap
+      align-items: flex-start
+      h2
+        padding-top: 30px
+      .wave-left
+        width: 265px
+        height: 95px
+        left: 0
+        top: 30%
+      .info-block__img
+        width: 314px
+        height: 314px
+        min-height: 0
+        margin-right: -55px
+      .info-block__txt
+        max-width: 100%
+        padding-top: 45px
+    .benefits
+      padding-bottom: 50px
+      .big-pattern
+        top: auto
+        right: auto
+        left: -270px
+        bottom: -20px
+      .owl-stage
+        display: flex
+        padding-top: 35px
+        font-size: 0
+      .info-block
+        height: 100%
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 0
+      .info-block__img
+        width: 100%
+        align-self: flex-end
+      .info-block__txt-over
+        padding: 50px 40px 40px
+      .info-block--hor
+        .info-block__img
+          width: 100%
+        .info-block__txt-over
+          width: 100%
+      .info-block--vert
+        max-width: none
+        margin-left: 0
+        margin-right: 0
+        &:nth-child(2)
+          margin-top: 0
+      .circle
+        width: 312px
+        height: 312px
+        &:nth-child(1)
+          right: -100px
+          top: 360px
+        &:nth-child(2)
+          display: none
+      .wave-right
+        display: none
+    .show-more
+      display: none
+    .main-offer
+      h2
+        display: none
+      .show-all
+        left: 50%
+      .owl-dots
+        left: 50%
+    .main-offer__img
+      display: none
+    .main-offer__info
+      width: 50%
+      height: auto
+      position: static
+      transform: none
+      border-radius: 0
+      padding-top: 50px
+@media screen and (max-width: 768px)
+  .main-page
+    .benefits
+      .info-block__img
+        min-height: 300px
+@media screen and (max-width: 736px)
+  .main-page
+    .main-slider-item
+      padding: 0 0 415px 0
+    .green-bar__action
+      &:nth-child(4)
+        display: none
+    .green-bar__pattern
+      &:nth-child(5)
+        display: none
+    .info-block--main
+      max-width: 100%
+      padding: 0
+      h2
+        padding-bottom: 35px
+        max-width: none
+      .info-block__img
+        width: 355px
+        height: 355px
+        margin: 0 auto
+      .info-block__txt
+        font-size: 20px
+        padding-top: 35px
+      .wave-left
+        display: none
+    .main-offer, .benefits
+      .owl-dot
+        width: 15px
+        height: 15px
+        margin: 0 15px
+    .benefits
+      margin: 0 -30px
+      padding-bottom: 35px
+      padding-top: 230px
+      width: auto
+      .big-pattern
+        top: -50px
+        right: -120px
+        left: auto
+        bottom: auto
+      .info-block
+        box-shadow: none
+      .info-block__img
+        min-height: 275px
+      .info-block__txt-over
+        padding: 50px 50px 0
+      .owl-dots
+        text-align: center
+        line-height: 1
+        padding: 30px 0
+      .circle:nth-child(1)
+        width: 500px
+        height: 500px
+        right: -350px
+        top: 72%
+    .main-offer
+      padding-top: 0
+      padding-bottom: 90px
+      .owl-dots
+        left: 0
+        bottom: -55px
+      .show-all
+        left: 0
+        bottom: 0
+    .main-offer__item
+      flex-wrap: wrap
+    .main-offer__plan
+      display: none
+    .main-offer__img
+      display: block
+      width: 100%
+      min-height: 300px
+      order: 0
+    .main-offer__info
+      width: 100%
+      order: 1
+      padding-top: 30px

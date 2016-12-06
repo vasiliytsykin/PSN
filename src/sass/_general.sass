@@ -27,23 +27,27 @@ body
     right: 0
     background-color: rgba(0, 0, 0, 0.5)
 
-h1,h2,h3,h4,h5,h6
+h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6
   font-weight: 500
   margin: 0
 
-h2
+h1, .h1
+  font-size: 45px
+  line-height: 55px
+
+h2, .h2
   font-size: 30px
   line-height: 40px
 
-h3
+h3, .h3
   font-size: 22px
   line-height: 30px
 
-h4
+h4, .h4
   font-size: 20px
   line-height: 28px
 
-h5
+h5, .h5
   font-size: 18px
   line-height: 26px
 
@@ -93,6 +97,7 @@ p
 .btn-default
   display: inline-block
   font-size: 14px
+  font-weight: 400
   line-height: 1
   padding: 8px 20px
   border: 2px solid
@@ -123,6 +128,71 @@ p
   font-size: 20px
   line-height: 1
   font-weight: 300
+.info-block
+  h2
+    padding-bottom: 10px
+  h5
+    color: #595959
+  .info-block__txt
+    font-size: 16px
+    position: relative
+    z-index: 1
+.scroll-top
+  text-align: center
+  margin-bottom: 30px
+  a
+    display: inline-block
+    font-size: 15px
+    text-transform: uppercase
+    color: $lightGreen
+    position: relative
+    font-weight: 500
+    &::before
+      position: absolute
+      content: ''
+      top: -10px
+      width: 90px
+      height: 15px
+      background-image: url(/img/scroll_down_up.svg)
+      left: 50%
+      transform: translateX(-50%)
+.big-slider
+  .owl-nav
+    position: absolute
+    width: 100%
+    top: 50%
+    padding: 0 30px
+    transform: translate(0, -50%)
+    .owl-prev , .owl-next
+      &::before
+        content: ''
+        width: 60px
+        height: 100px
+        background-image: url(/img/arrows.png)
+        background-repeat: no-repeat
+    .owl-prev
+      &::before
+        float: left
+        background-position: center left
+    .owl-next
+      &::before
+        float: right
+        background-position: center right
+  .owl-dots
+    position: absolute
+    text-align: center
+    left: 0
+    right: 0
+    line-height: 1
+  .owl-dot
+    display: inline-block
+    width: 10px
+    height: 10px
+    background-color: rgba(255,255,255,0.7)
+    border-radius: 50%
+    margin: 0 10px
+    &.active
+      background-color: rgba(255,255,255,1)
 @media screen and (max-width: 736px)
   .wrapper-inner
     padding: 0 30px

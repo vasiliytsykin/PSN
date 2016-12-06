@@ -1,0 +1,363 @@
+@import "var"
+
+.about-page
+  h1
+    font-family: bw_surco, sans-serif
+    padding: 30px 0 50px
+    text-align: center
+  .block-features
+    overflow: hidden
+    height: 807px
+    background: url(/img/about/girl.jpg) no-repeat center
+    background-size: cover
+    &:last-child
+      border-bottom: none
+    .wrapper-outer
+      height: inherit
+      position: relative
+      &::before, &::after
+        content: ''
+        display: block
+        top: 0
+        bottom: 1px
+        width: 1000px
+        background-color: rgba( 30,40,10, 0.4)
+        position: absolute
+      &::before
+        right: 100%
+      &::after
+        left: 100%
+  .block-features-row
+    height: 269px
+    border-bottom: 1px solid #b7f91f
+    &:last-child
+      border-bottom: none
+      .block-features-item
+        border-bottom: none
+        &.on
+          .detail-desc-over
+            height: 200%
+            top: auto
+      .detail-desc-over
+        height: 100%
+        bottom: 0
+      .detail-desc
+        bottom: 0
+        top: auto
+  .block-features-item-inner
+    position: relative
+    color: #fff
+    width: 100%
+    height: 100%
+    h2
+      position: absolute
+      top: 0
+    .short-desc
+      position: absolute
+      bottom: 0
+      font-size: 18px
+      line-height: 25px
+  .block-features-item
+    float: left
+    width: 33.3333%
+    height: 100%
+    border-left: 1px solid #b7f91f
+    border-bottom: 1px solid #b7f91f
+    padding: 40px
+    position: relative
+    background-color: rgba(30,40,10, 0.4)
+    &:hover
+      background-color: rgba(30,40,10, 0)
+    &:last-child
+      border-right: 1px solid #b7f91f
+    .detail-desc-over
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      transition: all 0.2s ease
+    .detail-desc
+      position: absolute
+      overflow: hidden
+      left: 0
+      right: 0
+      top: 0
+      background-color: $yellow
+      padding: 0 40px
+      z-index: 2
+      height: 0
+      transition: all 0.2s ease
+      p
+        margin-top: 15px
+        margin-bottom: 0
+        padding-right: 15%
+    .detail-desc-h
+      color: #fff
+      font-size: 18px
+      line-height: 25px
+      font-weight: 500
+      text-transform: uppercase
+    .btn-cross
+      width: 40px
+      height: 40px
+      position: absolute
+      top: 30px
+      right: 40px
+      cursor: pointer
+      transition: all 0.2s ease
+      &::before, &::after
+        content: ''
+        position: absolute
+        width: 40px
+        height: 3px
+        background-color: #fff
+        top: 50%
+      &::before
+        transform: rotate(90deg)
+    &.on
+      .btn-cross
+        z-index: 3
+        &::before
+          transform: rotate(45deg)
+        &::after
+          transform: rotate(-45deg)
+      .detail-desc
+        display: block
+        height: 538px
+        padding: 30px 40px
+  .block-features-open-text
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 2
+  .info-block
+    max-width: 1000px
+    margin: 0 auto
+    padding: 90px 0
+  .info-block__txt
+    max-width: 50%
+  .gallery
+    position: relative
+    margin-bottom: 120px
+  .gallery__slider
+    .owl-dots
+      bottom: 100px
+  .gallery__slide
+    padding-bottom: 53.75%
+    background: no-repeat center
+    background-size: cover
+  .gallery__slide__txt
+    color: #fff
+    font-weight: 600
+    text-align: center
+    position: absolute
+    bottom: 100px
+    padding: 30px
+    left: 0
+    right: 0
+    .h1
+      font-family: bw_surco, sans-serif
+      padding-bottom: 10px
+  .gallery__switch
+    position: absolute
+    height: 110px
+    width: 560px
+    overflow: hidden
+    background-color: $lightGreen
+    font-size: 0
+    top: 100%
+    transform: translate(-50%, -50%)
+    left: 50%
+    z-index: 2
+    display: flex
+    .switch__tab
+      position: relative
+      width: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 20px
+      font-weight: 500
+      color: #fff
+      text-transform: uppercase
+      cursor: pointer
+      &::before
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border: 0 solid $darkGreen
+        border-radius: 50%
+        transition: all 0.3s ease
+        z-index: -1
+      &.active, &:hover
+        &::before
+          width: 190px
+          height: 190px
+          border: 60px solid $darkGreen
+      &:first-child
+        &::after
+          position: absolute
+          content: ''
+          width: 20px
+          height: 80px
+          background: url(/img/tab_separator.svg) no-repeat center
+          right: 0
+          top: 50%
+          transform: translate(50%, -50%)
+  .gallery__tab
+    display: none
+    &.active
+      display: block
+  .block-prices
+    max-width: 1000px
+    margin: 0 auto
+    padding: 65px 90px 50px
+    box-shadow: 0 0 35px rgba(0,0,0,0.06)
+    display: flex
+    align-items: baseline
+    h2
+      width: 30%
+    .params
+      position: relative
+      flex-grow: 1
+      margin-top: -15px
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 45%
+        background-image: url(/img/separator_gray.svg)
+        height: 100%
+        width: 20px
+    .param
+      display: flex
+      justify-content: space-between
+      align-items: baseline
+      line-height: 1
+      padding: 15px 0
+    .param__name
+      font-size: 20px
+      text-transform: uppercase
+      font-weight: 600
+    .param__value
+      font-size: 30px
+      flex-basis: 40%
+  .contacts
+    padding: 120px 0
+    font-size: 25px
+    line-height: 35px
+    text-align: center
+    font-weight: 500
+    .phone
+      font-size: 40px
+      line-height: 50px
+      font-weight: 600
+      padding: 25px 0
+@media screen and (max-width: 1024px)
+  .about-page
+    .gallery__slide
+      padding-bottom: 440px
+    .block-prices
+      max-width: 70%
+      flex-wrap: wrap
+      padding: 30px 40px
+      h2
+        width: 100%
+        text-align: center
+      .params
+        margin-top: 35px
+      .param
+        padding: 10px 0
+      .param__name
+        font-size: 18px
+      .param__value
+        font-size: 22px
+    .contacts
+      padding: 50px 0 80px
+    .info-block
+      max-width: 70%
+      padding: 240px 0 30px
+    .info-block__txt
+      max-width: 100%
+      p
+        font-size: 20px
+        line-height: 30px
+    .block-features
+      height: 1170px
+    .block-features-row
+      height: auto
+      border-bottom: none
+      &:last-child
+        .block-features-item
+          &:not(:last-child)
+            border-bottom: 1px solid #b7f91f
+    .block-features-item
+      height: 130px
+      width: 100%
+      border-left: none
+      padding: 0 120px
+      &:last-child
+        border-right: none
+    .block-features-item-inner
+      display: flex
+      flex-wrap: wrap
+      align-content: center
+      align-items: center
+      h2
+        position: static
+        width: 100%
+        padding-bottom: 5px
+      .short-desc
+        position: static
+@media screen and (max-width: 768px)
+  .about-page
+    .block-prices
+      max-width: 560px
+    .info-block
+      max-width: 560px
+@media screen and (max-width: 736px)
+  .about-page
+    .gallery
+      margin-bottom: 50px
+    .gallery__slider
+      .owl-dots
+        bottom: 30px
+    .gallery__slide
+      padding-bottom: 305px
+    .gallery__slide__txt
+      display: none
+    .gallery__switch
+      position: relative
+      left: 0
+      width: 100%
+      transform: translate(0, 0)
+    .block-prices
+      box-shadow: none
+    .contacts
+      font-size: 20px
+      .phone
+        font-size: 30px
+    .info-block
+      max-width: 75%
+    .block-features
+      background-image: none
+      background-color: $yellow
+      height: auto
+    .block-features-item
+      height: 120px
+      padding: 0 60px 0 30px
+      background-color: rgba(30, 40, 10, 0)
+      border-bottom-color: #fff!important
+      .detail-desc-over
+        top: auto
+        bottom: 0
+    .block-features-item-inner
+      color: #000
+      .short-desc
+        display: none

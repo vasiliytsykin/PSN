@@ -1,4 +1,4 @@
-function engageCarousel(element, settings) {
+function engageOwlCarousel(element, settings) {
     
     element.addClass('owl-carousel').owlCarousel(settings);
     
@@ -73,7 +73,7 @@ function handleBenefits(width) {
         verticalBlocks.unwrap('.' + verticalBlocksWrapper);
         var stagePadding = Math.floor(0.15 * width);
         var margin = Math.floor(0.05 * width);
-        engageCarousel(benefits, {
+        engageOwlCarousel(benefits, {
             items:1,
             responsive: {
                 0: {
@@ -118,7 +118,7 @@ $(function () {
 
     });
 
-    engageCarousel($('.main-slider'), {
+    engageOwlCarousel($('.main-slider'), {
         items: 1,
         loop: false,
         navText: ['', ''],
@@ -166,7 +166,7 @@ $(function () {
 
     scrollTop($('.scroll-top a'), 0);
 
-    engageCarousel($('.main-offer__content'), {
+    engageOwlCarousel($('.main-offer__content'), {
 
         items: 1,
         loop: true,
