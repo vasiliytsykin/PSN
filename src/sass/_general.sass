@@ -193,6 +193,24 @@ p
     margin: 0 10px
     &.active
       background-color: rgba(255,255,255,1)
+.big-figure
+  position: absolute
+  background-repeat: no-repeat
+  background-position: center
+  background-size: contain
+  z-index: -1
+  &.circle
+    width: 500px
+    height: 500px
+    background-image: url(/img/circle-yellow.svg)
+  &.wave-right
+    width: 630px
+    height: 300px
+    background-image: url(/img/wave-green-right.png)
+  &.wave-left
+    width: 431px
+    height: 154px
+    background-image: url(/img/wave-green-left.png)
 @media screen and (max-width: 736px)
   .wrapper-inner
     padding: 0 30px

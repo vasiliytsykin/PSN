@@ -1,12 +1,12 @@
 @import "var"
 
 .about-page
+  overflow: hidden
   h1
     font-family: bw_surco, sans-serif
     padding: 30px 0 50px
     text-align: center
   .block-features
-    overflow: hidden
     height: 807px
     background: url(/img/about/girl.jpg) no-repeat center
     background-size: cover
@@ -132,6 +132,9 @@
   .gallery
     position: relative
     margin-bottom: 120px
+    .circle
+      bottom: -220px
+      right: -160px
   .gallery__slider
     .owl-dots
       bottom: 100px
@@ -212,6 +215,10 @@
     box-shadow: 0 0 35px rgba(0,0,0,0.06)
     display: flex
     align-items: baseline
+    position: relative
+    .wave-right
+      bottom: -215px
+      left: -384px
     h2
       width: 30%
     .params
@@ -280,7 +287,7 @@
         font-size: 20px
         line-height: 30px
     .block-features
-      height: 1170px
+      height: 1345px
     .block-features-row
       height: auto
       border-bottom: none
@@ -288,14 +295,28 @@
         .block-features-item
           &:not(:last-child)
             border-bottom: 1px solid #b7f91f
+      &:nth-child(2n)
+        .block-features-item
+          &:nth-child(2n)
+            border-right: 1px solid #b7f91f
+      &:nth-child(2n + 1)
+        .block-features-item
+          &:nth-child(2n + 1)
+            border-right: 1px solid #b7f91f
     .block-features-item
-      height: 130px
-      width: 100%
-      border-left: none
-      padding: 0 120px
+      height: 269px
+      width: 50%
       background-color: rgba(30, 40, 10, 0)
-      &:last-child
-        border-right: none
+      border-left: none
+      .detail-desc
+        top: 0!important
+        bottom: auto!important
+      .detail-desc-h
+        max-width: 80%
+      &.on
+        .btn-cross
+          top: 40px!important
+          margin-top: 0!important
     .block-features-item-inner
       display: flex
       flex-wrap: wrap
@@ -338,16 +359,25 @@
     .info-block
       max-width: 75%
     .block-features
-      background-image: none
-      background-color: $yellow
+      padding-top: 300px
+      margin-bottom: 1080px
       height: auto
     .block-features-item
+      width: 100%
       height: 120px
       padding: 0 60px 0 30px
       border-bottom-color: #fff!important
+      border-right: none!important
+      background-color: #ffd100!important
       .detail-desc
-        top: 100%
+        top: 100%!important
+        bottom: auto!important
+      &.on
+        .detail-desc
+          height: auto
     .block-features-item-inner
       color: #000
       .short-desc
         display: none
+    .big-figure
+      display: none

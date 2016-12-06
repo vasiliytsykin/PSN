@@ -208,6 +208,25 @@ p {
   .big-slider .owl-dot.active {
     background-color: white; }
 
+.big-figure {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1; }
+  .big-figure.circle {
+    width: 500px;
+    height: 500px;
+    background-image: url(/img/circle-yellow.svg); }
+  .big-figure.wave-right {
+    width: 630px;
+    height: 300px;
+    background-image: url(/img/wave-green-right.png); }
+  .big-figure.wave-left {
+    width: 431px;
+    height: 154px;
+    background-image: url(/img/wave-green-left.png); }
+
 @media screen and (max-width: 736px) {
   .wrapper-inner {
     padding: 0 30px; }
@@ -1206,23 +1225,6 @@ p {
     margin: 0 10px; }
     .main-page .main-offer .owl-dot.active, .main-page .benefits .owl-dot.active {
       opacity: 1; }
-  .main-page .big-figure {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; }
-    .main-page .big-figure.circle {
-      width: 500px;
-      height: 500px;
-      background-image: url(/img/circle-yellow.svg); }
-    .main-page .big-figure.wave-right {
-      width: 630px;
-      height: 300px;
-      background-image: url(/img/wave-green-right.png); }
-    .main-page .big-figure.wave-left {
-      width: 431px;
-      height: 154px;
-      background-image: url(/img/wave-green-left.png); }
 
 @media screen and (max-width: 1200px) {
   .main-page .info-block--main {
