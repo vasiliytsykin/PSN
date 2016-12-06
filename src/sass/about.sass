@@ -35,12 +35,9 @@
       .block-features-item
         border-bottom: none
         &.on
-          .detail-desc-over
-            height: 200%
-            top: auto
-      .detail-desc-over
-        height: 100%
-        bottom: 0
+          .btn-cross
+            top: -100%
+            margin-top: 40px
       .detail-desc
         bottom: 0
         top: auto
@@ -70,12 +67,6 @@
       background-color: rgba(30,40,10, 0)
     &:last-child
       border-right: 1px solid #b7f91f
-    .detail-desc-over
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      transition: all 0.2s ease
     .detail-desc
       position: absolute
       overflow: hidden
@@ -302,6 +293,7 @@
       width: 100%
       border-left: none
       padding: 0 120px
+      background-color: rgba(30, 40, 10, 0)
       &:last-child
         border-right: none
     .block-features-item-inner
@@ -352,11 +344,9 @@
     .block-features-item
       height: 120px
       padding: 0 60px 0 30px
-      background-color: rgba(30, 40, 10, 0)
       border-bottom-color: #fff!important
-      .detail-desc-over
-        top: auto
-        bottom: 0
+      .detail-desc
+        top: 100%
     .block-features-item-inner
       color: #000
       .short-desc
