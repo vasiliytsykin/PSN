@@ -17,6 +17,9 @@ body {
   body.global-menu-open {
     overflow: hidden; }
 
+input {
+  font-family: geometria, sans-serif; }
+
 .shade {
   position: absolute;
   top: 0;
@@ -109,7 +112,9 @@ p {
   padding: 8px 20px;
   border: 2px solid;
   border-radius: 17px;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer; }
 
 .btn-medium {
   font-size: 18px;
@@ -1848,49 +1853,72 @@ p {
   padding: 30px 0 50px;
   text-align: center; }
 
+.actions-page .action-list {
+  font-size: 0; }
+
 .actions-page .info-block {
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.06);
-  margin-bottom: 50px; }
-  .actions-page .info-block .info-block__txt-over {
-    padding: 50px 90px 40px; }
-  .actions-page .info-block .info-block__img {
-    min-height: 340px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative; }
-    .actions-page .info-block .info-block__img::before {
-      content: '';
-      position: absolute;
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      background-color: #fff;
-      background: url(/img/actions/svg/arrow.svg) no-repeat center; }
-  .actions-page .info-block .info-block__txt {
-    max-width: 425px;
-    font-size: 16px;
-    position: relative;
-    z-index: 1; }
-  .actions-page .info-block:hover {
+  margin-bottom: 50px;
+  display: block; }
+  .actions-page .info-block:nth-child(3n + 1) {
+    width: 100%; }
+    .actions-page .info-block:nth-child(3n + 1) .info-block__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .actions-page .info-block:nth-child(3n + 1) .info-block__txt-over {
+      width: 50%; }
+    .actions-page .info-block:nth-child(3n + 1) .info-block__img {
+      width: 50%; }
+      .actions-page .info-block:nth-child(3n + 1) .info-block__img::before {
+        left: 0;
+        bottom: 40px;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+  .actions-page .info-block:nth-child(3n + 2), .actions-page .info-block:nth-child(3n + 3) {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top; }
+    .actions-page .info-block:nth-child(3n + 2) .info-block__img::before, .actions-page .info-block:nth-child(3n + 3) .info-block__img::before {
+      right: 40px;
+      top: 0;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+  .actions-page .info-block:nth-child(3n + 2) {
+    padding-right: 20px; }
+  .actions-page .info-block:nth-child(3n + 3) {
+    padding-left: 20px;
+    margin-top: 100px; }
+  .actions-page .info-block:hover .info-block__content {
     background-color: #ffd100; }
-    .actions-page .info-block:hover .info-block__img::before {
-      background-image: url(/img/actions/svg/arrow-yellow.svg); }
+  .actions-page .info-block:hover .info-block__img::before {
+    background-image: url(/img/actions/svg/arrow-yellow.svg); }
 
-.actions-page .info-block--hor .info-block__img::before {
-  left: 0;
-  bottom: 40px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
+.actions-page .info-block__content {
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.06); }
 
-.actions-page .info-block--vert:nth-child(2) {
-  margin-top: 100px; }
+.actions-page .info-block__txt-over {
+  padding: 50px 90px 40px; }
 
-.actions-page .info-block--vert .info-block__img::before {
-  right: 40px;
-  top: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+.actions-page .info-block__img {
+  min-height: 340px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; }
+  .actions-page .info-block__img::before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    background: url(/img/actions/svg/arrow.svg) no-repeat center; }
+
+.actions-page .info-block__txt {
+  max-width: 425px;
+  font-size: 16px;
+  position: relative;
+  z-index: 1; }
 
 .actions-page .show-more {
   padding-bottom: 70px; }
@@ -1911,7 +1939,8 @@ p {
   margin: 0 auto;
   color: #999999;
   font-size: 15px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
   .actions-page .sign-in__form input[type="email"] {
     display: block;
     width: 100%;
@@ -1934,7 +1963,8 @@ p {
     margin-top: 15px;
     padding-left: 30px;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    margin-bottom: 40px; }
     .actions-page .sign-in__form label[for="agreement"]::before, .actions-page .sign-in__form label[for="agreement"]::after {
       content: '';
       position: absolute;
@@ -1953,3 +1983,45 @@ p {
       width: 8px;
       height: 8px;
       background-color: #999999; }
+
+@media screen and (max-width: 1024px) {
+  .actions-page .info-block {
+    width: 75% !important;
+    margin: 0 auto 50px !important;
+    padding: 0 !important;
+    display: block !important; }
+  .actions-page .info-block__txt-over {
+    width: 100% !important;
+    padding: 50px 55px 40px 90px; }
+  .actions-page .info-block__txt {
+    max-width: none; }
+  .actions-page .info-block__img {
+    width: 100% !important; }
+    .actions-page .info-block__img::before {
+      right: 40px !important;
+      left: auto !important;
+      top: 0 !important;
+      -webkit-transform: translateY(-50%) !important;
+              transform: translateY(-50%) !important; }
+  .actions-page .info-block__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .actions-page .sign-in {
+    background-image: url(/img/actions/t_podpiska.jpg); } }
+
+@media screen and (max-width: 736px) {
+  .actions-page .info-block {
+    width: 100% !important; }
+  .actions-page .info-block__content {
+    box-shadow: none; }
+  .actions-page .info-block__img {
+    min-height: 270px; }
+  .actions-page .action-list {
+    margin: 0 -30px; }
+  .actions-page .info-block__txt-over {
+    padding: 40px 30px 30px; }
+  .actions-page .sign-in {
+    height: 610px;
+    background-image: url(/img/actions/m_podpiska.jpg); }
+    .actions-page .sign-in h3 {
+      max-width: 410px; } }

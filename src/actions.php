@@ -1,22 +1,24 @@
 <? include 'include/header.php'?>
-    <div class="actions-page">
+<div class="actions-page" xmlns="http://www.w3.org/1999/html">
         <h1 class="dark-green">Акции</h1>
         <div class="wrapper-inner">
             <div class="action-list">
-                <a href="#" class="info-block info-block--hor">
-                    <div class="info-block__txt-over">
-                        <div class="info-block__txt">
-                            <h2>Рассрочка 0% до окончания строительства</h2>
-                            <h5>С 11 августа по 30 декабря</h5>
-                            <p>
-                                Без% рассрочка до окончания строительства на квартиры в 1 пусковом комплексе.
-                            </p>
+                <a href="#" class="info-block">
+                    <div class="info-block__content">
+                        <div class="info-block__txt-over">
+                            <div class="info-block__txt">
+                                <h2>Рассрочка 0% до&nbsp;окончания строительства</h2>
+                                <h5>С 11 августа по 30 декабря</h5>
+                                <p>
+                                    Без% рассрочка до окончания строительства на квартиры в 1 пусковом комплексе.
+                                </p>
+                            </div>
                         </div>
+                        <div class="info-block__img" style="background-image: url(img/actions/accii_1.jpg);"></div>
                     </div>
-                    <div class="info-block__img" style="background-image: url(img/actions/accii_1.jpg);"></div>
                 </a>
-                <div class="info-block--vert__over">
-                    <a href="#" class="info-block info-block--vert">
+                <a href="#" class="info-block">
+                    <div class="info-block__content">
                         <div class="info-block__txt-over">
                             <div class="info-block__txt">
                                 <h2>Феноменальная выгода</h2>
@@ -27,8 +29,10 @@
                             </div>
                         </div>
                         <div class="info-block__img" style="background-image: url(img/actions/accii_2.jpg);"></div>
-                    </a>
-                    <a href="#" class="info-block info-block--vert">
+                    </div>
+                </a>
+                <a href="#" class="info-block">
+                    <div class="info-block__content">
                         <div class="info-block__txt-over">
                             <div class="info-block__txt">
                                 <h2>Удваиваем материнский капитал</h2>
@@ -39,20 +43,22 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="info-block__img" style="background-image: url(img/actions/accii_3.jpg);"></div>
-                    </a>
-                </div>
-                <a href="#" class="info-block info-block--hor">
-                    <div class="info-block__txt-over">
-                        <div class="info-block__txt">
-                            <h2>Военным отделка в подарок</h2>
-                            <h5>С 13 ноября</h5>
-                            <p>
-                                При приобретении квартир по программе «Военная ипотека» действуют специальные услови
-                            </p>
-                        </div>
+                    <div class="info-block__img" style="background-image: url(img/actions/accii_3.jpg);"></div>
                     </div>
-                    <div class="info-block__img" style="background-image: url(img/actions/accii_4.jpg);"></div>
+                </a>
+                <a href="#" class="info-block">
+                    <div class="info-block__content">
+                        <div class="info-block__txt-over">
+                            <div class="info-block__txt">
+                                <h2>Военным отделка в&nbsp;подарок</h2>
+                                <h5>С 13 ноября</h5>
+                                <p>
+                                    При приобретении квартир по программе «Военная ипотека» действуют специальные услови
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-block__img" style="background-image: url(img/actions/accii_4.jpg);"></div>
+                    </div>
                 </a>
             </div>
             <div class="show-more">
@@ -65,6 +71,7 @@
                 <input type="email" name="e-mail" placeholder="E-mail">
                 <input type="checkbox" id="agreement">
                 <label for="agreement">Я согласен на <span class="terms">условия по получению email-рассылки</span></label>
+                <input type="submit" value="Подписаться на рассылку" class="btn-default btn-medium btn-green">
             </form>
         </div>
         <div class="scroll-top "><a href="#">вернуться наверх</a></div>
