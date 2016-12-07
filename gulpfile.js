@@ -8,8 +8,7 @@ function sassToCss(inPath, outPath) {
     return gulp.src(inPath)
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer())
-        .pipe(gulp.dest(outPath))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(outPath));
 }
 
 gulp.task('sass', function () {
@@ -22,11 +21,10 @@ gulp.task('watch', ['sass'], function () {
         allPath = 'src/**/*';
 
     browserSync.init({
-        server: {
-            baseDir: 'src/'
-        }
+        proxy: 'psn.loc',
+        notify: false
     });
 
-    gulp.watch(sassInPath, ['sass']);
+    gulp.watch(sassInPath, ['sass']).on('change', browserSync.reload);
     gulp.watch(allPath).on('change', browserSync.reload)
 });
