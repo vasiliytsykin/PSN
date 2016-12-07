@@ -34,14 +34,16 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6
 h1, .h1
   font-size: 45px
   line-height: 55px
+h1
+  font-family: bw_surco, sans-serif
 
 h2, .h2
   font-size: 30px
   line-height: 40px
 
 h3, .h3
-  font-size: 22px
-  line-height: 30px
+  font-size: 25px
+  line-height: 35px
 
 h4, .h4
   font-size: 20px
@@ -137,6 +139,21 @@ p
     font-size: 16px
     position: relative
     z-index: 1
+.info-block--hor
+  display: flex
+  .info-block__txt-over
+    width: 50%
+  .info-block__img
+    width: 50%
+.info-block--vert__over
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  margin: 0 -20px
+.info-block--vert
+  max-width: 600px
+  margin-left: 20px
+  margin-right: 20px
 .scroll-top
   text-align: center
   margin-bottom: 30px
@@ -211,6 +228,13 @@ p
     width: 431px
     height: 154px
     background-image: url(/img/wave-green-left.png)
+.content
+  padding-top: 100px
+.show-more
+  text-align: center
+@media screen and (max-width: 1340px)
+  .content
+    padding-top: 140px
 @media screen and (max-width: 736px)
   .wrapper-inner
     padding: 0 30px
