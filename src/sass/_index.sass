@@ -136,21 +136,25 @@
       height: 14px
       background-image: url(/img/envelope-dark-green.svg)
       margin-left: 10px
-  .info-block
-    box-shadow: 0 0 35px rgba(0,0,0,0.06)
-    margin-bottom: 50px
-    .info-block__txt-over
-      padding: 50px 90px 40px
+  .benefits
+    position: relative
     .info-block__img
-      min-height: 340px
-      background-size: cover
-      background-repeat: no-repeat
-      background-position: center
-    .info-block__txt
-      max-width: 425px
-      font-size: 16px
       position: relative
       z-index: 1
+    .big-pattern
+      width: 520px
+      right: -120px
+      top: 250px
+    .circle
+      &:nth-child(1)
+        right: -350px
+        top: 200px
+      &:nth-child(2)
+        left: -370px
+        top: 300px
+    .wave-right
+      bottom: -300px
+      right: -170px
   .info-block--main
     box-shadow: none
     display: flex
@@ -171,12 +175,6 @@
     .wave-left
       top: -10px
       left: -170px
-  .info-block--vert
-    &:nth-child(2)
-      margin-top: 100px
-    .btn-default
-      font-size: 18px
-      border-radius: 20px
   .main-offer
     padding-top: 80px
     margin-bottom: 70px
@@ -271,27 +269,6 @@
           border-bottom-color: transparent
   .big-pattern
     position: absolute
-  .benefits
-    position: relative
-    .info-block__img
-      position: relative
-      z-index: 1
-    .big-pattern
-      width: 520px
-      right: -120px
-      top: 250px
-    .circle
-      &:nth-child(1)
-        right: -350px
-        top: 200px
-      &:nth-child(2)
-        left: -370px
-        top: 300px
-    .wave-right
-      bottom: -300px
-      right: -170px
-  .benefit-list
-    opacity: 0.99
   .main-offer, .benefits
     .owl-dot
       width: 10px
@@ -358,26 +335,18 @@
         font-size: 0
       .info-block
         height: 100%
-        width: 100%
+        margin: 0
+      .info-block__content
+        height: 100%
         display: flex
         flex-wrap: wrap
-        margin-bottom: 0
       .info-block__img
-        width: 100%
+        width: 100%!important
         align-self: flex-end
       .info-block__txt-over
         padding: 50px 40px 40px
-      .info-block--hor
-        .info-block__img
-          width: 100%
-        .info-block__txt-over
-          width: 100%
-      .info-block--vert
-        max-width: none
-        margin-left: 0
-        margin-right: 0
-        &:nth-child(2)
-          margin-top: 0
+      .info-block__txt-over
+        width: 100%!important
       .circle
         width: 312px
         height: 312px
@@ -451,7 +420,7 @@
         right: -120px
         left: auto
         bottom: auto
-      .info-block
+      .info-block__content
         box-shadow: none
       .info-block__img
         min-height: 275px

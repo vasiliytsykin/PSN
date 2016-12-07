@@ -2,53 +2,26 @@
   h1
     padding: 30px 0 50px
     text-align: center
-  .action-list
-    font-size: 0
   .info-block
-    margin-bottom: 50px
-    display: block
     &:nth-child(3n + 1)
-      width: 100%
-      .info-block__content
-        display: flex
-      .info-block__txt-over
-        width: 50%
       .info-block__img
-        width: 50%
         &::before
           left: 0
           bottom: 40px
           transform: translateX(-50%)
     &:nth-child(3n + 2), &:nth-child(3n + 3)
-      width: 50%
-      display: inline-block
-      vertical-align: top
       .info-block__img
         &::before
           right: 40px
           top: 0
           transform: translateY(-50%)
-    &:nth-child(3n + 2)
-      padding-right: 20px
-    &:nth-child(3n + 3)
-      padding-left: 20px
-      margin-top: 100px
     &:hover
       .info-block__content
         background-color: $yellow
       .info-block__img
         &::before
           background-image: url(/img/actions/svg/arrow-yellow.svg)
-  .info-block__content
-    box-shadow: 0 0 35px rgba(0,0,0,0.06)
-  .info-block__txt-over
-    padding: 50px 90px 40px
   .info-block__img
-    min-height: 340px
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
-    position: relative
     &::before
       content: ''
       position: absolute
@@ -57,11 +30,6 @@
       border-radius: 50%
       background-color: #fff
       background: url(/img/actions/svg/arrow.svg) no-repeat center
-  .info-block__txt
-    max-width: 425px
-    font-size: 16px
-    position: relative
-    z-index: 1
   .show-more
     padding-bottom: 70px
   .sign-in

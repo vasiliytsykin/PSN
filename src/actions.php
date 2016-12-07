@@ -2,7 +2,7 @@
 <div class="actions-page" xmlns="http://www.w3.org/1999/html">
         <h1 class="dark-green">Акции</h1>
         <div class="wrapper-inner">
-            <div class="action-list">
+            <div class="info-list action-list">
                 <a href="#" class="info-block">
                     <div class="info-block__content">
                         <div class="info-block__txt-over">

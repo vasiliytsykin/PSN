@@ -62,22 +62,24 @@
                             <div class="big-figure circle"></div>
                             <div class="big-figure wave-right"></div>
                         </div>
-                        <div class="benefit-list">
-                            <div class="info-block info-block--hor">
-                                <div class="info-block__txt-over">
-                                    <div class="info-block__txt">
-                                        <h2>Семья</h2>
-                                        <h5>Здесь не живут — здесь цветут</h5>
-                                        <p>
-                                            Общее озеленение территории с организацией детских и спортивных площадок,
-                                            пешеходных и велосипедных дорожек, зон для спокойного отдыха.
-                                        </p>
+                        <div class="info-list benefit-list">
+                            <div class="info-block">
+                                <div class="info-block__content">
+                                    <div class="info-block__txt-over">
+                                        <div class="info-block__txt">
+                                            <h2>Семья</h2>
+                                            <h5>Здесь не живут — здесь цветут</h5>
+                                            <p>
+                                                Общее озеленение территории с организацией детских и спортивных площадок,
+                                                пешеходных и велосипедных дорожек, зон для спокойного отдыха.
+                                            </p>
+                                        </div>
                                     </div>
+                                    <div class="info-block__img" style="background-image: url(img/main/family.jpg);"></div>
                                 </div>
-                                <div class="info-block__img" style="background-image: url(img/main/family.jpg);"></div>
                             </div>
-                            <div class="info-block--vert__over">
-                                <div class="info-block info-block--vert">
+                            <div class="info-block">
+                                <div class="info-block__content">
                                     <div class="info-block__txt-over">
                                         <div class="info-block__txt">
                                             <h2>Инфраструктура</h2>
@@ -91,7 +93,9 @@
                                     </div>
                                     <div class="info-block__img" style="background-image: url(img/main/infrastructura.jpg);"></div>
                                 </div>
-                                <div class="info-block info-block--vert">
+                            </div>
+                            <div class="info-block">
+                                <div class="info-block__content">
                                     <div class="info-block__txt-over">
                                         <div class="info-block__txt">
                                             <h2>Уютная среда</h2>
@@ -106,24 +110,26 @@
                                     <div class="info-block__img" style="background-image: url(img/main/sreda.jpg);"></div>
                                 </div>
                             </div>
-                            <div class="info-block info-block--hor">
-                                <div class="info-block__txt-over">
-                                    <div class="info-block__txt">
-                                        <h2>Дом</h2>
-                                        <h5>Всегда приятно возвращаться</h5>
-                                        <p>
-                                            В проекте учтены все аспекты жизни
-                                            человека – мы позаботились о том, чтобы вам было комфортно жить здесь.
-                                            Наш жилой комплекс создан для того, чтобы сделать мир чуточку лучше.
-                                        </p>
+                            <div class="info-block">
+                                <div class="info-block__content">
+                                    <div class="info-block__txt-over">
+                                        <div class="info-block__txt">
+                                            <h2>Дом</h2>
+                                            <h5>Всегда приятно возвращаться</h5>
+                                            <p>
+                                                В проекте учтены все аспекты жизни
+                                                человека – мы позаботились о том, чтобы вам было комфортно жить здесь.
+                                                Наш жилой комплекс создан для того, чтобы сделать мир чуточку лучше.
+                                            </p>
+                                        </div>
                                     </div>
+                                    <div class="info-block__img" style="background-image: url(img/main/home.jpg);"></div>
                                 </div>
-                                <div class="info-block__img" style="background-image: url(img/main/home.jpg);"></div>
                             </div>
                         </div>
                     </div>
                     <div class="show-more">
-                        <a href="#" class="btn-default btn-green">Показать еще</a>
+                        <a href="#" class="btn-default btn-medium btn-green">Показать еще</a>
                     </div>
                 </div>
                 <div class="main-offer">

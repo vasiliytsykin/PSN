@@ -65,12 +65,9 @@ function removeShade() {
 
 function handleBenefits(width) {
     var benefits = $('.main-page .benefit-list');
-    var verticalBlocks = $('.main-page .benefit-list .info-block--vert');
-    var verticalBlocksWrapper = 'info-block--vert__over';
 
     if(width <= 1024)
     {
-        verticalBlocks.unwrap('.' + verticalBlocksWrapper);
         var stagePadding = Math.floor(0.15 * width);
         var margin = Math.floor(0.05 * width);
         engageOwlCarousel(benefits, {
@@ -88,11 +85,7 @@ function handleBenefits(width) {
         });
     }
     else
-    {
         destroyOwlCarousel(benefits);
-        if(!verticalBlocks.parent('.' + verticalBlocksWrapper).length)
-            verticalBlocks.wrapAll('<div class="' + verticalBlocksWrapper + '"></div>');
-    }
 }
 
 $(function () {

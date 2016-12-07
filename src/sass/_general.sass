@@ -134,6 +134,37 @@ p
   font-size: 20px
   line-height: 1
   font-weight: 300
+.info-list
+  font-size: 0
+  .info-block
+    margin-bottom: 50px
+    display: block
+    &:nth-child(3n + 1)
+      width: 100%
+      .info-block__content
+        display: flex
+      .info-block__txt-over
+        width: 50%
+      .info-block__img
+        width: 50%
+    &:nth-child(3n + 2), &:nth-child(3n + 3)
+      width: 50%
+      display: inline-block
+      vertical-align: top
+    &:nth-child(3n + 2)
+      padding-right: 20px
+    &:nth-child(3n + 3)
+      padding-left: 20px
+      margin-top: 100px
+  .info-block__content
+    box-shadow: 0 0 35px rgba(0,0,0,0.06)
+  .info-block__txt-over
+    padding: 50px 90px 40px
+  .info-block__txt
+    max-width: 425px
+  .info-block__img
+    min-height: 340px
+    position: relative
 .info-block
   h2
     padding-bottom: 10px
@@ -143,21 +174,10 @@ p
     font-size: 16px
     position: relative
     z-index: 1
-.info-block--hor
-  display: flex
-  .info-block__txt-over
-    width: 50%
-  .info-block__img
-    width: 50%
-.info-block--vert__over
-  display: flex
-  justify-content: space-between
-  align-items: flex-start
-  margin: 0 -20px
-.info-block--vert
-  max-width: 600px
-  margin-left: 20px
-  margin-right: 20px
+.info-block__img
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
 .scroll-top
   text-align: center
   margin-bottom: 30px
