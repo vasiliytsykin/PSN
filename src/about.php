@@ -248,9 +248,10 @@
                     </div>
                 </div>
                 <div class="contacts">
-                    По любым вопросам звоните нам,<br>
-                    мы расскажем обо всём, что вас интересует
-                    <div class="phone">+7 495  133 45 56</div>
+                    <h3>По любым вопросам звоните нам,<br>
+                        мы расскажем обо всём, что вас интересует
+                    </h3>
+                    <div class="phone">+7 495  800 41 48</div>
                     <a href="#" class="btn-default btn-medium btn-green">Заказать звонок</a>
                 </div>
                 <div class="scroll-top "><a href="#">вернуться наверх</a></div>

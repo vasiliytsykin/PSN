@@ -1,5 +1,7 @@
 function engageOwlCarousel(element, settings) {
     
+    if(element.hasClass('owl-carousel'))
+        destroyOwlCarousel(element);
     element.addClass('owl-carousel').owlCarousel(settings);
     
 }
@@ -64,7 +66,9 @@ function removeShade() {
 }
 
 function handleBenefits(width) {
+
     var benefits = $('.main-page .benefit-list');
+
 
     if(width <= 1024)
     {
@@ -72,14 +76,16 @@ function handleBenefits(width) {
         var margin = Math.floor(0.05 * width);
         engageOwlCarousel(benefits, {
             items:1,
+            margin: margin,
+            stagePadding: stagePadding,
             responsive: {
                 0: {
-                    dots: true
+                    dots: true,
+                    margin: 0,
+                    stagePadding: 0
                 },
-                768: {
-                    dots: false,
-                    margin: margin,
-                    stagePadding: stagePadding
+                736: {
+                    dots: false
                 }
             }
         });
