@@ -1,0 +1,150 @@
+/*--------CONTACTS---------*/
+.contact-page
+  padding-top: 50px
+  overflow: hidden
+  h1
+    text-align: center
+  .contacts
+    padding: 90px 0
+  .main-info
+    padding-top: 80px
+    position: relative
+    .big-figure
+      right: 0
+      margin-right: -250px
+      top: 65%
+  .main-info__content
+    max-width: 1000px
+    margin: 0 auto
+    padding-right: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: baseline
+    //h4, .h4, .phone, .email
+    //  font-weight: 600
+    .h4
+      text-transform: uppercase
+    p
+      margin: 10px 0
+    .phone
+      font-size: 20px
+    h2
+      padding: 20px 0 25px
+  .main-info__txt-block
+    max-width: 740px
+    padding-bottom: 60px
+  .map-wrapper
+    height: 650px
+    position: relative
+  .map
+    height: 100%
+  .map__tooltip
+    width: 390px
+    height: 130px
+    padding: 0 40px
+    position: absolute
+    z-index: 999
+    top: 30px
+    right: 170px
+    display: flex
+    align-items: center
+    color: $lightGray
+    font-size: 20px
+    line-height: 28px
+    background-color: #fff
+    .btn-close
+      position: absolute
+      top: 20px
+      right: 20px
+      background-image: url(/img/btn-close-yellow.svg)
+  .route-guide
+    padding: 100px 0 60px
+    .big-figure
+      right: 0
+      top: 72%
+  .route-guide__slider-over
+    position: relative
+  .route-guide__controls
+    position: absolute
+    top: 0
+    left: 0
+    padding: 50px 90px 40px
+    z-index: 2
+    .switch
+      padding-top: 20px
+    .switch__tab
+      &:not(.active)
+        border-color: transparent
+  .big-slider
+    &:not(.active)
+      display: none
+    .slider__item
+      display: flex
+    .slider__item__txt
+      padding: 220px 90px 0
+      width: 50%
+      font-size: 16px
+    .slider__item__img
+      width: 50%
+      min-height: 518px
+      background-repeat: no-repeat
+      background-size: cover
+    .owl-nav
+      padding: 0
+      width: auto
+      left: -70px
+      right: -70px
+    .owl-prev , .owl-next
+      &::before
+        width: 35px
+        height: 60px
+    .owl-prev
+      &::before
+        background-image: url(/img/contacts/arrow_prev.svg)
+    .owl-next
+      &::before
+        background-image: url(/img/contacts/arrow_next.svg)
+    .owl-dots
+      padding-top: 50px
+    .owl-dot
+      background-color: $lightGreen
+      opacity: 0.6
+      &.active
+        opacity: 1
+@media screen and (max-width: 1024px)
+  .contact-page
+    .main-info__content
+      max-width: 60%
+      padding-right: 0
+    .main-info__txt-block
+      &:nth-last-child(2)
+        order: 1
+      &:last-child
+        padding-right: 22px
+    .map__tooltip
+      right: 30px
+    .route-guide__slider-over
+      width: 75%
+      margin: 0 auto
+    .big-slider
+      .slider__item
+        flex-wrap: wrap
+        height: 100%
+      .slider__item__txt
+        width: 100%
+        padding: 220px 40px 50px
+      .slider__item__img
+        width: 100%
+        align-self: flex-end
+      .owl-stage
+        display: flex
+        font-size: 0
+    .route-guide__controls
+      padding: 50px 40px 40px
+    .big-figure
+      display: none
+@media screen and (max-width: 768px)
+  .contact-page
+    .main-info__content
+      max-width: 75%

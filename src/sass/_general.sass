@@ -96,7 +96,6 @@ ul
   stroke-miterlimit: 10
 p
   margin: 35px 0
-  font-weight: 500
 
 .btn-default
   display: inline-block
@@ -115,10 +114,17 @@ p
 .btn-green
   border-color: $lightGreen
   color: $lightGreen
+.btn-dark-green
+  border-color: $darkGreen
+  color: $darkGreen
 .btn-green
   &:hover
     background-color: $lightGreen
     color: #fff
+.btn-close
+  cursor: pointer
+  width: 28px
+  height: 28px
 .action
   text-align: center
 .action__date
@@ -204,21 +210,21 @@ p
     top: 50%
     padding: 0 30px
     transform: translate(0, -50%)
-    .owl-prev , .owl-next
-      &::before
-        content: ''
-        width: 60px
-        height: 100px
-        background-image: url(/img/arrows.png)
-        background-repeat: no-repeat
-    .owl-prev
-      &::before
-        float: left
-        background-position: center left
-    .owl-next
-      &::before
-        float: right
-        background-position: center right
+  .owl-prev , .owl-next
+    &::before
+      content: ''
+      width: 60px
+      height: 100px
+      background-image: url(/img/arrows.png)
+      background-repeat: no-repeat
+  .owl-prev
+    &::before
+      float: left
+      background-position: center left
+  .owl-next
+    &::before
+      float: right
+      background-position: center right
   .owl-dots
     position: absolute
     text-align: center
@@ -256,6 +262,21 @@ p
     width: 320px
     height: 700px
     background-image: url(/img/wave-yellow.svg)
+.pattern
+  position: absolute
+  opacity: 0.2
+  .stroke
+    fill: none
+    stroke-width: 7
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke-miterlimit: 10
+  .dark-green
+    stroke: $darkGreen
+  .light-green
+    stroke: $lightGreen
+  .orange
+    stroke: $orange
 .content
   padding-top: 100px
 .show-more

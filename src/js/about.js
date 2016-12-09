@@ -29,8 +29,11 @@ $(function () {
 
     $('.about-page .switch__tab').on('click', function () {
 
-        $('.gallery__tab').toggleClass('active');
-        $('.switch__tab').toggleClass('active');
+        if(!$(this).hasClass('active')){
+            $('.gallery__tab').toggleClass('active');
+            $('.switch__tab').toggleClass('active');
+        }
+        
 
     });
 
