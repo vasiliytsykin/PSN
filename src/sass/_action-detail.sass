@@ -83,6 +83,12 @@
       font-size: 20px
       line-height: 30px
       padding-top: 25px
+    .pattern
+      opacity: 0.4
+      top: 100%
+      left: 100%
+      margin-top: -80px
+      margin-left: -80px
   .main-block, .side-block
     display: inline-block
     vertical-align: top
@@ -97,6 +103,7 @@
     background-size: cover
     margin-left: -90px
     .pattern
+      opacity: 0.3
       bottom: 100%
       right: 100%
   .side-block
@@ -115,15 +122,27 @@
       width: 20px
       top: 0
       left: 30px
+    .pattern
+      opacity: 0.4
+      right: 100%
+      margin-right: 90px
+      top: 70%
   .contacts
     padding: 40px 0 90px
+    position: relative
+    .big-figure
+      left: 80%
+      top: -50%
+    .pattern
+      left: 75%
+      bottom: 75%
   .hot-action
     text-align: center
     padding: 50px
     line-height: 1
     max-width: 390px
     position: relative
-    .circle
+    .big-figure
       top: 100%
       left: 100%
       margin-left: -50px
@@ -185,7 +204,11 @@
       stroke-linejoin: round
       stroke-miterlimit: 10
     .dark-green
-      stroke: #00ACC8
+      stroke: $darkGreen
+    .light-green
+      stroke: $lightGreen
+    .orange
+      stroke: $orange
 @media screen and (max-width: 1024px)
   .action-detail-page
     .action-detail
@@ -199,7 +222,7 @@
       padding-left: 0
     .side-block
       width: auto
-      margin: 0 -10%
+      margin: 35px -10% 0
       display: block
     .action-detail__nav--small
       position: static
@@ -228,8 +251,26 @@
     .action-detail__img
       margin: 0 -10%
       padding-bottom: 375px
+      .pattern
+        bottom: 100%
+        right: auto
+        left: 100%
+        margin-left: 10%
+        margin-bottom: 110px
     .hot-action
       margin: 0 auto
+      .pattern
+        margin-left: -57px
+        margin-bottom: -80px
+    .big-figure
+      display: none
+    .contacts
+      .pattern
+        display: none
+    .notice
+      .pattern
+        margin-right: 50px
+        top: -200%
 @media screen and (max-width: 736px)
   .action-detail-page
     .action-detail
@@ -246,7 +287,7 @@
     .action-detail__img
       margin: 0 -30px
     .action-detail__nav--small
-      display: block
+      padding-right: 0
     .action-detail__nav--big
       display: block
       padding-top: 50px
@@ -259,3 +300,10 @@
       &::before
         left: 0
         transform: translateX(-50%)
+    .pattern
+      display: none
+    .hot-action
+      .pattern
+        display: block
+        margin-left: -90px
+        margin-bottom: -70px
