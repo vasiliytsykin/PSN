@@ -65,11 +65,28 @@ $(function () {
 
     initMap();
 
-    $('.map__tooltip .btn-close').on('click', function () {
 
-        $(this).parent().addClass('hidden');
+    function toggleShowTooltip() {
 
-    });
+        var tooltip = $('.map__tooltip');
+        var btnClose = tooltip.find('.btn-close');
+        var hidden = 'hidden';
+
+        btnClose.on('click', function () {
+
+            tooltip.addClass(hidden);
+
+            setTimeout(function () {
+                tooltip.removeClass(hidden);
+            }, 5000)
+
+        });
+
+
+
+    }
+
+    toggleShowTooltip();
 
     $('.route-guide .switch__tab').on('click', function () {
 
