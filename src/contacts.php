@@ -16,9 +16,9 @@
                     <div class="main-info__txt-block">
                         <div class="h4">режим работы</div>
                         <p>
-                            <span>понедельник – пятница</span><br>
+                            <span class="gray">понедельник – пятница</span><br>
                             с 09:00 до 20:00<br>
-                            <span>суббота, восресенье</span><br>
+                            <span class="gray">суббота, восресенье</span><br>
                             с 10:00 до 20:00
                         </p>
                     </div>
@@ -65,7 +65,7 @@
                             <div class="switch__tab btn-default btn-medium btn-dark-green">Машина</div>
                         </div>
                     </div>
-                    <div class="big-slider gallery__tab box-shadow active" id="transport">
+                    <div class="big-slider gallery__tab active" id="transport">
                         <div class="slider__item">
                             <div class="slider__item__txt">
                                 Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
@@ -84,7 +84,7 @@
                             <div class="slider__item__img" style="background-image: url(/img/contacts/guide-img-1.jpg);"></div>
                         </div>
                     </div>
-                    <div class="big-slider gallery__tab box-shadow" id="car">
+                    <div class="big-slider gallery__tab id="car">
                         <div class="slider__item">
                             <div class="slider__item__txt">
                                 Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
