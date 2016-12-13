@@ -113,7 +113,8 @@ p {
   border-radius: 17px;
   text-decoration: none;
   background-color: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  white-space: nowrap; }
 
 .btn-medium {
   font-size: 18px;
@@ -2566,3 +2567,233 @@ p {
       box-shadow: none; }
   .docs-page .big-figure {
     display: none; } }
+
+.flat-page {
+  padding: 50px 40px 0; }
+  .flat-page .plans {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 1000px;
+        flex-basis: 1000px; }
+  .flat-page .general-plans {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 26%; }
+    .flat-page .general-plans a {
+      color: #999999;
+      font-size: 15px;
+      line-height: 1;
+      padding-bottom: 3px;
+      border-bottom: 1px dashed #999999; }
+      .flat-page .general-plans a:hover {
+        border-bottom-color: transparent; }
+    .flat-page .general-plans .plan__img {
+      margin: 20px auto 0; }
+  .flat-page .plan {
+    padding-bottom: 35px;
+    width: 100%; }
+    .flat-page .plan a {
+      margin-left: 48px;
+      position: relative; }
+      .flat-page .plan a::before {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        left: -48px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+  .flat-page .plan__img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  .flat-page #general-plan {
+    padding-top: 35px; }
+    .flat-page #general-plan .plan__img {
+      width: 100%;
+      padding-bottom: 57.695%; }
+    .flat-page #general-plan a::before {
+      background-image: url(/img/flat/genplan-icon.svg); }
+  .flat-page #floor-plan .plan__img {
+    width: 69.235%;
+    padding-bottom: 26.925%; }
+  .flat-page #floor-plan a::before {
+    background-image: url(/img/flat/floor-icon.svg); }
+  .flat-page #section-plan .plan__img {
+    width: 46.155%;
+    padding-bottom: 38.465%; }
+  .flat-page #section-plan a::before {
+    background-image: url(/img/flat/section-icon.svg); }
+  .flat-page .flat-plan {
+    text-align: center;
+    -ms-flex-preferred-size: 740px;
+        flex-basis: 740px; }
+    .flat-page .flat-plan .plan__img {
+      width: 480px;
+      height: 460px;
+      margin: 0 auto; }
+    .flat-page .flat-plan .views {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      white-space: nowrap; }
+      .flat-page .flat-plan .views a {
+        padding: 5px 7px;
+        margin: 0 3px;
+        font-size: 15px;
+        color: #595959; }
+        .flat-page .flat-plan .views a.active, .flat-page .flat-plan .views a:hover, .flat-page .flat-plan .views a:active {
+          background-color: rgba(0, 172, 200, 0.15); }
+  .flat-page .flat-params {
+    text-align: center;
+    font-size: 20px;
+    max-width: 440px; }
+    .flat-page .flat-params h2 {
+      font-size: 35px;
+      line-height: 45px;
+      font-family: bw_surco, sans-serif; }
+    .flat-page .flat-params .price {
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 500;
+      padding-top: 30px;
+      padding-bottom: 45px; }
+    .flat-page .flat-params .param {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 40%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      white-space: nowrap; }
+    .flat-page .flat-params .param__value {
+      color: #00acc8;
+      font-weight: 500;
+      width: 40%;
+      padding-left: 20px;
+      text-align: left; }
+    .flat-page .flat-params .buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-top: 20px; }
+      .flat-page .flat-params .buttons .btn-default {
+        padding-left: 30px;
+        padding-right: 30px; }
+    .flat-page .flat-params .links {
+      font-size: 15px;
+      line-height: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 45px 30px;
+      text-align: left; }
+      .flat-page .flat-params .links a {
+        color: #999999;
+        position: relative;
+        padding-left: 60px; }
+        .flat-page .flat-params .links a::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 40px;
+          height: 40px; }
+      .flat-page .flat-params .links .btn-pdf::before {
+        background-image: url(/img/flat/download-icon.svg); }
+      .flat-page .flat-params .links .btn-email::before {
+        background-image: url(/img/flat/email-icon.svg); }
+  .flat-page .param-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .flat-page .param-list--main {
+    padding-bottom: 60px; }
+    .flat-page .param-list--main .param:nth-child(2n + 1) {
+      width: 30%; }
+    .flat-page .param-list--main .param:nth-child(2n + 2) {
+      width: 60%; }
+  .flat-page .slide-block__header {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eaeaea;
+    cursor: pointer;
+    margin-bottom: 20px; }
+    .flat-page .slide-block__header .h4:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      width: 18px;
+      height: 10px;
+      background-image: url(/img/flat/arrow_down.svg); }
+    .flat-page .slide-block__header .star {
+      color: #999999; }
+  .flat-page .slide-block__content {
+    display: none; }
+  .flat-page .slide-block.open .slide-block__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eaeaea; }
+  .flat-page .slide-block.open .slide-block__header {
+    border-bottom: none; }
+    .flat-page .slide-block.open .slide-block__header .h4::after {
+      background-image: url(/img/flat/arrow_up.svg); }
+  .flat-page .mortgage-calc {
+    text-align: left;
+    width: 100%; }
+    .flat-page .mortgage-calc .input-group {
+      padding-bottom: 20px; }
+    .flat-page .mortgage-calc label {
+      display: block;
+      font-size: 15px;
+      color: #999999; }
+    .flat-page .mortgage-calc input {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      padding: 5px 0;
+      border: none;
+      border-bottom: 2px solid #eaeaea;
+      outline: none;
+      width: 100%; }
+    .flat-page .mortgage-calc .result {
+      font-size: 30px; }
+
+.flat-page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-bottom: 90px; }
