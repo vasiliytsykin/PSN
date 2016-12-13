@@ -1,0 +1,252 @@
+.developer-page
+  padding-top: 30px
+
+  h1
+    text-align: center
+  .text-block
+    max-width: 1080px
+    margin: 0 auto
+    position: relative
+    p
+      max-width: 650px
+  .developer-logo
+    position: absolute
+    width: 235px
+    height: 150px
+    bottom: 20px
+    right: 80px
+    background: url(/img/developer/logo_psn.png) no-repeat center
+    background-size: cover
+  .banner
+    height: 450px
+    background: url(/img/developer/img_main.jpg) no-repeat center
+    background-size: cover
+    color: #fff
+    margin: 70px 0
+    position: relative
+    .wrapper-main
+      height: 100%
+    .wrapper-outer
+      position: relative
+      display: flex
+      align-items: center
+      height: 100%
+    .text-block
+      width: 100%
+      h2
+        max-width: 520px
+    .notice
+      position: absolute
+      bottom: 20px
+      right: 0
+      opacity: 0.6
+    .big-figure
+      right: 0
+      top: 50%
+      margin-right: -20px
+  .link
+    font-size: 15px
+    line-height: 1
+    display: inline-block
+    text-transform: uppercase
+    padding-top: 10px
+    font-weight: 500
+  .other-projects
+    padding: 50px 0 90px
+    h2
+      text-align: center
+  .gallery
+    padding-top: 40px
+  .gallery__slider
+    .owl-dots
+      bottom: 60px
+  .gallery__tab
+    display: none
+    &.active
+      display: block
+  .gallery__switch-over
+    background-color: $lightGreen
+  .gallery__switch
+    height: 100px
+    max-width: 740px
+    margin: 0 auto
+    overflow: hidden
+    font-size: 0
+    display: flex
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ''
+      width: 20px
+      height: 80px
+      background: url(/img/tab_separator.svg) no-repeat center
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+  .switch__tab
+    position: relative
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+    font-weight: 500
+    color: #fff
+    text-transform: uppercase
+    cursor: pointer
+    padding: 0 20px
+    &::before
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      border: 0 solid #00acc8
+      border-radius: 50%
+      transition: all 0.3s ease
+      z-index: -1
+    &.active, &:hover
+      &::before
+        width: 190px
+        height: 190px
+        border: 60px solid #00acc8
+  .gallery__slide
+    height: 480px
+    position: relative
+    overflow: hidden
+    background: no-repeat center
+    background-size: cover
+    &.im
+      .gallery__slide__txt
+        background-color: #3b88bd
+    &.pol
+      .gallery__slide__txt
+        background-color: #bdb3a9
+    &.dom
+      .gallery__slide__txt
+        background-color: #f05a23
+    &.sreda
+      .gallery__slide__txt
+        background-color: #434241
+    .awards
+      position: absolute
+      top: 25px
+      right: 40px
+      display: flex
+    .award
+      width: 80px
+      height: 95px
+      background: no-repeat center
+      background-size: cover
+  .gallery__slide__txt
+    position: absolute
+    width: 600px
+    height: 600px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-repeat: no-repeat
+    border-radius: 50%
+    color: #fff
+    text-align: center
+    padding-top: 130px
+    .h2
+      padding-bottom: 10px
+    .h5
+      line-height: 28px
+      opacity: 0.5
+    .link
+      padding-top: 20px
+      color: #fff
+    .logo
+      width: 212px
+      height: 80px
+      margin: 0 auto 50px
+      background: no-repeat center
+.developer-page__content
+  padding-top: 50px
+@media screen and (max-width: 1080px)
+  .developer-page
+    .developer-logo
+      width: 161px
+      height: 101px
+      position: static
+      margin-top: 20px
+    .text-block
+      max-width: 75%
+    .big-figure
+      display: none
+@media screen and (max-width: 800px)
+  .developer-page
+    .text-block
+      p
+        max-width: 100%
+    .banner
+      height: 380px
+      background-position: 8% 0
+    .gallery__slide
+      background-position: 0 0
+      .awards
+        right: 30px
+        top: auto
+        bottom: 25px
+      .award
+        width: 60px
+        height: 70px
+    .gallery__slide__txt
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      opacity: 0.85
+      transform: none
+      border-radius: 0
+      padding-top: 70px
+      .h5
+        opacity: 1
+@media screen and (max-width: 736px)
+  .developer-page
+    .developer-logo
+      width: 125px
+      height: 80px
+      margin-top: 0
+    .banner
+      background-position: 33% 0
+    .text--primary
+      order: 1
+      .text-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    .text--secondary
+      order: 3
+      padding-bottom: 90px
+    .other-projects
+      order: 2
+    .text-block
+      max-width: 100%
+    .banner
+      height: 350px
+      margin: 10px 0 40px
+      .notice
+        bottom: 50px
+        right: auto
+    .other-projects
+      padding: 20px 0
+    .gallery__slide
+      height: 615px
+      .awards
+        bottom: 120px
+        left: 0
+        right: 0
+        justify-content: center
+      .award
+        width: 80px
+        height: 95px
+  .developer-page__content
+    display: flex
+    flex-direction: column

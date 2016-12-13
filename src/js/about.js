@@ -26,16 +26,7 @@ $(function () {
         }
 
     });
-
-    $('.about-page .switch__tab').on('click', function () {
-
-        if(!$(this).hasClass('active')){
-            $('.gallery__tab').toggleClass('active');
-            $('.switch__tab').toggleClass('active');
-        }
-        
-
-    });
+    
 
     $('.block-features-open-text').on('click', function () {
 

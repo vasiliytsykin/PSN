@@ -176,6 +176,32 @@ $(function () {
 
     playMainVideo();
 
+    $('.gallery__switch .switch__tab').on('click', function () {
+
+        if(!$(this).hasClass('active')){
+            $('.gallery__tab').toggleClass('active');
+            $('.gallery__switch .switch__tab').toggleClass('active');
+        }
+
+
+    });
+
+    /*-------------DEVELOPER---------*/
+
+    engageOwlCarousel($('.developer-page .gallery__slider'), {
+
+        items: 1,
+        // loop: true,
+        nav: false,
+        // autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: true,
+        animateOut: 'fadeOut'
+
+    });
+
+    /*---------END DEVELOPER---------*/
+
 });
 
 

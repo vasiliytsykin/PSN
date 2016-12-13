@@ -291,7 +291,7 @@ console.log(patterns);
             if(scrolled  > elOffset){
                 var top_pos = -200 * ((scrolled - elOffset) / windowHeight);
                 $(el).css({
-                    transform: 'translateY(' +  top_pos + 'px)'
+                    transform: ' translateY(' +  top_pos + 'px)'
                 });
             }
 
