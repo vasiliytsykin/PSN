@@ -3450,3 +3450,10 @@ p {
     padding: 50px 8% 40px !important; }
   .plan-filter-page .filter__results .item__desc {
     width: auto; } }
+
+.plan-filter-detail-page {
+  padding-top: 50px; }
+  .plan-filter-detail-page h1 {
+    text-align: center; }
+    .plan-filter-detail-page h1 span {
+      text-transform: none; }
