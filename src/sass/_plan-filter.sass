@@ -1,0 +1,338 @@
+/*--------PLAN FILTER---------*/
+.plan-filter-page
+  padding-top: 30px
+  position: relative
+  h1
+    text-align: center
+    padding-bottom: 10px
+  h5
+    color: $darkGray
+    text-align: center
+  .big-figure
+    top: 60%
+    right: 0
+    margin-right: -250px
+  .filter-over
+    padding-top: 60px
+    padding-bottom: 90px
+  .filter
+    display: flex
+  .filter__params
+    width: 220px
+    text-align: center
+    li
+      line-height: 1
+      padding-bottom: 30px
+    input
+      &[type="checkbox"]
+        display: none
+        &:checked
+          + label
+            color: #000
+            font-weight: 500
+            &::before
+              content: ''
+              position: absolute
+              width: 23px
+              height: 16px
+              right: 100%
+              top: 0
+              margin-right: 10px
+              background-image: url(/img/plan-filter/select_yellow.svg)
+    .input-group
+      padding-bottom: 20px
+      &.finish
+        label
+          min-width: 110px
+    .input-group__name
+      font-size: 20px
+      line-height: 1
+      text-transform: uppercase
+      color: $darkGreen
+      padding-bottom: 20px
+      font-weight: 500
+    label, .house-type
+      color: $lightGray
+      font-size: 18px
+    label
+      display: inline-block
+      line-height: 1
+      min-width: 30px
+      position: relative
+      cursor: pointer
+    .reset-filter
+      font-size: 15px
+      line-height: 1
+      padding-bottom: 3px
+      color: $lightGray
+      span
+        display: inline-block
+        border-bottom: 1px dashed $lightGray
+        &:hover
+          border-bottom-color: transparent
+      &.visible-lg
+        padding-top: 20px
+    .inputs--special
+      font-size: 0
+      li
+        display: inline-block
+      .house-type
+        display: block
+        padding-bottom: 15px
+      label
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 1px solid $lightGray
+        border-radius: 50%
+        margin: 0 7px
+        &::before
+          display: none
+      &.panel
+        input
+          &[type="checkbox"]
+            &:checked
+              + label
+                color: $lightGreen
+                border-color: $lightGreen
+      &.mono
+        input
+          &[type="checkbox"]
+            &:checked
+              + label
+                color: $darkGreen
+                border-color: $darkGreen
+  .filter__results-over
+    padding-right: 300px
+  .filter__results
+    display: flex
+    flex-wrap: wrap
+    width: 910px
+    align-items: flex-start
+    .item
+      position: relative
+      width: 50%
+      margin-bottom: 50px
+      &:nth-child(2n+1)
+        padding-right: 25px
+        .hover-block
+          margin-left: -12px
+      &:nth-child(2n+2)
+        padding-left: 25px
+        .hover-block
+          margin-left: 12px
+        .item__desc
+          left: 100%
+      &:hover
+        .hover-block
+          opacity: 1
+        .item__desc
+          display: block
+    .item__img
+      position: relative
+      height: 425px
+      background: #f7f7f7 no-repeat center
+      background-size: contain
+    .hover-block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 290px
+      height: 290px
+      background-color: rgba(0, 172, 200, 0.8)
+      border-radius: 50%
+      color: #fff
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      align-content: center
+      opacity: 0
+      transition: all 0.3s ease
+      .h4
+        text-transform: uppercase
+        text-align: center
+        width: 100%
+        padding-bottom: 10px
+    .item__desc
+      position: absolute
+      top: 0
+      left: 200%
+      margin-left: 35px
+      width: 265px
+      background-color: #fff
+      box-shadow: 0 0 35px rgba(0,0,0,0.06)
+      padding: 50px 40px 0
+      text-align: center
+      display: none
+      .h4
+        padding-bottom: 35px
+        text-transform: uppercase
+        font-weight: 600
+      .plan-type
+        margin-bottom: 40px
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          top: 100%
+          left: 50%
+          transform: translate(-50%, -50%) rotateX(180deg)
+          width: 142px
+          height: 20px
+          background-image: url(/img/svg-library/separator_hor.svg)
+      .value
+        font-weight: 400
+        text-transform: none
+        padding-top: 5px
+  sup
+    font-size: 12px
+  .show-all
+    text-align: center
+@media screen and (max-width: 1500px)
+  .plan-filter-page
+    .filter-over
+      max-width: 1200px
+      margin: 0 auto
+    .filter
+      display: block
+    .filter__params
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      padding-bottom: 60px
+      .reset-filter
+        &.visible-lg
+          padding-top: 0
+      .inputs
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+      .input-group
+        &.house
+          .inputs
+            justify-content: space-between
+            li
+              &.special
+                width: 100%
+          .inputs--special
+            display: block
+      .input-group
+        &.room
+          .inputs
+            li
+              width: 50%
+      .input-group
+        &.finish
+          .inputs
+            li
+              width: 100%
+@media screen and (max-width: 1280px)
+  .plan-filter-page
+    .filter__results
+      width: 100%
+@media screen and (max-width: 1024px)
+  .plan-filter-page
+    .filter__results-over
+      padding-right: 0
+    .filter-over
+      padding-bottom: 80px
+    .filter__params
+      width: 75%
+      margin: 0 auto
+      justify-content: space-between
+      padding-bottom: 70px
+      .inputs
+        display: block
+      .input-group
+        &.room
+          .inputs
+            li
+              width: auto
+    .reset-filter
+      width: 100%
+    .filter__results
+      width: 100%
+      border-top: 2px solid #e7e7e7
+      padding-bottom: 50px
+      .item
+        margin: 0
+        padding-top: 50px
+        padding-bottom: 40px
+        border-bottom: 2px solid #e7e7e7
+        &:nth-child(2n+1)
+          padding-right: 20px
+        &:nth-child(2n+2)
+          padding-left: 20px
+      .item__img
+        height: 350px
+      .hover-block
+        position: static
+        opacity: 1
+        background-color: transparent
+        transform: none
+        color: #000
+        width: auto
+        height: auto
+        margin-left: 0!important
+        .h1, .h4
+          font-size: 20px
+          text-transform: none
+          display: inline-block
+          width: auto
+          font-weight: 400
+          line-height: 1
+        .h1
+          padding-left: 5px
+      .item__desc
+        position: static
+        display: block
+        box-shadow: none
+        padding-top: 40px
+        margin: 0 auto
+        .plan-type
+          margin-bottom: 0
+          padding-bottom: 20px
+        .h4
+          display: none
+          &::after
+            display: none
+        .plan-type
+          display: block
+@media screen and (max-width: 736px)
+  .plan-filter-page
+    .filter__params
+      width: 84%
+      .inputs
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+      .input-group
+        width: 100%
+        &.house
+          .inputs
+            justify-content: space-between
+            li
+              &.special
+                width: 100%
+          .inputs--special
+            display: block
+      .input-group
+        &.room
+          .inputs
+            li
+              width: 30%
+      .input-group
+        &.finish
+          .inputs
+            li
+              width: 50%
+    .filter__results
+      .item
+        width: 100%
+        padding: 50px 8% 40px!important
+      .item__desc
+        width: auto
