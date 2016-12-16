@@ -1,0 +1,66 @@
+.param-filter-page
+  padding-top: 30px
+  h1
+    text-align: center
+    font-weight: 600
+  .filter
+    padding-top: 100px
+    padding-bottom: 80px
+  .filter__params
+    display: flex
+    justify-content: space-between
+    padding: 0 30px 80px
+    .reset-filter
+      &.visible-lg
+        padding-top: 105px
+  .input-group__name
+    span
+      text-transform: none
+    sup
+      font-size: 12px
+@media screen and (max-width: 1024px)
+  .param-filter-page
+    .filter__params
+      flex-wrap: wrap
+      width: 80%
+      margin: 0 auto
+      .input-group
+        &.finish
+          width: 50%
+          padding: 0 0 0 10%
+          .input-group__name
+            width: 100%
+          .inputs
+            display: flex
+            justify-content: space-between
+      .reset-filter
+        &.visible-sm
+          width: 50%
+          padding-right: 7%
+          padding-top: 42px
+@media screen and (max-width: 800px)
+  .param-filter-page
+    .filter__params
+      width: 100%
+      padding: 0 0 80px
+@media screen and (max-width: 736px)
+  .param-filter-page
+    .filter__params
+      .input-group
+        width: 100%
+        &.finish
+          width: 80%
+          margin: 0 auto
+          padding: 0
+        &.house
+          .inputs
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            .special
+              width: 100%
+          .inputs--special
+            display: block
+      .reset-filter
+        &.visible-xs
+          padding-top: 30px

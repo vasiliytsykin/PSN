@@ -6,8 +6,11 @@
         <link rel="stylesheet" href="lib/bootstrap-grid.css">
         <link rel="stylesheet" href="fonts/bwsurco/bwsurco.css">
         <link rel="stylesheet" href="fonts/geometria/geometria.css">
+        <link rel="stylesheet" href="fonts/ALSRublRegular/ALSRublRegular.css">
         <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="lib/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.css">
+        <link rel="stylesheet" href="css/rangeSlider.css">
         <link rel="stylesheet" href="css/style.css">
         <title>PSN</title>
     </head>

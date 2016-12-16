@@ -1,0 +1,195 @@
+/*----------FILTER-----------*/
+.filter__params
+  text-align: center
+  li
+    line-height: 1
+    padding-bottom: 30px
+  input
+    &[type="checkbox"]
+      display: none
+      &:checked
+        + label
+          color: #000
+          font-weight: 500
+          &::before
+            content: ''
+            position: absolute
+            width: 23px
+            height: 16px
+            right: 100%
+            top: 0
+            margin-right: 10px
+            background-image: url(/img/plan-filter/select_yellow.svg)
+  .input-group
+    padding-bottom: 20px
+    &.finish
+      label
+        min-width: 110px
+    .caption-over
+      display: flex
+      justify-content: space-between
+      font-size: 18px
+      line-height: 1
+      padding: 0 5px
+  .input-group__name
+    font-size: 20px
+    line-height: 1
+    text-transform: uppercase
+    color: $darkGreen
+    padding-bottom: 20px
+    font-weight: 500
+  label, .house-type
+    color: $lightGray
+    font-size: 18px
+  label
+    display: inline-block
+    line-height: 1
+    min-width: 30px
+    position: relative
+    cursor: pointer
+  .reset-filter
+    &.visible-lg
+      padding-top: 20px
+  .inputs--special
+    font-size: 0
+    li
+      display: inline-block
+    .house-type
+      display: block
+      padding-bottom: 15px
+    label
+      width: 40px
+      height: 40px
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 1px solid $lightGray
+      border-radius: 50%
+      margin: 0 7px
+      &::before
+        display: none
+    &.panel
+      input
+        &[type="checkbox"]
+          &:checked
+            + label
+              color: $lightGreen
+              border-color: $lightGreen
+    &.mono
+      input
+        &[type="checkbox"]
+          &:checked
+            + label
+              color: $darkGreen
+              border-color: $darkGreen
+/*--------END FILTER-----------*/
+
+/*----------FILTER RESULT-----------*/
+
+.filter__results--table
+  padding: 0 50px
+  margin: 0 -50px
+  font-size: 20px
+  min-width: 1180px
+  .results-list__header
+    display: flex
+    .param__name
+      font-weight: 500
+      width: 15%
+  sup
+    font-size: 12px
+  .results-list
+    width: 100%
+    text-align: center
+  .item
+    height: 90px
+    display: flex
+    align-items: center
+    .h3
+      font-size: 35px
+      line-height: 45px
+      font-family: bw_surco, sans-serif
+    &:hover
+      background-color: #ededed!important
+    &:nth-child(2n+1)
+      background-color: #f7f7f7
+    .param__name
+      display: none
+  .general-params
+    width: 63%
+    display: flex
+    justify-content: space-around
+    .param, .param__name
+      &:nth-last-child(2)
+        width: 25%
+      &:nth-last-child(1)
+        width: 20%
+  .prices
+    width: 37%
+    display: flex
+    justify-content: space-around
+    .param
+      width: 30%
+      &:nth-child(1), &:nth-child(2)
+        .param__value
+          color: $orange
+      &:nth-child(3)
+        .param__value
+          color: $darkGreen
+    .param__name
+      width: 30%
+  .param
+    width: 15%
+@media screen and (max-width: 1024px)
+  .filter__results
+    padding: 0
+    margin: 0
+    border-top: 2px solid #e5e5e5
+    .results-list__header
+      display: none
+    .item
+      background-color: #fff!important
+      justify-content: space-between
+      align-items: baseline
+      flex-wrap: wrap
+      height: auto
+      padding: 60px 12%
+      border-bottom: 2px solid #e5e5e5
+      &:hover
+        background-color: #fff!important
+      .h3
+        width: 100%
+        text-align: center
+        padding-bottom: 50px
+    .results-list
+      text-align: left
+    .general-params
+      display: block
+      width: 50%
+      .param__value
+        font-weight: 500
+        min-width: 30%
+    .param
+      width: 100%!important
+      display: flex
+      justify-content: space-between
+      &.room
+        display: none
+    .param__name
+      display: block!important
+      width: auto!important
+    .prices
+      display: block
+      width: auto
+      .param
+        display: block
+@media screen and (max-width: 736px)
+  .filter__results
+    .item
+      padding: 70px 0
+      .h3
+        max-width: 300px
+        margin: 0 auto
+    .general-params
+      width: 60%
+/*-------END FILTER RESULT-----------*/

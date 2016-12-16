@@ -87,9 +87,9 @@
                                 <label for="finish">с отделкой</label>
                             </li>
                         </ul>
-                        <a href="/" class="reset-filter visible-md visible-lg"><span>Сбросить параметры</span></a>
+                        <a href="/" class="link--dashed reset-filter visible-md visible-lg"><span>Сбросить параметры</span></a>
                     </div>
-                    <a href="/" class="reset-filter visible-sm visible-xs"><span>Сбросить параметры</span></a>
+                    <a href="/" class="link--dashed reset-filter visible-sm visible-xs"><span>Сбросить параметры</span></a>
                 </div>
                 <div class="filter__results-over">
                     <div class="filter__results">
