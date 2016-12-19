@@ -191,9 +191,9 @@ $(function () {
     engageOwlCarousel($('.developer-page .gallery__slider'), {
 
         items: 1,
-        // loop: true,
+        loop: true,
         nav: false,
-        // autoplay: true,
+        autoplay: true,
         autoplayTimeout: 7000,
         autoplayHoverPause: true,
         animateOut: 'fadeOut'
@@ -201,6 +201,38 @@ $(function () {
     });
 
     /*---------END DEVELOPER---------*/
+
+    /*----------PANORAMA-------------*/
+
+    engageOwlCarousel($('.panorama-page .photos__slider'), {
+
+        items: 1,
+        loop: true,
+        navText: ['', ''],
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayHoverPause: true,
+        animateOut: 'fadeOut',
+        responsive: {
+            0: {
+                nav: false
+            },
+            1025: {
+                nav: true
+            }
+        }
+
+    });
+
+    embedpano({
+        swf:"/pano/tour.swf",
+        xml:"/pano/tour.xml",
+        target:"pano",
+        html5:"prefer",
+        passQueryParameters:true
+    });
+
+    /*-------END PANORAMA-------------*/
 
 });
 

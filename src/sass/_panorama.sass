@@ -1,0 +1,97 @@
+/*----------PANORAMA-----------*/
+.panorama-page
+  padding-top: 30px
+  position: relative
+  .circle
+    left: 0
+    top: 30%
+    margin-left: -250px
+  .wave-yellow
+    right: 0
+    top: 50%
+    margin-right: -160px
+  h1, .h1, h5
+    text-align: center
+  h1
+    padding-bottom: 10px
+  h5
+    color: $darkGray
+  .photos
+    padding: 100px 0
+    p
+    .h1
+      padding-bottom: 50px
+  .photos__slider
+    .slide
+      height: 860px
+      background: no-repeat center
+      background-size: cover
+    .slide__txt
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 70px
+      text-align: center
+      color: #fff
+      .h1
+        padding-bottom: 10px
+        font-family: bw_surco, sans-serif
+      .h5
+        color: #fff
+    .owl-dots
+      bottom: 40px
+  .panorama-over
+    position: relative
+    margin-top: 50px
+    height: 670px
+  .panorama
+    height: 100%
+  .developer-logo
+    position: absolute
+    width: 100px
+    height: 50px
+    background: url(/img/panorama/logo_white.png) no-repeat center
+    background-size: contain
+    top: 30px
+    right: 40px
+    z-index: 1
+@media screen and (max-width: 1024px)
+  .panorama-page
+    .big-figure
+      display: none
+    h5
+      display: none
+    .photos__slider
+      padding-bottom: 50px
+      .slide
+        height: 470px
+        margin-bottom: 100px
+      .slide__txt
+        color: #000
+        bottom: 0
+        .h5
+          font-size: 20px
+          color: #000
+      .owl-dots
+        bottom: 0
+      .owl-dot
+        width: 14px
+        height: 14px
+        background-color: $lightGreen
+        opacity: 0.3
+        margin: 0 15px
+        &.active
+          opacity: 1
+@media screen and (max-width: 736px)
+  .panorama-page
+    .photos
+      padding: 60px 0
+      .h1
+        font-size: 30px
+        font-family: geometria, sans-serif
+        padding-bottom: 25px
+    .photos__slider
+      .slide
+        height: 280px
+        .h1
+          font-size: 34px
