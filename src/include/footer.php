@@ -94,7 +94,9 @@
         <script src="lib/ion.rangeSlider/js/ion.rangeSlider.js"></script>
         <script src="js/vivus.js"></script>
         <script src="js/patterns.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
         <script src="pano/tour.js"></script>
+        <script src="lib/dragdealer/dragdealer.js"></script>
         <script src="js/script.js"></script>
         <script src="js/about.js"></script>
         <script src="js/contacts.js"></script>

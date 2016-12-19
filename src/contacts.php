@@ -1,6 +1,5 @@
 <? include 'include/header.php'?>
 
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
     <div class="contact-page">
         <h1 class="dark-green">Офис продаж</h1>
         <div class="main-info">

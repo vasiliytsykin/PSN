@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="lib/slick-carousel/slick/slick.css">
         <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.css">
         <link rel="stylesheet" href="css/rangeSlider.css">
+        <link rel="stylesheet" href="lib/dragdealer/dragdealer.css">
         <link rel="stylesheet" href="css/style.css">
         <title>PSN</title>
     </head>

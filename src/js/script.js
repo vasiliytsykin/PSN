@@ -224,15 +224,38 @@ $(function () {
 
     });
 
-    embedpano({
-        swf:"/pano/tour.swf",
-        xml:"/pano/tour.xml",
-        target:"pano",
-        html5:"prefer",
-        passQueryParameters:true
-    });
+    if($('#pano').length){
+        embedpano({
+            swf:"/pano/tour.swf",
+            xml:"/pano/tour.xml",
+            target:"pano",
+            html5:"prefer",
+            passQueryParameters:true
+        });
+    }
 
     /*-------END PANORAMA-------------*/
+
+    /*---------MAIN PLAN-------------*/
+
+    var mainMap = $('.main-plan__map');
+
+    if(mainMap.length)
+    {
+        console.log('ok');
+
+        mainMap.addClass('handle');
+        mainMap.parent().addClass('dragdealer');
+
+        var canvas = new Dragdealer('main-map-over', {
+            x: 1,
+            y: 1,
+            speed: 0.2,
+            requestAnimationFrame: true
+        });
+    }
+
+    /*-----END MAIN PLAN-------------*/
 
 });
 
