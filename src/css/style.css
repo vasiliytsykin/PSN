@@ -3862,7 +3862,9 @@ p {
       background-size: contain; }
   .main-plan-page .main-plan {
     padding-left: 300px;
-    position: relative; }
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto; }
   .main-plan-page .main-plan__map-over {
     position: relative;
     width: 100%;
