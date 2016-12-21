@@ -3,23 +3,40 @@
   padding: 50px 40px 0
   .plans
     display: flex
+    flex-wrap: wrap
     flex-basis: 1000px
+    position: relative
   .general-plans
     display: flex
     flex-direction: column
     align-items: center
     text-align: center
     width: 26%
+    padding-top: 45px
     a
       color: $lightGray
       font-size: 15px
       line-height: 1
       padding-bottom: 3px
       border-bottom: 1px dashed $lightGray
+      white-space: nowrap
       &:hover
         border-bottom-color: transparent
     .plan__img
       margin: 20px auto 0
+  .btn-back
+    position: absolute
+    top: 17px
+    transform: translateX(50%)
+    display: inline-block
+    color: $lightGray
+    font-size: 15px
+    line-height: 1
+    padding-bottom: 3px
+    border-bottom: 1px dashed $lightGray
+    white-space: nowrap
+    &:hover
+      border-bottom-color: transparent
   .plan
     padding-bottom: 35px
     width: 100%
@@ -63,23 +80,11 @@
   .flat-plan
     text-align: center
     flex-basis: 740px
+    padding-top: 15px
     .plan__img
-      width: 480px
-      height: 460px
-      margin: 0 auto
-    .views
-      display: flex
-      padding-top: 30px
-      padding-bottom: 30px
-      justify-content: center
-      white-space: nowrap
-      a
-        padding: 5px 7px
-        margin: 0 3px
-        font-size: 15px
-        color: $darkGray
-        &.active, &:hover, &:active
-          background-color: rgba(0,172,200, 0.15)
+      width: 650px
+      height: 535px
+      margin: 30px auto 0
   .flat-params
     text-align: center
     font-size: 20px
@@ -94,24 +99,26 @@
       font-weight: 500
       padding-top: 30px
       padding-bottom: 45px
-    .param
-      display: flex
-      width: 40%
-      justify-content: space-between
-      white-space: nowrap
-    .param__value
-      color: $darkGreen
-      font-weight: 500
-      width: 40%
-      padding-left: 20px
-      text-align: left
+  .param
+    font-size: 20px
+    display: flex
+    width: 40%
+    justify-content: space-between
+    white-space: nowrap
+  .param__value
+    color: $darkGreen
+    font-weight: 500
+    width: 40%
+    padding-left: 20px
+    text-align: left
+  .fluid-block
     .buttons
       display: flex
       justify-content: space-between
       padding-top: 20px
       .btn-default
-        padding-left: 30px
-        padding-right: 30px
+        padding-left: 28px
+        padding-right: 28px
     .links
       font-size: 15px
       line-height: 20px
@@ -135,6 +142,12 @@
       .btn-email
         &::before
           background-image: url(/img/flat/email-icon.svg)
+    .notice
+      font-size: 12px
+      line-height: 17px
+      color: $lightGray
+      padding-top: 25px
+      text-align: left
   .param-list
     display: flex
     flex-wrap: wrap
@@ -152,7 +165,7 @@
     cursor: pointer
     margin-bottom: 20px
     .h4
-      &:after
+      &::after
         content: ''
         display: inline-block
         vertical-align: middle
@@ -168,7 +181,7 @@
     &.open
       .slide-block__content
         display: flex
-        padding-bottom: 20px
+        padding-bottom: 30px
         margin-bottom: 20px
         border-bottom: 2px solid #eaeaea
       .slide-block__header
@@ -181,23 +194,261 @@
     width: 100%
     .input-group
       padding-bottom: 20px
+      position: relative
     label
       display: block
       font-size: 15px
       color: $lightGray
-    input
+    input, .caption
       display: block
       font-size: 30px
       line-height: 1
+      height: 48px
       padding: 5px 0
       border: none
       border-bottom: 2px solid #eaeaea
       outline: none
       width: 100%
+      &:focus
+        border-bottom-color: $lightGreen
     .result
       font-size: 30px
+      line-height: 1
+      padding-top: 15px
+    .notice
+      font-size: 10px
+      line-height: 12px
+      padding-top: 0
+      padding-bottom: 25px
+    .select-box
+      position: relative
+      .caption
+        cursor: pointer
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          right: 20px
+          top: 50%
+          transform: translate(0, -50%)
+          width: 18px
+          height: 10px
+          background-image: url(/img/flat/arrow_down.svg)
+      .options
+        position: absolute
+        top: 100%
+        left: 0
+        right: 0
+        z-index: 1
+        display: none
+      &.open
+        .caption
+          &::after
+            background-image: url(/img/flat/arrow_up.svg)
+        .options
+          display: block
+      .option
+        height: 70px
+        background-color: #f6f6f6
+        cursor: pointer
+        padding-left: 20px
+        display: flex
+        align-items: center
+        &:hover
+          background-color: #ededed
+          .sub-options
+            display: flex
+      .sub-options
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        width: 37%
+        background-color: $lightGreen
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        display: none
+      .sub-option
+        cursor: pointer
+        font-size: 20px
+        &:hover
+          color: #fff
+      .bank-logo
+        width: 205px
+        height: 40px
+        background: no-repeat center
+        &.psb
+          background-image: url(/img/flat/logo_prom.png)
+        &.sber
+          background-image: url(/img/flat/logo_sber.png)
+        &.otk
+          background-image: url(/img/flat/logo_otkr.png)
+  .extra-info
+    width: 85%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .finish
+      width: 150px
+      height: 150px
+      border-radius: 50%
+      background-color: $yellow
+      color: #fff
+      line-height: 18px
+      text-align: center
+      padding-top: 15px
+      font-weight: 600
+    .finish__icon
+      display: inline-block
+      width: 25px
+      height: 50px
+      background: url(/img/flat/brush.svg) no-repeat center
+    .compass
+      width: 80px
+      height: 80px
+      background: url(/img/flat/compass.svg) no-repeat center
+    .notice
+      position: relative
+      width: 260px
+      height: 140px
+      padding: 30px
+      font-size: 18px
+      line-height: 28px
+      color: $lightGray
+      span
+        color: $orange
+      .btn-close
+        position: absolute
+        top: 10px
+        right: 15px
+        width: 20px
+        height: 20px
+        background: url(/img/flat/close_small.svg)
 .flat-page__content
   display: flex
-  align-items: baseline
-  padding-bottom: 90px
-/*-----END FLAT DETAIL---------*/
+  align-items: flex-start
+  padding-bottom: 120px
+@media screen and (max-width: 1520px)
+  .flat-page
+    .general-plans
+      padding-top: 50px
+      width: 100%
+      order: 1
+      flex-direction: row
+      align-items: baseline
+    .btn-back
+      transform: none
+    .plan
+      width: 30%
+    .flat-plan
+      margin: 0 auto 50px
+@media screen and (max-width: 1280px)
+  .flat-page
+    .btn-back
+      position: static
+@media screen and (max-width: 1024px)
+  .flat-page__content
+    flex-wrap: wrap
+  .flat-page
+    padding: 50px 30px 0
+    .btn-back
+      margin-bottom: 15px
+    .plans
+      flex-wrap: wrap
+      order: 1
+      max-width: 740px
+      margin: 0 auto
+    .plan
+      width: auto
+      padding-bottom: 0
+    .general-plans
+      order: 1
+      width: 100%
+      flex-direction: row
+      align-items: baseline
+      padding: 30px 20px 0
+      justify-content: space-between
+    #general-plan
+      padding-top: 0
+      .plan__img
+        width: 205px
+        padding-bottom: 119px
+    #floor-plan
+      .plan__img
+        width: 160px
+        padding-bottom: 90px
+    #section-plan
+      .plan__img
+        width: 110px
+        padding-bottom: 105px
+    .flat-params
+      max-width: 560px
+      margin: 0 auto
+    .param-list--main
+      justify-content: space-between
+      padding-left: 62px
+      .param
+        &:nth-child(2n+2)
+          width: 55%
+          .param__value
+            width: 50%
+    .fluid-block
+      text-align: center
+      margin: 0 auto
+      width: 430px
+    .extra-info
+      width: 100%
+      padding: 35px 0 70px
+@media screen and (max-width: 736px)
+  .flat-page
+    .flat-params
+      max-width: 100%
+    .param-list--main
+      padding-bottom: 50px
+      justify-content: space-between
+      padding-left: 0
+      .param
+        &:nth-child(2n+2)
+          .param__value
+            width: 40%
+    .param
+      width: 45%
+    .param__value
+      width: 40%
+    .plans
+      flex-basis: auto
+    .general-plans
+      width: 100%
+      padding: 30px 0 0
+      .plan__img
+        width: 100%!important
+    #general-plan
+      .plan__img
+        padding-bottom: 75px
+    #floor-plan, #section-plan
+      .plan__img
+        padding-bottom: 65px
+    .fluid-block
+      width: 100%
+      .buttons
+        .btn-default
+          padding-left: 25px
+          padding-right: 25px
+    .plan
+      width: 30%
+      a
+        margin-left: 30px
+        &::before
+          width: 20px
+          height: 20px
+          left: -30px
+    .flat-plan
+      flex-basis: auto
+      .plan__img
+        width: 100%
+        height: 350px
+    .extra-info
+      .notice
+        display: none

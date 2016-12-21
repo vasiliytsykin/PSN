@@ -99,7 +99,7 @@
         <script src="lib/dragdealer/dragdealer.js"></script>
         <script src="js/script.js"></script>
         <script src="js/about.js"></script>
-        <script src="js/contacts.js"></script>
+<!--        <script src="js/contacts.js"></script>-->
         <script src="js/flat-detail.js"></script>
         <script src="js/filter.js"></script>
     </body>
