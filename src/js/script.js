@@ -257,6 +257,69 @@ $(function () {
 
     /*-----END MAIN PLAN-------------*/
 
+    /*----------------INFRA------------*/
+
+
+    (function initInfraMap() {
+
+        if($('#infra-map').length)
+        {
+            Markers['ind1000'] = {'name':'ЖК', 'group':'main', 'coord':{lat:55.560989, lng:37.576975}};
+            gMap.markers = Markers;
+            gMap.init('moscow', 'white');
+            $('.infra-group__title a').click(function(){
+                var group_show={};
+                $(this).closest('.infra-group').find('.infra-subsection-title a').each(function(ind, el){
+                    var  group_code = $(el).attr('href').replace('#','');
+                    group_show[group_code]=group_code;
+                });
+                $('.infra-subsection-title, .infra-group').removeClass('active');
+                $(this).parent().parent().addClass('active');
+                gMap.filterByGroup(group_show);
+                return false;
+            });
+            $('.infra-subsection-title a').click(function(){
+                $('.infra-subsection-title, .infra-group').removeClass('active');
+                $(this).parent().addClass('active');
+                var group_show={};
+                var  group_code = $(this).attr('href').replace('#','');
+                group_show[group_code]=group_code;
+                gMap.filterByGroup(group_show);
+                return false;
+            });
+
+
+            (function setIcons(pathPrefix) {
+
+                var groups = gMap.groups;
+
+                groups.forEach(function (group) {
+
+                    var iconPath = pathPrefix + group + '.svg';
+                    var element = $('.' + group);
+
+                    element.find('.icon').css({
+                        'background-image': 'url(' + iconPath + ')'
+                    });
+                });
+
+            })('/img/infra/icon-');
+
+
+            $('.infra-nav__handle').on('click', function () {
+
+                $('.infra-nav').toggleClass('closed');
+
+            });
+
+        }
+
+    })();
+
+
+
+    /*-------------END INFRA------------*/
+
 });
 
 

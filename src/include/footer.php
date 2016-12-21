@@ -97,6 +97,7 @@
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
         <script src="pano/tour.js"></script>
         <script src="lib/dragdealer/dragdealer.js"></script>
+        <script src="js/infra.js"></script>
         <script src="js/script.js"></script>
         <script src="js/about.js"></script>
 <!--        <script src="js/contacts.js"></script>-->

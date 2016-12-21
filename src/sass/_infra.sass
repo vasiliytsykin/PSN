@@ -1,0 +1,182 @@
+.infra-page
+  padding-top: 45px
+  position: relative
+  overflow: hidden
+  .circle
+    right: 0
+    top: 50%
+    margin-right: -150px
+  .wave-green
+    top: 80%
+    left: 0
+    margin-left: -350px
+  h1
+    text-align: center
+  .map-wrapper
+    height: 700px
+    position: relative
+    padding-top: 30px
+    overflow: hidden
+  .map
+    width: 100%
+    height: 700px
+  .infra-nav
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 215px
+    transform: translateY(0)
+    transition: all 0.3s ease
+    a
+      font-size: 18px
+      color: #b2b2b2
+    &.closed
+      transform: translateY(100%)
+  .infra-nav-wrapper
+    font-size: 0
+    background-color: rgba(255, 255, 255, 0.8)
+    height: inherit
+    padding: 25px 50px
+    display: flex
+    justify-content: space-between
+  .infra-nav__handle
+    position: absolute
+    bottom: 100%
+    right: 0
+    height: 40px
+    width: 40px
+    background-color: #fff
+    cursor: pointer
+  .infra-group__title
+    margin-bottom: 15px
+    line-height: 1
+    a
+      font-size: 25px
+      font-weight: 600
+  .infra-group
+    &.education
+      .infra-group__title
+        a
+          color: $darkGreen
+    &.health
+      .infra-group__title
+        a
+          color: $red
+    &.sport
+      .infra-group__title
+        a
+          color: $yellow
+    &.shop
+      .infra-group__title
+        a
+          color: $orange
+    &.park
+      .infra-group__title
+        a
+          color: $lightGreen
+    &.active
+      .infra-subsection-title
+        a
+          color: #000
+  .infra-subsection-title
+    font-weight: 500
+    position: relative
+    padding-left: 40px
+    margin-bottom: 15px
+    .icon
+      position: absolute
+      content: ''
+      width: 30px
+      height: 30px
+      left: 0
+      top: 0
+      background: no-repeat center
+    &:hover, &:active, &.active
+      a
+        color: #000
+  .infra-list-over
+     padding-bottom: 150px
+  .infra-list
+    .infra-group
+      padding: 70px 0 0
+      float: left
+      width: 33%
+      &.shop
+        float: right
+      &.park
+        float: none
+        clear: both
+    .infra-group__title
+      a
+        font-size: 30px
+        font-weight: 500
+    .infra-subsection-title
+      margin: 15px 0 0
+      a
+        font-size: 20px
+        text-transform: uppercase
+  .infra-list__item
+    cursor: pointer
+    font-weight: 500
+  .info-block
+    p
+      margin: 10px 0
+  .info-block__txt
+    max-width: 520px
+    padding-bottom: 60px
+@media screen and (max-width: 1024px)
+  .infra-page
+    .big-figure
+      display: none
+    .map-wrapper
+      height: auto
+    .infra-nav
+      position: static
+      padding: 50px 40px 0
+      height: auto
+      .infra-group
+        &:last-child
+          .infra-group__title
+            margin-bottom: 0
+        &:nth-child(2n+2)
+          padding-left: 20px
+      .infra-subsection-title
+        display: none
+    .infra-group
+      width: 50%!important
+    .infra-nav-wrapper
+      max-width: 75%
+      margin: 0 auto
+      flex-wrap: wrap
+      padding: 0
+    .infra-group__title
+      margin-bottom: 20px
+    .infra-list-over
+      max-width: 75%
+      margin: 0 auto
+    .infra-list
+      margin: 0 -20px
+      .infra-group
+        padding: 70px 20px 0
+    .infra-nav__handle
+      display: none
+    .info-block
+      display: none
+@media screen and (max-width: 736px)
+  .infra-page
+    .infra-nav-wrapper
+      max-width: 100%
+    .infra-nav
+      padding: 50px 60px 0
+      .infra-group
+        &:nth-child(2n+2)
+          padding-left: 0
+    .infra-group
+      width: 100%!important
+    .infra-list-over
+      max-width: 100%
+    .infra-list
+      margin: 0
+      .infra-group
+        padding: 70px 0 0
