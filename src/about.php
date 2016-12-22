@@ -183,7 +183,7 @@
                     </div>
                 </div>
                 <div class="gallery">
-                    <div class="gallery__tab architecture active">
+                    <div class="gallery__tab tab-1 active">
                         <div class="gallery__slider big-slider">
                             <div class="gallery__slide" style="background-image: url(img/main-slider-render-1.jpg);">
                                 <div class="gallery__slide__txt">
@@ -199,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__tab sections">
+                    <div class="gallery__tab tab-2">
                         <div class="gallery__slider big-slider">
                             <div class="gallery__slide" style="background-image: url(img/main-slider-render-2.jpg);">
                                 <div class="gallery__slide__txt">
@@ -216,10 +216,10 @@
                         </div>
                     </div>
                     <div class="gallery__switch">
-                        <div class="switch__tab active">
+                        <div class="switch__tab tab-1 active" data-tab="tab-1">
                             Архитектура
                         </div>
-                        <div class="switch__tab">
+                        <div class="switch__tab tab-2" data-tab="tab-2">
                             Подъезды
                         </div>
                     </div>

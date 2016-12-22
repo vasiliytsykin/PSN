@@ -1,0 +1,156 @@
+/*-----------PARTNERS----------*/
+.partners-page
+  overflow: hidden
+  padding-top: 30px
+  position: relative
+  .circle
+    left: 0
+    top: 50%
+    margin-left: -250px
+  .wave-yellow
+    right: 0
+    top: 60%
+  h1
+    text-align: center
+  .banner-over
+    padding-top: 40px
+  .banner
+    height: 450px
+    background: url(/img/partners/top-banner.jpg) no-repeat center
+    background-size: cover
+  .info-block--main
+    padding: 70px 0
+    max-width: 1080px
+    margin: 0 auto
+    .info-block__txt
+      max-width: 520px
+    p
+      margin: 10px 0 0
+  .gallery
+    padding-bottom: 90px
+  .gallery__switch-over
+    padding: 0 80px
+  .gallery__switch
+    justify-content: space-around
+  .switch__tab
+    padding: 0 50px
+    &:not(:last-child)
+      &:after
+        position: absolute
+        content: ''
+        width: 20px
+        height: 80px
+        background: url(/img/tab_separator.svg) no-repeat center
+        left: 100%
+        top: 50%
+        transform: translate(-50%, -50%) rotateY(180deg)
+  .slide-block
+    .trigger
+      height: 110px
+      display: flex
+      justify-content: center
+      align-items: center
+      max-width: 760px
+      margin: 0 auto
+      cursor: pointer
+    &.main
+      .slide-block__header
+        background-color: $lightGreen
+        font-size: 20px
+        text-transform: uppercase
+        color: #fff
+      .trigger
+        .name
+          &::after
+            margin-bottom: 8px
+            background: url(/img/partners/arrow-white-down.svg) no-repeat center
+      &.open
+        >.slide-block__header
+          .trigger
+            border-bottom: none
+            .name
+              &::after
+                background-image: url(/img/partners/arrow-white-up.svg)
+      &:not(:last-child)
+        .trigger
+          border-bottom: 2px solid #abf01b
+    &.sub
+      .slide-block__header
+        background-color: transparent
+        color: #000
+      &:not(:last-child)
+        .trigger
+          border-bottom: 1px solid #e0e0e0
+      &:only-child
+        .trigger
+          border-bottom: none
+      .trigger
+        .name
+          &::after
+            background: url(/img/partners/arrow-green-down.svg) no-repeat center
+      &.open
+        .trigger
+          border-bottom: none
+          .name
+            color: $lightGreen
+            &::after
+              background-image: url(/img/partners/arrow-green-up.svg)
+    a
+      font-size: 18px
+      font-weight: 500
+    .slide-block__content
+      display: none
+  .slide-block__header
+    padding: 0 40px
+    .name
+      &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 20px
+        height: 12px
+        margin-bottom: 15px
+        margin-left: 15px
+  .partner-info
+    box-shadow:  inset  0  35px 35px -35px rgba(0,0,0,0.06), inset  0 -35px 35px -35px rgba(0,0,0,0.06)
+    padding: 80px 0
+    .info-block
+      max-width: 1080px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+    .info-block__txt
+      max-width: 650px
+      p
+        margin: 0 0 10px
+@media screen and (max-width: 1024px)
+  .partners-page
+    .circle
+      margin-left: -350px
+    .wave-yellow
+      margin-right: -250px
+    .banner
+      height: 310px
+    .info-block--main
+      max-width: 560px
+      .info-block__txt
+        max-width: 100%
+    .partner-info
+      padding: 50px 0
+      .info-block
+        display: block
+        max-width: 560px
+        margin: 0 auto
+      .info-block__img
+        text-align: center
+    .gallery__tab
+      display: block
+@media screen and (max-width: 736px)
+  .partners-page
+    .big-figure
+      display: none
+    .banner
+      background-image: url(/img/partners/m-top-banner.jpg)
+    .slide-block__header
+      padding: 0 30px

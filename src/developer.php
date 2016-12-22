@@ -46,11 +46,11 @@
                 <div class="gallery">
                     <div class="gallery__switch-over">
                         <div class="gallery__switch">
-                            <div class="switch__tab">комфорт-класс</div>
-                            <div class="switch__tab active">бизнес-класс</div>
+                            <div class="switch__tab tab-1" data-tab="tab-1">комфорт-класс</div>
+                            <div class="switch__tab tab-2 active" data-tab="tab-2">бизнес-класс</div>
                         </div>
                     </div>
-                    <div class="gallery__tab">
+                    <div class="gallery__tab tab-1">
                         <div class="gallery__slider big-slider">
                             <div class="gallery__slide dom" style="background-image: url(/img/developer/projects/dom.jpg);">
                                 <div class="gallery__slide__txt">
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__tab active">
+                    <div class="gallery__tab tab-2 active">
                         <div class="gallery__slider big-slider">
                             <div class="gallery__slide im" style="background-image: url(/img/developer/projects/im.jpg);">
                                 <div class="gallery__slide__txt">

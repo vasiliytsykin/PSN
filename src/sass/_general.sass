@@ -321,6 +321,46 @@ p
     border-bottom: 1px dashed $lightGray
     &:hover
       border-bottom-color: transparent
+.gallery__tab
+  display: none
+  &.active
+    display: block
+.gallery__switch-over
+  background-color: $lightGreen
+.gallery__switch
+  height: 100px
+  overflow: hidden
+  font-size: 0
+  display: flex
+  position: relative
+  z-index: 1
+.switch__tab
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 20px
+  font-weight: 500
+  color: #fff
+  text-transform: uppercase
+  cursor: pointer
+  &::before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border: 0 solid #00acc8
+    border-radius: 50%
+    transition: all 0.3s ease
+    z-index: -1
+  &.active, &:hover
+    &::before
+      width: 190px
+      height: 190px
+      border: 60px solid #00acc8
 @media screen and (max-width: 1340px)
   .content
     padding-top: 140px

@@ -1,10 +1,5 @@
 $(function () {
-
-    $('.slide-block__header').on('click', function () {
-
-        $(this).closest('.slide-block').toggleClass('open');
-
-    });
+    
 
     $('.mortgage-calc .select-box .caption').on('click', function () {
 
