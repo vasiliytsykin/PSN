@@ -60,8 +60,8 @@
                     <div class="route-guide__controls">
                         <h2>Подробное описание<br>схемы проезда</h2>
                         <div class="switch">
-                            <div class="switch__tab btn-default btn-medium btn-dark-green active">Транспорт</div>
-                            <div class="switch__tab btn-default btn-medium btn-dark-green">Машина</div>
+                            <div class="switch-tab btn-default btn-medium btn-dark-green active">Транспорт</div>
+                            <div class="switch-tab btn-default btn-medium btn-dark-green">Машина</div>
                         </div>
                     </div>
                     <div class="big-slider gallery__tab active" id="transport">

@@ -11,9 +11,9 @@
                 <div class="param__name">С отделкой</div>
             </div>
             <div class="prices">
-                <div class="param__name">Цена, <span class="rubl">a</span></div>
-                <div class="param__name">По акции, <span class="rubl">a</span></div>
-                <div class="param__name">Выгода, <span class="rubl">a</span></div>
+                <div class="param__name">Цена, <span class="ruble">a</span></div>
+                <div class="param__name">По акции, <span class="ruble">a</span></div>
+                <div class="param__name">Выгода, <span class="ruble">a</span></div>
             </div>
         </div>
         <a href="#" class="item">

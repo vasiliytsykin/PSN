@@ -34,7 +34,7 @@
                         <li class="sub-level">Москва, Феодосийская ул. дом 1</li>
                         <li class="phone">
                             <span class="code">+7 (495) </span>
-                            <span class="number">133 45 56</span>
+                            <span class="number">800 41 48</span>
                         </li>
                         <li><a href="#" class="btn-default btn-green">Заказать звонок</a></li>
                     </ul>
@@ -100,7 +100,7 @@
         <script src="js/infra.js"></script>
         <script src="js/script.js"></script>
         <script src="js/about.js"></script>
-<!--        <script src="js/contacts.js"></script>-->
+        <script src="js/contacts.js"></script>
         <script src="js/flat-detail.js"></script>
         <script src="js/filter.js"></script>
     </body>

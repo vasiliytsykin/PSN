@@ -88,11 +88,11 @@ $(function () {
 
     toggleShowTooltip();
 
-    $('.route-guide .switch__tab').on('click', function () {
+    $('.route-guide .switch-tab').on('click', function () {
 
         if(!$(this).hasClass('active')){
             $('.gallery__tab').toggleClass('active');
-            $('.switch__tab').toggleClass('active');
+            $('.switch-tab').toggleClass('active');
         }
     });
 

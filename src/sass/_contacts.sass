@@ -73,9 +73,10 @@
     z-index: 2
     .switch
       padding-top: 20px
-    .switch__tab
-      &:not(.active)
-        border-color: transparent
+    .switch-tab
+      border-color: transparent
+      &.active
+        border-color: $darkGreen
   .big-slider
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.06)
     &:not(.active)

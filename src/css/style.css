@@ -841,8 +841,7 @@ p {
 
 @media screen and (max-width: 1024px) {
   .footer__menu {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    display: block; }
     .footer__menu ul:nth-child(4) {
       width: 100%;
       margin-left: 50%;
@@ -2503,8 +2502,10 @@ p {
     z-index: 2; }
     .contact-page .route-guide__controls .switch {
       padding-top: 20px; }
-    .contact-page .route-guide__controls .switch__tab:not(.active) {
+    .contact-page .route-guide__controls .switch-tab {
       border-color: transparent; }
+      .contact-page .route-guide__controls .switch-tab.active {
+        border-color: #00acc8; }
   .contact-page .big-slider {
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.06); }
     .contact-page .big-slider:not(.active) {
