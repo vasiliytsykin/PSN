@@ -34,7 +34,7 @@
                     <div class="icon"></div>
                     <div class="h5">On-line камера</div>
                 </a>
-                <a href="#" class="panorama">
+                <a href="panorama.php" class="panorama">
                     <div class="icon"></div>
                     <div class="h5">Панорама</div>
                 </a>
@@ -62,14 +62,23 @@
             <div class="info-block">
                 <div class="info-block__txt">
                     <h2>Описание</h2>
-                    <h5>Подзаголовок описания</h5>
+                    <h5>Первая очередь</h5>
                     <p>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit. This is Photoshop's version
-                        of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                        quis bibendum auctor, nisi elit. velit auctor aliquet.
+                        Корпус №1 возводится с помощью универсальной строительной системы панельного типа ДОММОС.
+                        Готовность квартир предполагает: наличие перегородок, стяжку полов, разводку инженерных
+                        систем до оконечных устройств, а потолки и стены готовы под финишную отделку.
+                    </p>
+                    <p>
+                        Корпус №2 возводится по технологии монолитного строительства.
+                        В квартирах будет выполнена трассировка внутренних перегородок в один кирпич,
+                        гидроизоляция мокрых зон и разводка инженерных систем до стояка.
+                    </p>
+                    <p>
+                        Каждый из корпусов имеет секцию с готовой отделкой, где&nbsp;квартиры будут полностью готовы к тому,
+                        чтобы только завести мебель.
                     </p>
                 </div>
+                <div class="pattern big-pattern pattern-1 dark-green anim-pattern" data-pattern="pattern-1"></div>
             </div>
         </div>
         <div class="big-figure circle"></div>

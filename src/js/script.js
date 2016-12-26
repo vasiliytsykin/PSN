@@ -288,7 +288,7 @@ $(function () {
         mainMap.parent().addClass('dragdealer');
 
         var canvas = new Dragdealer('main-map-over', {
-            x: 1,
+            x: 0.7,
             y: 1,
             speed: 0.2,
             requestAnimationFrame: true

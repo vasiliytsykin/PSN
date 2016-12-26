@@ -241,7 +241,8 @@
         <div class="info-block">
             <div class="wrapper-inner">
                 <div class="info-block__txt">
-                    <h2>О расположении</h2>
+                    <h2>Район</h2>
+                    <h5>Северное Бутово</h5>
                     <p>
                         Живя рядом с лесом и наслаждаясь идеальной экологией,
                         приятно осознавать, что все городские преимущества находятся в шаговой доступности.<br>
@@ -252,6 +253,7 @@
                 </div>
             </div>
         </div>
+        <div class="pattern big-pattern pattern-1 dark-green anim-pattern" data-pattern="pattern-1"></div>
         <div class="scroll-top "><a href="#">вернуться наверх</a></div>
     </div>
 <? include 'include/footer.php'?>

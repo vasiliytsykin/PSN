@@ -1,6 +1,13 @@
 /*--------FLAT DETAIL---------*/
 .flat-page
   padding: 50px 40px 0
+  position: relative
+  overflow: hidden
+  .circle
+    bottom: 0
+    right: 0
+    margin-right: -250px
+    margin-bottom: -250px
   .plans
     display: flex
     flex-wrap: wrap
@@ -353,6 +360,8 @@
     flex-wrap: wrap
   .flat-page
     padding: 50px 30px 0
+    .circle
+      display: none
     .btn-back
       margin-bottom: 15px
     .plans

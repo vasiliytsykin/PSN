@@ -2,6 +2,11 @@
 .contact-page
   padding-top: 50px
   overflow: hidden
+  position: relative
+  .pattern-1
+    left: 0
+    bottom: 10%
+    transform: translateX(-25%)
   h1
     text-align: center
   .contacts
@@ -116,6 +121,9 @@
         opacity: 1
 @media screen and (max-width: 1024px)
   .contact-page
+    .pattern-1
+      bottom: 13.5%
+      transform: translateX(-55%)
     .main-info__content
       max-width: 60%
       padding-right: 0
@@ -144,9 +152,12 @@
         font-size: 0
     .route-guide__controls
       padding: 50px 40px 40px
-    .big-figure
+    .circle
       display: none
-@media screen and (max-width: 768px)
+    .pattern-1
+      bottom: 11%
+      transform: translateX(-57%)
+@media screen and (max-width: 800px)
   .contact-page
     .main-info__content
       max-width: 75%
@@ -168,4 +179,6 @@
       box-shadow: none
     .route-guide
       padding: 20px 0 50px
+      .big-figure
+        margin-right: -360px
 /*-----END CONTACTS---------*/

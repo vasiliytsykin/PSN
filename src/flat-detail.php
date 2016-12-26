@@ -1,5 +1,6 @@
 <? include 'include/header.php'?>
     <div class="flat-page">
+        <div class="big-figure circle"></div>
         <div class="flat-page__content">
             <div class="plans">
                 <a href="#" class="btn-back hidden-sm hidden-xs">Вернуться назад</a>

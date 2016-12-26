@@ -3,6 +3,18 @@
   padding-top: 30px
   position: relative
   overflow: hidden
+  .bee
+    left: 90px
+    top: 1150px
+  .carrot
+    top: 720px
+    right: 23%
+  .bird
+    right: 120px
+    top: 930px
+  .trees
+    left: 150px
+    bottom: 200px
   h1
     text-align: center
     padding-bottom: 10px
@@ -109,6 +121,8 @@
     text-align: center
 @media screen and (max-width: 1500px)
   .plan-filter-page
+    .bee, .bird
+      display: none
     .filter-over
       max-width: 1200px
       margin: 0 auto
@@ -152,6 +166,12 @@
       width: 100%
 @media screen and (max-width: 1024px)
   .plan-filter-page
+    .carrot
+      top: 50%
+      right: 0
+    .trees
+      left: 0
+      top: 70%
     .filter__results-over
       padding-right: 0
     .filter-over
@@ -209,6 +229,7 @@
         box-shadow: none
         padding-top: 40px
         margin: 0 auto
+        background-color: transparent
         .plan-type
           margin-bottom: 0
           padding-bottom: 20px
@@ -220,6 +241,10 @@
           display: block
 @media screen and (max-width: 736px)
   .plan-filter-page
+    .pattern
+      display: none
+    .big-figure
+      display: none
     .filter__params
       width: 84%
       .inputs

@@ -1,6 +1,10 @@
 <? include 'include/header.php'?>
     <div class="plan-filter-page">
         <div class="big-figure circle"></div>
+        <div class="pattern carrot dark-green anim-pattern" data-pattern="carrot"></div>
+        <div class="pattern bird light-green anim-pattern" data-pattern="bird"></div>
+        <div class="pattern trees light-green anim-pattern" data-pattern="trees"></div>
+        <div class="pattern bee light-green anim-pattern" data-pattern="bee"></div>
         <div class="wrapper-main">
             <h1 class="dark-green">Выбор по типам планировок</h1>
             <h5>Представлено более 100 вариантов различных планировок</h5>

@@ -1,5 +1,17 @@
 /*--------ACTIONS---------*/
 .actions-page
+  overflow: hidden
+  position: relative
+  .circle
+    left: 0
+    top: 30%
+    margin-left: -250px
+  .pattern-1
+    right: 0
+    top: 19%
+  .pattern-2
+    left: 0
+    top: 42%
   h1
     padding: 30px 0 50px
     text-align: center
@@ -95,6 +107,14 @@
           cursor: pointer
 @media screen and (max-width: 1024px)
   .actions-page
+    .circle
+      margin-left: -350px
+    .pattern-1
+      top: 41%
+      transform: translateX(62%)
+    .pattern-2
+      top: 58.5%
+      transform: translateX(-4%)
     .info-block
       width: 75%!important
       margin: 0 auto 50px!important
@@ -118,6 +138,8 @@
       background-image: url(/img/actions/t_podpiska.jpg)
 @media screen and (max-width: 736px)
   .actions-page
+    .big-figure, .pattern
+      display: none
     .info-block
       width: 100%!important
     .info-block__content

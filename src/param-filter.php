@@ -1,5 +1,7 @@
 <? include 'include/header.php'?>
     <div class="param-filter-page">
+        <div class="pattern carrot dark-green anim-pattern" data-pattern="carrot"></div>
+        <div class="pattern bird light-green anim-pattern" data-pattern="bird"></div>
         <div class="wrapper-main">
             <h1 class="dark-green">Выбор по&nbsp;параметрам</h1>
             <div class="wrapper-outer">

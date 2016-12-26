@@ -10,6 +10,9 @@
     top: 80%
     left: 0
     margin-left: -350px
+  .pattern-1
+    bottom: 5%
+    left: 50%
   h1
     text-align: center
   .map-wrapper
@@ -119,16 +122,19 @@
   .infra-list__item
     cursor: pointer
     font-weight: 500
-  .info-block
-    p
-      margin: 10px 0
   .info-block__txt
     max-width: 520px
     padding-bottom: 60px
 @media screen and (max-width: 1024px)
   .infra-page
-    .big-figure
+    .wave-green
       display: none
+    .circle
+      width: 310px
+      height: 310px
+      margin-right: -200px
+    .pattern-1
+      bottom: 10%
     .map-wrapper
       height: auto
     .infra-nav
@@ -165,6 +171,10 @@
       display: none
 @media screen and (max-width: 736px)
   .infra-page
+    .circle
+      display: none
+    .pattern-1
+      display: none
     .infra-nav-wrapper
       max-width: 100%
     .infra-nav

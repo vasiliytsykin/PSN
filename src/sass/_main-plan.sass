@@ -198,10 +198,11 @@
         line-height: 1
         position: relative
         max-width: none
+        padding-right: 25px
         sup
           font-size: 18px
           position: absolute
-          left: 100%
+          right: 0
           top: -10px
           padding-left: 2px
       &::before
@@ -223,8 +224,12 @@
     max-width: 1000px
     margin: 0 auto
     padding: 70px 0 90px
+    display: flex
+    align-items: center
   .info-block__txt
     max-width: 475px
+  .pattern-1
+    position: static
 @media screen and (max-width: 1024px)
   .main-plan-page
     .big-figure
@@ -251,6 +256,11 @@
           border-bottom: none
     .info-block
       max-width: 75%
+      display: block
+    .camera
+      display: none
+    .compass
+      display: none
 @media screen and (max-width: 800px)
   .main-plan-page
     .info-block__txt
@@ -270,3 +280,5 @@
           border-bottom: 3px solid #abf01b
     .info-block
       max-width: none
+    .pattern-1
+      display: none

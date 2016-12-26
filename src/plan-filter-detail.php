@@ -1,5 +1,6 @@
 <? include 'include/header.php'?>
     <div class="plan-filter-detail-page">
+        <div class="big-figure circle"></div>
         <div class="wrapper-main">
             <a href="#" class="link--dashed btn-back visible-sm visible-xs"><span>Вернуться назад</span></a>
             <h1 class="dark-green">ТИП 1.1-А <span>евроформат</span></h1>

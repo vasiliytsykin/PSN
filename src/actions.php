@@ -1,5 +1,8 @@
 <? include 'include/header.php'?>
-<div class="actions-page" xmlns="http://www.w3.org/1999/html">
+<div class="actions-page">
+        <div class="big-figure circle"></div>
+        <div class="pattern big-pattern pattern-1 dark-green anim-pattern" data-pattern="pattern-1"></div>
+        <div class="pattern big-pattern pattern-2 light-green anim-pattern" data-pattern="pattern-2"></div>
         <h1 class="dark-green">Акции</h1>
         <div class="wrapper-inner">
             <div class="info-list action-list">

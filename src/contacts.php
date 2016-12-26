@@ -1,6 +1,7 @@
 <? include 'include/header.php'?>
 
     <div class="contact-page">
+        <div class="pattern big-pattern pattern-1 dark-green anim-pattern" data-pattern="pattern-1"></div>
         <h1 class="dark-green">Офис продаж</h1>
         <div class="main-info">
             <div class="big-figure circle"></div>

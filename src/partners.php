@@ -12,7 +12,7 @@
         <div class="wrapper-main">
             <div class="info-block info-block--main">
                 <div class="info-block__txt">
-                    <h2>Заголовок про участников</h2>
+                    <h2>Только профессионалы</h2>
                     <p>
                         Мы собрали отличную команду, чтобы сделать этот проект особенным.
                         Европейских архитекторов, которые с большим вниманием относятся
@@ -22,6 +22,7 @@
                         и ипотечные программы максимально выгодными для наших будущих жильцов.
                     </p>
                 </div>
+                <div class="pattern big-pattern pattern-5 dark-green anim-pattern" data-pattern="pattern-5"></div>
             </div>
         </div>
         <div class="gallery">
