@@ -94,8 +94,8 @@ function handleBenefits(width) {
         destroyOwlCarousel(benefits);
 }
 
-$(function () {
 
+$(function () {
 
     $('.burger-btn').on('click', function () {
 

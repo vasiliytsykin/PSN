@@ -16,25 +16,25 @@
                 </div>
                 <div class="green-bar">
                     <div class="green-bar__content">
-                        <div class="green-bar__pattern pattern-2 anim-pattern"></div>
+                        <div class="green-bar__pattern pattern static yellow anim-pattern" data-pattern="adv-bird"></div>
                         <a href="#" class="action green-bar__action">
                             <div class="action__date">до 11.09.16</div>
                             <div class="action__main-line">Клубная карта</div>
                             <div class="action__extra-line">в подарок</div>
                         </a>
-                        <div class="green-bar__pattern pattern-3 anim-pattern"></div>
+                        <div class="green-bar__pattern pattern static yellow anim-pattern" data-pattern="adv-flower"></div>
                         <a href="#" class="action green-bar__action">
                             <div class="action__date">до 30.09.16</div>
                             <div class="action__main-line">Скидка на 2 этаж</div>
                             <div class="action__extra-line">до 20 %</div>
                         </a>
-                        <div class="green-bar__pattern pattern-4 anim-pattern"></div>
+                        <div class="green-bar__pattern pattern static yellow anim-pattern" data-pattern="adv-wave"></div>
                         <a href="#" class="action green-bar__action">
                             <div class="action__date">до 30.09.16</div>
                             <div class="action__main-line">Бонусы за скорость</div>
                             <div class="action__extra-line">cкидки до 20 %</div>
                         </a>
-                        <div class="green-bar__pattern pattern-5 anim-pattern"></div>
+                        <div class="green-bar__pattern pattern static yellow anim-pattern" data-pattern="adv-fish"></div>
                     </div>
                 </div>
                 <div class="wrapper-inner">
@@ -56,7 +56,8 @@
                         <div class="big-figure wave-left static"></div>
                     </div>
                     <div class="benefits">
-                        <div class="big-pattern anim-pattern pattern-1"></div>
+                        <div class="pattern big-pattern pattern-1 dark-green anim-pattern" data-pattern="pattern-1"></div>
+                        <div class="pattern big-pattern pattern-4 light-green anim-pattern" data-pattern="pattern-4"></div>
                         <div class="big-figures">
                             <div class="big-figure circle"></div>
                             <div class="big-figure circle"></div>

@@ -304,20 +304,31 @@ p {
     background-image: url(/img/svg-library/wave_green.svg); }
 
 .pattern {
-  position: absolute;
-  opacity: 0.2; }
+  position: absolute; }
+  .pattern.static {
+    position: static; }
+  .pattern.dark-green .pattern-svg {
+    opacity: 0.2; }
+  .pattern.dark-green .stroke {
+    stroke: #00acc8; }
+  .pattern.light-green .pattern-svg {
+    opacity: 0.4; }
+  .pattern.light-green .stroke {
+    stroke: #95d600; }
+  .pattern.orange .stroke {
+    stroke: #f38b00; }
+  .pattern.yellow .stroke {
+    stroke: #ffd100; }
   .pattern .stroke {
     fill: none;
     stroke-width: 7;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10; }
-  .pattern .dark-green {
-    stroke: #00acc8; }
-  .pattern .light-green {
-    stroke: #95d600; }
-  .pattern .orange {
-    stroke: #f38b00; }
+  .pattern .fill.dark-green {
+    fill: #00acc8; }
+  .pattern .fill.light-green {
+    fill: #95d600; }
 
 .content {
   padding-top: 100px; }
@@ -1231,10 +1242,14 @@ p {
     .main-page .benefits .info-block__img {
       position: relative;
       z-index: 1; }
-    .main-page .benefits .big-pattern {
-      width: 520px;
+    .main-page .benefits .pattern-1 {
       right: -120px;
       top: 250px; }
+    .main-page .benefits .pattern-4 {
+      bottom: 18%;
+      left: -90px;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg); }
     .main-page .benefits .circle:nth-child(1) {
       right: -350px;
       top: 200px; }

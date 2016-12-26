@@ -276,21 +276,38 @@ p
     width: 700px
     height: 300px
     background-image: url(/img/svg-library/wave_green.svg)
+
 .pattern
   position: absolute
-  opacity: 0.2
+  &.static
+    position: static
+  &.dark-green
+    .pattern-svg
+      opacity: 0.2
+    .stroke
+      stroke: $darkGreen
+  &.light-green
+    .pattern-svg
+      opacity: 0.4
+    .stroke
+      stroke: $lightGreen
+  &.orange
+    .stroke
+      stroke: $orange
+  &.yellow
+    .stroke
+      stroke: $yellow
   .stroke
     fill: none
     stroke-width: 7
     stroke-linecap: round
     stroke-linejoin: round
     stroke-miterlimit: 10
-  .dark-green
-    stroke: $darkGreen
-  .light-green
-    stroke: $lightGreen
-  .orange
-    stroke: $orange
+  .fill
+    &.dark-green
+      fill: $darkGreen
+    &.light-green
+      fill: $lightGreen
 .content
   padding-top: 100px
 .show-more
