@@ -2,6 +2,15 @@
 
 .about-page
   overflow: hidden
+  position: relative
+  .pattern-6
+    right: 10%
+    top: 33%
+    transform: rotateY(180deg)
+  .pattern-1
+    right: 0
+    bottom: 6%
+    transform: translateX(21%)
   h1
     font-family: bw_surco, sans-serif
     padding: 30px 0 50px
@@ -217,20 +226,19 @@
     padding: 65px 90px 50px
     box-shadow: 0 0 35px rgba(0,0,0,0.06)
     display: flex
-    align-items: baseline
     position: relative
     h2
       width: 30%
     .params
       position: relative
       flex-grow: 1
-      margin-top: -15px
+      margin-top: -10px
       &::after
         content: ''
         position: absolute
         top: 0
         left: 45%
-        background-image: url(/img/separator_gray.svg)
+        background-image: url(/img/svg-library/separator_ver.svg)
         height: 100%
         width: 20px
     .param
@@ -250,6 +258,12 @@
     padding: 120px 0
 @media screen and (max-width: 1024px)
   .about-page
+    .pattern-6
+      right: 0
+      top: 43%
+    .pattern-1
+      bottom: 2%
+      transform: translateX(65%)
     .gallery
       margin-bottom: 130px
       .circle
@@ -259,6 +273,8 @@
         right: -90px
       .wave-right
         left: -530px
+      .owl-nav
+        display: none
     .gallery__slide
       padding-bottom: 440px
     .block-prices
@@ -327,6 +343,11 @@
       max-width: 560px
 @media screen and (max-width: 736px)
   .about-page
+    .pattern-1
+      display: none
+    .pattern-6
+      top: 41%
+      transform: translateX(10%) rotateY(180deg)
     .gallery
       margin-bottom: 50px
     .gallery__slider
@@ -349,6 +370,7 @@
         font-size: 30px
     .info-block
       max-width: 75%
+      padding-top: 400px
     .block-features
       padding-top: 300px
       margin-bottom: 1080px

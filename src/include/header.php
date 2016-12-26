@@ -2,9 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=0.6, maximum-scale=1.0 user-scalable=yes">
+        <meta name="viewport" content="width=device-width, minimum-scale=0.65, maximum-scale=1.0 user-scalable=yes">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="MobileOptimized" content="480">
+        <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" href="lib/bootstrap-grid.css">
         <link rel="stylesheet" href="fonts/bwsurco/bwsurco.css">
         <link rel="stylesheet" href="fonts/geometria/geometria.css">

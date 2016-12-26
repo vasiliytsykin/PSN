@@ -67,7 +67,8 @@ function removeShade() {
 
 function handleBenefits(width) {
 
-    var benefits = $('.main-page .benefit-list');
+    var benefits = $('.main-page .benefit-list'),
+        item = $('.main-page .benefit-list .info-block');
 
 
     if(width <= 1024)
@@ -89,9 +90,24 @@ function handleBenefits(width) {
                 }
             }
         });
+
+        var parent = item.parent();
+        
+        item.css({
+            
+            height: parent.height()
+            
+        });
     }
     else
+    {
         destroyOwlCarousel(benefits);
+        item.css({
+
+            height: 'auto'
+
+        });
+    }
 }
 
 
@@ -117,19 +133,7 @@ $(function () {
 
     });
 
-    engageOwlCarousel($('.main-slider'), {
-        items: 1,
-        loop: false,
-        navText: ['', ''],
-        responsive: {
-            0: {
-                nav: false
-            },
-            768: {
-                nav: true
-            }
-        }
-    });
+
 
     $('.actions-modal__content').slick({
 
@@ -157,7 +161,6 @@ $(function () {
     $(window).on('resize', function () {
 
         var width = $(window).width();
-        handleBenefits(width);
         if(width > 1340)
             removeShade();
 
@@ -165,16 +168,6 @@ $(function () {
 
     scrollTop($('.scroll-top a'), 0);
 
-    engageOwlCarousel($('.main-offer__content'), {
-
-        items: 1,
-        loop: true,
-        nav: false,
-        mouseDrag: false,
-        animateOut: 'fadeOut'
-    });
-
-    playMainVideo();
 
     $('.gallery__switch .switch__tab').on('click', function () {
 
@@ -188,6 +181,50 @@ $(function () {
 
 
     });
+
+
+    /*------------INDEX---------------*/
+
+    engageOwlCarousel($('.main-slider'), {
+        items: 1,
+        loop: false,
+        navText: ['', ''],
+        responsive: {
+            0: {
+                nav: false
+            },
+            768: {
+                nav: true
+            }
+        }
+    });
+
+    $(window).on('resize', function () {
+
+        var width = $(window).width();
+        handleBenefits(width);
+
+        var el = $('.benefits .circle:nth-child(1)');
+        if(width <= 736)
+            freeze(el);
+        else
+            unfreeze(el);
+
+    }).resize();
+
+    engageOwlCarousel($('.main-offer__content'), {
+
+        items: 1,
+        loop: true,
+        nav: false,
+        mouseDrag: false,
+        animateOut: 'fadeOut'
+    });
+
+    playMainVideo();
+
+    /*------------END INDEX------------*/
+
 
     /*-------------DEVELOPER---------*/
 

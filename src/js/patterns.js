@@ -262,17 +262,7 @@ $(document).ready(function(){
 
     patternizer.init();
     patternizer.animate();
-
-    $(window).on('resize', function () {
-
-        var el = $('.benefits .circle:nth-child(1)');
-        if($(window).width() <= 736)
-            freeze(el);
-        else
-            unfreeze(el)
-    });
-
-
+    
     $(window).scroll(function(){
 
         animateBigFigure();

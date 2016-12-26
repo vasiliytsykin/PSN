@@ -45,13 +45,8 @@
                         <h2 class="dark-green">Гринада – новый жилой квартал комфорткласса</h2>
                         <div class="info-block__img" style="background-image: url(img/main/family-circle.png);"></div>
                         <div class="info-block__txt">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p>Жилой квартал «Гринада» расположен в&nbsp;10 минутах пешком от станции метро "Бульвар Дмитрия Донского" и&nbsp;непосредственно на границе Бутовского лесопарка.</p>
+                            <p>На участке площадью 6,65 га, в одном из&nbsp;самых зеленых районов Москвы, строится жилой квартал комфорткласса площадью 170 тыс. м2, состоящий из 5 домов переменной этажности, а также детским садом и школой на 780 мест.</p>
                         </div>
                         <div class="big-figure wave-left static"></div>
                     </div>
@@ -68,43 +63,12 @@
                                 <div class="info-block__content">
                                     <div class="info-block__txt-over">
                                         <div class="info-block__txt">
-                                            <h2>Семья</h2>
-                                            <h5>Здесь не живут — здесь цветут</h5>
+                                            <h2>Транспортная доступность</h2>
+                                            <h5>2 км от МКАД</h5>
                                             <p>
-                                                Общее озеленение территории с организацией детских и спортивных площадок,
-                                                пешеходных и велосипедных дорожек, зон для спокойного отдыха.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="info-block__img" style="background-image: url(img/main/family.jpg);"></div>
-                                </div>
-                            </div>
-                            <div class="info-block">
-                                <div class="info-block__content">
-                                    <div class="info-block__txt-over">
-                                        <div class="info-block__txt">
-                                            <h2>Инфраструктура</h2>
-                                            <h5>Все необходимое — рядом</h5>
-                                            <p>
-                                                На первых этажах комплекса заработают многочисленные
-                                                и необходимые социальные учреждения: магазины, аптеки,
-                                                столовые, кафе и рестораны, отделения банков и т.д.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="info-block__img" style="background-image: url(img/main/infrastructura.jpg);"></div>
-                                </div>
-                            </div>
-                            <div class="info-block">
-                                <div class="info-block__content">
-                                    <div class="info-block__txt-over">
-                                        <div class="info-block__txt">
-                                            <h2>Уютная среда</h2>
-                                            <h5>Все необходимое — рядом</h5>
-                                            <p>
-                                                У современных градостроителей накопился огромный опыт благоустройства,
-                                                создания комфортной среды обитания для жизни.
-                                                Уютной, надежной, безопасной для рождения и воспитания детей.
+                                                10 пешком от станции метро «Бульвар Дмитрия Донского»,
+                                                2 км от МКАД и два шоссе ведущих в&nbsp;центр, все это дает
+                                                отличную возможность жить в&nbsp;городе и прогнозировать свое время.
                                             </p>
                                         </div>
                                     </div>
@@ -115,23 +79,55 @@
                                 <div class="info-block__content">
                                     <div class="info-block__txt-over">
                                         <div class="info-block__txt">
-                                            <h2>Дом</h2>
-                                            <h5>Всегда приятно возвращаться</h5>
+                                            <h2>Инфраструктура</h2>
+                                            <h5>Все необходимое — рядом</h5>
                                             <p>
-                                                В проекте учтены все аспекты жизни
-                                                человека – мы позаботились о том, чтобы вам было комфортно жить здесь.
-                                                Наш жилой комплекс создан для того, чтобы сделать мир чуточку лучше.
+                                                Северное Бутово — молодой и уже обжитой район с&nbsp;развитой инфраструктурой.
+                                                Сегодня в нем есть все самое необходимое в шаговой доступности: магазины,
+                                                аптеки, салоны красоты и спортивные студии для детей и взрослых.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info-block__img" style="background-image: url(img/main/infrastructura.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <div class="info-block__content">
+                                    <div class="info-block__txt-over">
+                                        <div class="info-block__txt">
+                                            <h2>Безопасность</h2>
+                                            <h5>Современная система контроля доступа</h5>
+                                            <p>
+                                                Жилой квартал «Гринада» спроектирован по принципу «двор без машин» и с закрытой территорией,
+                                                которая будет оборудована самой современной системой контроля доступа и видеонаблюдения.
+                                                Парковка будет вынесена на отдельную часть территории.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="info-block__img" style="background-image: url(img/main/home.jpg);"></div>
                                 </div>
                             </div>
+                            <div class="info-block">
+                                <div class="info-block__content">
+                                    <div class="info-block__txt-over">
+                                        <div class="info-block__txt">
+                                            <h2>Экология</h2>
+                                            <h5>Свежий и чистый воздух</h5>
+                                            <p>
+                                                Район Северное Бутово по праву считается одним из самых экологически чистых районов Москвы,
+                                                так&nbsp;как расположен на самой высокой её точке. Район наполнен свежим и чистым воздухом, который
+                                                вдохновляет на новые открытия и его хочется вдохнуть полной грудью, выйдя ранним утром на&nbsp;балкон.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="info-block__img" style="background-image: url(img/main/family.jpg);"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="show-more">
-                        <a href="#" class="btn-default btn-medium btn-green">Показать еще</a>
-                    </div>
+<!--                    <div class="show-more">-->
+<!--                        <a href="#" class="btn-default btn-medium btn-green">Показать еще</a>-->
+<!--                    </div>-->
                 </div>
                 <div class="main-offer">
                     <h2>Предложение дня</h2>

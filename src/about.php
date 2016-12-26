@@ -1,6 +1,8 @@
 <? include 'include/header.php'?>
 
             <div class="about-page">
+                <div class="pattern big-pattern pattern-6 dark-green anim-pattern" data-pattern="pattern-6"></div>
+                <div class="pattern big-pattern pattern-1 light-green anim-pattern" data-pattern="pattern-1"></div>
                 <h1 class="dark-green">О жилом квартале</h1>
                 <div class="block-features">
                     <div class="block-features-row">
@@ -172,13 +174,14 @@
                         <h2>О проекте</h2>
                         <h5>Подзаголовок архитектуры</h5>
                         <p>
-                            This is Photoshop's version  of Lorem Ipsum.
-                            Proin gravida nibh vel velit auctor aliquet.
-                            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit.
-                            This is Photoshop's version  of Lorem Ipsum.
-                            Proin gravida nibh vel velit auctor aliquet.
-                            Aenean sollicitudin, lorem quis bibendum auctor,
-                            nisi elit. velit auctor aliquet.
+                            Мы спроектировали квартал, который будет сочетать в себе все преимущества
+                            экологии этого района: транспортную доступность, органичность архитектуры
+                            с ландшафтом и высокие стандарты строительства.
+                        </p>
+                        <p>
+                            «Гринада» - это гармоничное сочетание невероятных возможностей большого города и природы.
+                            Мы стремимся выразить в проекте совершенно новый взгляд на базовые потребности
+                            современного человека – человека активного, спортивного, делового и семейного одновременно.
                         </p>
                     </div>
                 </div>

@@ -63,7 +63,8 @@ function initMap() {
 
 $(function () {
 
-    initMap();
+    if($('#map').length)
+        initMap();
 
 
     function toggleShowTooltip() {
