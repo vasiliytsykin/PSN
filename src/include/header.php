@@ -15,10 +15,12 @@
         <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.css">
         <link rel="stylesheet" href="css/rangeSlider.css">
         <link rel="stylesheet" href="lib/dragdealer/dragdealer.css">
+        <link rel="stylesheet" href="lib/magnific-popup/dist/magnific-popup.css">
         <link rel="stylesheet" href="css/style.css">
         <title>PSN</title>
     </head>
     <body>
+        <?include 'menu.php'?>
         <div class="shade"></div>
         <header class="header">
             <div class="header__top-line">
@@ -31,11 +33,13 @@
                 <div class="header__logo"></div>
                 <div class="header__nav">
                     <ul class="top-menu">
-                        <li class="top-level"><a href="#" class="nested">о проекте</a></li>
-                        <li class="top-level"><a href="#" class="nested">выбор квартир</a></li>
-                        <li class="top-level"><a href="#" class="nested">условия покупки</a></li>
-                        <li class="top-level"><a href="#">новости</a></li>
-                        <li class="top-level"><a href="#">офис продаж</a></li>
+                        <?foreach ($menu as $name => $topLevelItem){
+
+                        $nested = count($topLevelItem['items']) != 0 ? 'nested' : '';
+                        ?>
+                            <li class="top-level"><a href="<?=$topLevelItem['url']?>" class="<?=$nested?>"><?=$topLevelItem['name']?></a></li>
+
+                        <?}?>
                     </ul>
                 </div>
                 <div class="header__contact">
@@ -47,30 +51,34 @@
                     <a href="#" class="email"></a>
                 </div>
             </div>
+            
         </header>
         <div class="global-menu">
             <div class="global-menu__control"><div class="burger-btn"><span></span></div></div>
             <div class="global-menu__content">
                 <ul class="top-menu">
-                    <li class="top-level">
-                        <a href="#" class="nested">о проекте</a>
-                        <ul class="sub-menu">
-                            <li class="sub-level"><a href="#">О жилом квартале</a></li>
-                            <li class="sub-level"><a href="#">План ЖК</a></li>
-                            <li class="sub-level"><a href="#">Инфраструктура</a></li>
-                            <li class="sub-level"><a href="#">Панорама</a></li>
-                            <li class="sub-level"><a href="#">Панорама</a></li>
-                        </ul>
-                    </li>
-                    <li class="top-level"><a href="#" class="nested">выбор квартир</a></li>
-                    <li class="top-level"><a href="#" class="nested">условия покупки</a></li>
-                    <li class="top-level"><a href="#">новости</a></li>
-                    <li class="top-level"><a href="#">офис продаж</a></li>
+
+                    <?foreach ($menu as $name => $topLevelItem){
+
+                        $nested = count($topLevelItem['items']) != 0 ? 'nested' : '';
+                        ?>
+                        <li class="top-level">
+                            <a href="<?=$topLevelItem['url']?>" class="<?=$nested?>"><?=$topLevelItem['name']?></a>
+                            <ul class="sub-menu">
+
+                                <?foreach ($topLevelItem['items'] as $subItem){?>
+
+                                    <li class="sub-level"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li>
+
+                                <?}?>
+                            </ul>
+                        </li>
+                    <?}?>
                 </ul>
                 <div class="global-menu__contact">
                     <div class="address">
                         Москва,<br>
-                        Феодосийская ул. дом 1
+                        Феодосийская ул., вл. 1/9
                     </div>
                     <div class="phone dark-green">
                         <span class="code">+7 (495) </span>

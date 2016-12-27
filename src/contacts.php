@@ -9,9 +9,9 @@
                 <div class="main-info__content">
                     <div class="main-info__txt-block">
                         <div class="h4">офис продаж</div>
-                        <p>г. Москва, Дербеневская наб., д. 7, стр. 10<br>Деловой квартал «Новоспасский»</p>
+                        <p>Москва, Феодосийская ул., вл. 1/9</p>
                         <div class="phone dark-green">+7 495 800 41 48</div>
-                        <div class="email dark-green">psn@gmail.com</div>
+                        <div class="email dark-green">sales@jk-grinada.ru</div>
                     </div>
                     <div class="main-info__txt-block">
                         <div class="h4">режим работы</div>
@@ -22,14 +22,14 @@
                             с 10:00 до 20:00
                         </p>
                     </div>
-                    <div class="main-info__txt-block">
-                        <div class="h4">режим работы</div>
+                    <div class="main-info__txt-block hidden-sm hidden-xs">
+                        <div class="h4">для прессы</div>
                         <p>
-                            Владимир Николаев,<br>PR-директор
+                            Чернавская Ольга,<br>менеджер проекта
                         </p>
-                        <div class="email dark-green">vladimir@psn.ru</div>
+                        <div class="email dark-green">chernavskaya@psn-group.ru</div>
                     </div>
-                    <div class="main-info__txt-block">
+                    <div class="main-info__txt-block hidden-sm hidden-xs">
                         <h2>Схема проезда</h2>
                         <p>
                             Proin gravida nibh vel velit auctor aliquet.
@@ -40,9 +40,9 @@
                             auctor a&nbsp;ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
                         </p>
                     </div>
-                    <div class="main-info__txt-block">
-                        <h4>Мы рады вашим<br class="hidden-xs">отзывам<br>и предложениям</h4>
-                        <div class="email dark-green">vladimir@psn.ru</div>
+                    <div class="main-info__txt-block hidden-sm hidden-xs">
+                        <h4>Мы рады вашим<br>отзывам!</h4>
+                        <div class="email dark-green">chernavskaya@psn-group.ru</div>
                     </div>
                 </div>
             </div>
@@ -103,6 +103,20 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-main">
+            <div class="main-info mobile visible-sm visible-xs">
+                <div class="main-info__content">
+                    <div class="main-info__txt-block">
+                        <h4>Мы рады вашим отзывам!</h4>
+                        <div class="h4">для прессы</div>
+                        <p>
+                            Чернавская Ольга, менеджер проекта
+                        </p>
+                        <div class="email dark-green">chernavskaya@psn-group.ru</div>
+                    </div>
                 </div>
             </div>
         </div>

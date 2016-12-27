@@ -63,19 +63,19 @@
                             </li>
                             <li>
                                 <input type="checkbox" id="room-1">
-                                <label for="room-1">1к.</label>
+                                <label for="room-1">1 к.</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="room-2">
-                                <label for="room-2">2к.</label>
+                                <label for="room-2">2 к.</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="room-3">
-                                <label for="room-3">3к.</label>
+                                <label for="room-3">3 к.</label>
                             </li>
                             <li>
                                 <input type="checkbox" id="room-4">
-                                <label for="room-4">4к.</label>
+                                <label for="room-4">4 к.</label>
                             </li>
                         </ul>
                     </div>
@@ -102,8 +102,8 @@
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.4.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№1, №2</div></div>
-                                <div class="h4">стоимость от<div class="value">12 460 000 р.</div></div>
-                                <div class="h4">Площадь от<div class="value">40,67 м<sup>2</sup></div></div>
+                                <div class="h4">стоимость<div class="value">от 12 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">Площадь<div class="value">40,67 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
                                 <div class="h4">Доступно предложений:</div>
@@ -115,8 +115,8 @@
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.3.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№3, №4</div></div>
-                                <div class="h4">стоимость от<div class="value">10 460 000 р.</div></div>
-                                <div class="h4">Площадь от<div class="value">50,6 м<sup>2</sup></div></div>
+                                <div class="h4">стоимость<div class="value">от 10 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">Площадь<div class="value">50,6 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
                                 <div class="h4">Доступно предложений:</div>
@@ -128,8 +128,8 @@
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.4.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№1, №2</div></div>
-                                <div class="h4">стоимость от<div class="value">12 460 000 р.</div></div>
-                                <div class="h4">Площадь от<div class="value">40,67 м<sup>2</sup></div></div>
+                                <div class="h4">стоимость<div class="value">от 12 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">Площадь<div class="value">40,67 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
                                 <div class="h4">Доступно предложений:</div>
@@ -141,8 +141,8 @@
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.3.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№3, №4</div></div>
-                                <div class="h4">стоимость от<div class="value">10 460 000 р.</div></div>
-                                <div class="h4">Площадь от<div class="value">50,6 м<sup>2</sup></div></div>
+                                <div class="h4">стоимость<div class="value">от 10 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">Площадь<div class="value">50,6 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
                                 <div class="h4">Доступно предложений:</div>

@@ -23,7 +23,7 @@
                 <div class="wrapper-main">
                     <div class="wrapper-outer">
                         <div class="text-block">
-                            <h2>«Группа ПСН» входит в ТОП-5 девелоперов г. Москвы по объемам строительства*</h2>
+                            <h2>«Группа ПСН» входит в ТОП-5 девелоперов г.&nbsp;Москвы по объемам строительства*</h2>
                         </div>
                         <div class="notice">* по данным «Бест Новострой»</div>
                     </div>
@@ -42,11 +42,11 @@
                 </div>
             </div>
             <div class="other-projects">
-                <h2>Другие проекты</h2>
+                <h2>Другие проекты девелопера</h2>
                 <div class="gallery">
                     <div class="gallery__switch-over">
                         <div class="gallery__switch">
-                            <div class="switch__tab tab-1" data-tab="tab-1">комфорт-класс</div>
+                            <div class="switch__tab tab-1" data-tab="tab-1">комфорткласс</div>
                             <div class="switch__tab tab-2 active" data-tab="tab-2">бизнес-класс</div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                                     <div class="logo" style="background-image: url(/img/developer/projects/dom_logo.png)"></div>
                                     <div class="h2">Микрорайон Домашний</div>
                                     <div class="h5">Донецкая.,30</div>
-                                    <div class="h5">Площадь квартир: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
                                     <a href="http://домашний.рф" target="_blank" class="link">домашний.рф</a>
                                 </div>
                                 <div class="awards">
@@ -69,7 +69,7 @@
                                     <div class="logo" style="background-image: url(/img/developer/projects/sreda_logo.png);"></div>
                                     <div class="h2">Жилой квартал SREDA</div>
                                     <div class="h5">Рязанский проспект, 2</div>
-                                    <div class="h5">Площадь квартир: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
                                     <a href="http://sreda-kvartal.ru" target="_blank" class="link">sreda-kvartal.ru</a>
                                 </div>
                                 <div class="awards">
@@ -85,7 +85,7 @@
                                     <div class="logo" style="background-image: url(/img/developer/projects/im_logo.png)"></div>
                                     <div class="h2">Жилой квартал I’M</div>
                                     <div class="h5">Кожевнический проезд, владение 4</div>
-                                    <div class="h5">Площадь квартир: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
                                     <a href="http://im-moscow.ru" target="_blank" class="link">IM-Moscow.ru</a>
                                 </div>
                                 <div class="awards">
@@ -100,7 +100,7 @@
                                     <div class="logo" style="background-image: url(/img/developer/projects/pol_logo.png);"></div>
                                     <div class="h2">Комплекс «Полянка/44»</div>
                                     <div class="h5">Большая Полянка, 44/2</div>
-                                    <div class="h5">Площадь квартир: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
                                     <a href="http://polyanka44.com" target="_blank" class="link">polyanka44.com</a>
                                 </div>
                                 <div class="awards">

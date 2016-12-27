@@ -200,7 +200,7 @@
             </script>
             <div class="map" id="infra-map"></div>
             <div class="infra-nav wrapper-outer">
-                <div class="infra-nav__handle"></div>
+                <div class="infra-nav__handle"><div class="arrow"></div></div>
                 <div class="infra-nav-wrapper">
                     <? foreach($arInfra as $codeGroup =>$infraGroup){?>
                         <div class="infra-group <?=$codeGroup?> ">

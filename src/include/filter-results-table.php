@@ -16,7 +16,7 @@
                 <div class="param__name">Выгода, <span class="ruble">a</span></div>
             </div>
         </div>
-        <a href="#" class="item">
+        <a href="flat-detail.php" class="item">
             <div class="h3 dark-green visible-sm visible-xs">1-комнатная евроформат</div>
             <div class="general-params">
                 <div class="param">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="item">
+        <a href="flat-detail.php" class="item">
             <div class="h3 dark-green visible-sm visible-xs">1-комнатная евроформат</div>
             <div class="general-params">
                 <div class="param">

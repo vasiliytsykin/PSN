@@ -259,9 +259,9 @@
     cursor: pointer
   .arrows
     height: 100px
+    width: 28px
     display: flex
-    flex-direction: column
-    justify-content: space-between
+    flex-wrap: wrap
     position: relative
     &::after
       content: ''
@@ -279,6 +279,7 @@
     &.prev
       background-image: url(/img/arrow-up-white.svg)
     &.next
+      align-self: flex-end
       background-image: url(/img/arrow-down-white.svg)
 .actions-modal__tip
   position: absolute

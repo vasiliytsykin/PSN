@@ -63,7 +63,7 @@ function initMap() {
 
 $(function () {
 
-    if($('#map').length)
+    if($('.contact-page #map').length)
         initMap();
 
 
@@ -97,10 +97,11 @@ $(function () {
         }
     });
 
-    engageOwlCarousel($('.big-slider'), {
+    engageOwlCarousel($('.route-guide .big-slider'), {
 
         items: 1,
         nav: true,
+        loop: true,
         navText: ['', '']
 
     })

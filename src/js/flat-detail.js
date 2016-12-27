@@ -31,4 +31,11 @@ $(function () {
 
     }());
 
+    $('.flat-page .open-popup').magnificPopup({
+
+        type:'inline',
+        mainClass: 'flat-popup'
+
+    })
+
 });

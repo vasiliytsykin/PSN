@@ -37,7 +37,7 @@
     .gray
       color: $lightGray
   .main-info__txt-block
-    max-width: 740px
+    max-width: 700px
     padding-bottom: 60px
   .map-wrapper
     height: 650px
@@ -121,9 +121,19 @@
         opacity: 1
 @media screen and (max-width: 1024px)
   .contact-page
-    .pattern-1
-      bottom: 13.5%
-      transform: translateX(-55%)
+    .main-info
+      &.mobile
+        .main-info__content
+          display: block
+          max-width: none
+        .main-info__txt-block
+          max-width: none
+          text-align: center
+          padding: 0
+        h4
+          padding-bottom: 25px
+        .email
+          line-height: 1
     .main-info__content
       max-width: 60%
       padding-right: 0
@@ -140,7 +150,6 @@
     .big-slider
       .slider__item
         flex-wrap: wrap
-        height: 100%
       .slider__item__txt
         width: 100%
         padding: 220px 40px 50px
@@ -150,12 +159,16 @@
       .owl-stage
         display: flex
         font-size: 0
+        align-content: stretch
+      .owl-item
+        display: flex
+        align-content: stretch
     .route-guide__controls
       padding: 50px 40px 40px
     .circle
       display: none
     .pattern-1
-      bottom: 11%
+      bottom: 21%
       transform: translateX(-57%)
 @media screen and (max-width: 800px)
   .contact-page

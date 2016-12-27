@@ -4,34 +4,35 @@
             <div class="wrapper-outer">
                 <div class="footer__menu">
                     <ul>
-                        <li class="top-level"><a href="#">О проекте</a></li>
-                        <li class="sub-level"><a href="#">О проекте</a></li>
-                        <li class="sub-level"><a href="#">План проекта</a></li>
-                        <li class="sub-level"><a href="#">Инфтраструктура</a></li>
-                        <li class="sub-level"><a href="#">Документация проекта</a></li>
-                        <li class="sub-level"><a href="#">О застройщике</a></li>
-                        <li class="sub-level"><a href="#">Участники проекта</a></li>
-                        <li class="sub-level"><a href="#">Участники проекта</a></li>
+                        <li class="top-level"><a href="about.php">О проекте</a></li>
+                        <li class="sub-level"><a href="about.php">О жилом квартале</a></li>
+                        <li class="sub-level"><a href="main-plan.php">План ЖК</a></li>
+                        <li class="sub-level"><a href="infrastructure.php">Инфтраструктура</a></li>
+                        <li class="sub-level"><a href="panorama.php">Панорама</a></li>
+                        <li class="sub-level"><a href="docs.php">Документация проекта</a></li>
+                        <li class="sub-level"><a href="developer.php">О застройщике</a></li>
+                        <li class="sub-level"><a href="partners.php">Участники проекта</a></li>
+                        <li class="sub-level"><a href="#">Дневники стройки</a></li>
                         <li class="sub-level"><a href="#">История района</a></li>
                     </ul>
                     <ul>
-                        <li class="top-level"><a href="#">выбрать квартиру</a></li>
-                        <li class="sub-level"><a href="#">Генплан</a></li>
-                        <li class="sub-level"><a href="#">Выбрать по параметрам</a></li>
-                        <li class="sub-level"><a href="#">Выбрать по планировке</a></li>
+                        <li class="top-level"><a href="main-plan.php">выбрать квартиру</a></li>
+                        <li class="sub-level"><a href="main-plan.php">Генплан</a></li>
+                        <li class="sub-level"><a href="param-filter.php">Выбрать по параметрам</a></li>
+                        <li class="sub-level"><a href="plan-filter.php">Выбрать по планировке</a></li>
                         <li class="sub-level"><a href="#">Выбрать машиноместо</a></li>
                         <li class="sub-level"><a href="#">Коммерческие помещения</a></li>
                     </ul>
                     <ul>
                         <li class="top-level"><a href="#">УСловия покупки</a></li>
                         <li class="sub-level"><a href="#">Ипотека</a></li>
-                        <li class="sub-level"><a href="#"></a>Акции</li>
+                        <li class="sub-level"><a href="actions.php">Акции</a></li>
                         <li class="sub-level"><a href="#">Новости проекта</a></li>
                         <li class="sub-level"><a href="#">Новости компании</a></li>
                     </ul>
                     <ul>
-                        <li class="top-level">Контакты офиса продаж</li>
-                        <li class="sub-level">Москва, Феодосийская ул. дом 1</li>
+                        <li class="top-level"><a href="contacts.php">Офис продаж</a></li>
+                        <li class="sub-level">Москва, Феодосийская ул., вл. 1/9</li>
                         <li class="phone">
                             <span class="code">+7 (495) </span>
                             <span class="number">800 41 48</span>
@@ -46,7 +47,7 @@
                     <div class="footer__social footer__socials--ins"></div>
                 </div>
                 <div class="footer__info">
-                    <div class="footer__copyright">© Девелопер проекта: ГРУППА ПСН 2107 <span class="dev-logo"></span></div>
+                    <div class="footer__copyright">© Девелопер проекта: ГРУППА ПСН 2017 <span class="dev-logo"></span></div>
                     <a href="#" class="footer__pdf">Проектная декларация ООО&nbsp;«Феодосийская»&nbsp;[&nbsp;PDF.&nbsp;3&nbsp;мб&nbsp;]</a>
                     <a href="#" class="footer__politics">Политика конфиденциальности</a>
                 </div>
@@ -92,11 +93,12 @@
         <script src="lib/owl.carousel/dist/owl.carousel.js"></script>
         <script src="lib/slick-carousel/slick/slick.js"></script>
         <script src="lib/ion.rangeSlider/js/ion.rangeSlider.js"></script>
+        <script src="lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+        <script src="lib/dragdealer/dragdealer.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
+        <script src="pano/tour.js"></script>
         <script src="js/vivus.js"></script>
         <script src="js/patterns.js"></script>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
-        <script src="pano/tour.js"></script>
-        <script src="lib/dragdealer/dragdealer.js"></script>
         <script src="js/infra.js"></script>
         <script src="js/script.js"></script>
         <script src="js/about.js"></script>

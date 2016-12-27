@@ -226,7 +226,6 @@
       font-size: 10px
       line-height: 12px
       padding-top: 0
-      padding-bottom: 25px
     .select-box
       position: relative
       .caption
@@ -333,6 +332,36 @@
         width: 20px
         height: 20px
         background: url(/img/flat/close_small.svg)
+.flat-popup
+  &.mfp-bg
+    z-index: 10000
+  &.mfp-wrap
+    z-index: 10001
+  .popup
+    max-width: 850px
+    height: 810px
+    background-color: #fff
+    padding: 50px 0
+    margin: 0 auto
+    position: relative
+    h2
+      padding-bottom: 110px
+      text-align: center
+    .popup__img
+      width: 640px
+      height: 500px
+      margin: 0 auto
+      background: no-repeat center
+      background-size: contain
+  .mfp-close
+    font-size: 0
+    width: 40px
+    height: 40px
+    background-image: url(/img/flat/close.svg)
+    position: absolute
+    top: 20px
+    right: 20px
+    opacity: 1
 .flat-page__content
   display: flex
   align-items: flex-start
@@ -410,6 +439,15 @@
     .extra-info
       width: 100%
       padding: 35px 0 70px
+  .flat-popup
+    .popup
+      max-width: 740px
+      height: 705px
+      h2
+        padding-bottom: 80px
+      .popup__img
+        width: 550px
+        height: 433px
 @media screen and (max-width: 736px)
   .flat-page
     .flat-params
@@ -461,3 +499,12 @@
     .extra-info
       .notice
         display: none
+  .flat-popup
+    .popup
+      height: auto
+      h2
+        padding-bottom: 30px
+      .popup__img
+        width: 90%
+        height: 400px
+/*-----END FLAT DETAIL---------*/

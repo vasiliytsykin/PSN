@@ -6,7 +6,7 @@
                 <a href="#" class="btn-back hidden-sm hidden-xs">Вернуться назад</a>
                 <div class="general-plans">
                     <div class="plan" id="general-plan">
-                        <a href="#">Генплан</a>
+                        <a href="main-plan.php">Генплан</a>
                         <div class="plan__img" style="background-image: url(/img/flat/genplan-map.svg);"></div>
                     </div>
                     <div class="plan" id="floor-plan">
@@ -14,8 +14,12 @@
                         <div class="plan__img" style="background-image: url(/img/flat/floor-plan.svg);"></div>
                     </div>
                     <div class="plan" id="section-plan">
-                        <a href="#">План секции</a>
+                        <a href="#section-popup" class="open-popup">План секции</a>
                         <div class="plan__img" style="background-image: url(/img/flat/section-plan.svg);"></div>
+                        <div id="section-popup" class="popup mfp-hide">
+                            <h2>План секции</h2>
+                            <div class="popup__img" style="background-image: url(/img/flat/section-popup.jpg);"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="flat-plan">
@@ -127,7 +131,7 @@
                                     Данный расчет является предварительным.<br>
                                     Для получения более точной информации обратитесь в отделение банка.
                                 </div>
-                                <a href="#" class="btn-default btn-medium btn-green">Отправить заявку</a>
+<!--                                <a href="#" class="btn-default btn-medium btn-green">Отправить заявку</a>-->
                             </form>
                         </div>
                     </div>
@@ -264,7 +268,7 @@
                                     Данный расчет является предварительным.<br>
                                     Для получения более точной информации обратитесь в отделение банка.
                                 </div>
-                                <a href="#" class="btn-default btn-medium btn-green">Отправить заявку</a>
+<!--                                <a href="#" class="btn-default btn-medium btn-green">Отправить заявку</a>-->
                             </form>
                         </div>
                     </div>

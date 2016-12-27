@@ -265,7 +265,7 @@
       bottom: 2%
       transform: translateX(65%)
     .gallery
-      margin-bottom: 130px
+      margin-bottom: 85px
       .circle
         width: 312px
         height: 312px
@@ -277,6 +277,11 @@
         display: none
     .gallery__slide
       padding-bottom: 440px
+    .gallery__switch
+      position: relative
+      width: 100%
+      left: 0
+      transform: none
     .block-prices
       max-width: 70%
       flex-wrap: wrap
@@ -357,11 +362,6 @@
       padding-bottom: 305px
     .gallery__slide__txt
       display: none
-    .gallery__switch
-      position: relative
-      left: 0
-      width: 100%
-      transform: translate(0, 0)
     .block-prices
       box-shadow: none
     .contacts
@@ -382,7 +382,7 @@
       padding: 0 60px 0 30px
       border-bottom-color: #fff!important
       border-right: none!important
-      background-color: #ffd100!important
+      background-color: $lightGreen!important
       &.on
         .detail-desc
           height: auto
