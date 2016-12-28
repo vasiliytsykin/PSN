@@ -62,6 +62,12 @@
                     <div class="param__value">1 000 000</div>
                 </div>
             </div>
+            <div class="tooltip box-shadow">
+                <h4>корпус 1</h4>
+                <h6>Панельный дом</h6>
+                <img src="/img/flat/floor-plan-green.png" alt="floor-plan">
+                <img src="/img/flat/genplan-map-green.png" alt="floor-plan">
+            </div>
         </a>
         <a href="flat-detail.php" class="item">
             <div class="h3 dark-green visible-sm visible-xs">1-комнатная евроформат</div>
@@ -108,6 +114,12 @@
                     <div class="param__name">Выгода, <span class="rubl">a</span></div>
                     <div class="param__value">1 000 000</div>
                 </div>
+            </div>
+            <div class="tooltip box-shadow">
+                <h4>корпус 1</h4>
+                <h6>Панельный дом</h6>
+                <img src="/img/flat/floor-plan-green.png" alt="floor-plan">
+                <img src="/img/flat/genplan-map-green.png" alt="floor-plan">
             </div>
         </a>
     </div>

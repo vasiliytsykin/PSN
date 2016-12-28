@@ -6,7 +6,7 @@
         <h1 class="dark-green">Акции</h1>
         <div class="wrapper-inner">
             <div class="info-list action-list">
-                <a href="#" class="info-block">
+                <a href="action-detail.php" class="info-block">
                     <div class="info-block__content">
                         <div class="info-block__txt-over">
                             <div class="info-block__txt">

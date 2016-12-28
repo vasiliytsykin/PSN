@@ -9,7 +9,7 @@
                     <a href="#" class="link--dashed btn-back hidden-sm hidden-xs"><span>Вернуться назад</span></a>
                     <div class="planoplan-over">
                         <div class="h5 dark-green">Предложение по возможной отделке&nbsp;квартиры:</div>
-                        <div class="planoplan" style="background-image: url(img/plan-filter/planoplan.jpg);"></div>
+                        <div class="planoplan" style="background-image: url(img/flat/flat-plan.jpg);"></div>
                     </div>
                     <?include 'include/filter-results-table.php'?>
                 </div>

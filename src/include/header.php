@@ -30,15 +30,12 @@
                 </div>
             </div>
             <div class="header__bottom-line">
-                <div class="header__logo"></div>
+                <a href="/" class="header__logo"></a>
                 <div class="header__nav">
                     <ul class="top-menu">
                         <?foreach ($menu as $name => $topLevelItem){
-
-                        $nested = count($topLevelItem['items']) != 0 ? 'nested' : '';
-                        ?>
+                            $nested = count($topLevelItem['items']) != 0 ? 'nested' : ''; ?>
                             <li class="top-level"><a href="<?=$topLevelItem['url']?>" class="<?=$nested?>"><?=$topLevelItem['name']?></a></li>
-
                         <?}?>
                     </ul>
                 </div>
@@ -51,25 +48,18 @@
                     <a href="#" class="email"></a>
                 </div>
             </div>
-            
         </header>
         <div class="global-menu">
             <div class="global-menu__control"><div class="burger-btn"><span></span></div></div>
             <div class="global-menu__content">
                 <ul class="top-menu">
-
                     <?foreach ($menu as $name => $topLevelItem){
-
-                        $nested = count($topLevelItem['items']) != 0 ? 'nested' : '';
-                        ?>
+                        $nested = count($topLevelItem['items']) != 0 ? 'nested' : ''; ?>
                         <li class="top-level">
                             <a href="<?=$topLevelItem['url']?>" class="<?=$nested?>"><?=$topLevelItem['name']?></a>
                             <ul class="sub-menu">
-
                                 <?foreach ($topLevelItem['items'] as $subItem){?>
-
                                     <li class="sub-level"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li>
-
                                 <?}?>
                             </ul>
                         </li>
@@ -90,3 +80,14 @@
         </div>
 
         <div class="content">
+            <ul class="sub-menu--main">
+                <?
+                $currentPage = str_replace(array('/', '.php'), '', $_SERVER['REQUEST_URI']);
+                if(isset($itemsToMenu[$currentPage])){
+                    $subMenu = $menu[$itemsToMenu[$currentPage]];
+                    foreach ($subMenu['items'] as $subItem){
+
+                        $active = strpos($subItem['url'], $currentPage) !== false ? 'active' : '';
+                        ?>
+                        <li class="sub-level <?=$active?>"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li><?}}?>
+            </ul>

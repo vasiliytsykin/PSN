@@ -1,5 +1,25 @@
 <?php
 
+
+$itemsToMenu = array(
+
+    'about' => 'about',
+    'infrastructure' => 'about',
+    'panorama' => 'about',
+    'docs' => 'about',
+    'developer' => 'about',
+    'partners' => 'about',
+    'main-plan' => 'main-plan',
+    'param-filter' => 'main-plan',
+    'plan-filter' => 'main-plan',
+    'plan-filter-detail' => 'main-plan',
+    'flat-detail' => 'main-plan',
+    'actions' => 'actions',
+    'action-detail' => 'actions',
+    'contacts' => 'contacts',
+);
+
+
 $menu = array(
 
     'about' => array(
@@ -9,7 +29,7 @@ $menu = array(
         'items' => array(
 
             array('name' => 'О жилом квартале', 'url' => 'about.php'),
-            array('name' => 'План ЖК', 'url' => 'main-plan.php'),
+            array('name' => 'План ЖК', 'url' => '#'),
             array('name' => 'Инфраструктура', 'url' => 'infrastructure.php'),
             array('name' => 'Панорама', 'url' => 'panorama.php'),
             array('name' => 'Документация проекта', 'url' => 'docs.php'),
@@ -34,16 +54,17 @@ $menu = array(
         )
     ),
 
-    'mortgage' => array(
+    'actions' => array(
 
         'name' => 'Условия покупки',
-        'url' => '#',
+        'url' => 'actions.php',
         'items' => array(
 
             array('name' => 'Ипотека', 'url' => '#'),
             array('name' => 'Акции', 'url' => 'actions.php'),
         )
     ),
+
 
     'news' => array(
 

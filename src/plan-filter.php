@@ -97,7 +97,7 @@
                 </div>
                 <div class="filter__results-over">
                     <div class="filter__results">
-                        <a href="#" class="item">
+                        <a href="plan-filter-detail.php" class="item">
                             <div class="item__img" style="background-image: url(/img/plan-filter/plan_1.jpg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.4.а</div>
@@ -110,7 +110,7 @@
                                 <div class="h1">3</div>
                             </div>
                         </a>
-                        <a href="#" class="item">
+                        <a href="plan-filter-detail.php" class="item">
                             <div class="item__img" style="background-image: url(/img/plan-filter/plan_2.jpg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.3.а</div>
@@ -123,7 +123,7 @@
                                 <div class="h1">5</div>
                             </div>
                         </a>
-                        <a href="#" class="item">
+                        <a href="plan-filter-detail.php" class="item">
                             <div class="item__img" style="background-image: url(/img/plan-filter/plan_3.jpg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.4.а</div>
@@ -136,7 +136,7 @@
                                 <div class="h1">3</div>
                             </div>
                         </a>
-                        <a href="#" class="item">
+                        <a href="plan-filter-detail.php" class="item">
                             <div class="item__img" style="background-image: url(/img/plan-filter/plan_4.jpg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.3.а</div>

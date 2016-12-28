@@ -4,23 +4,37 @@ function initMap() {
 
     function init() {
 
-        var psn = new google.maps.LatLng(55.9170407,37.4118087);
+        var psn = new google.maps.LatLng(55.5599,37.576),
+            subway = new google.maps.LatLng(55.569497,37.5765),
+            center = new google.maps.LatLng(55.564624,37.5753931);
 
         var psnIcon = {
             url: '/img/contacts/psn-pin.png',
             size: new google.maps.Size(75, 105),
             anchor: new google.maps.Point(37, 105)
-        };
+        },
 
-        var psnPin = new google.maps.Marker({
+            subwayIcon = {
+            url: '/img/contacts/subway-pin.png',
+            size: new google.maps.Size(215, 115),
+            anchor: new google.maps.Point(107, 105)
+        },
+
+            psnPin = new google.maps.Marker({
             icon: psnIcon,
             position: psn,
             zIndex: 999
-        });
+            }),
+
+            subwayPin = new google.maps.Marker({
+                icon: subwayIcon,
+                position: subway,
+                zIndex: 999
+            });
 
         mapProp = {
-            center: psn,
-            zoom: 14,
+            center: center,
+            zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             zoomControl: true,
@@ -58,6 +72,7 @@ function initMap() {
         });
 
         psnPin.setMap(map);
+        subwayPin.setMap(map);
     }
 }
 

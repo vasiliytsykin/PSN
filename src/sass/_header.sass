@@ -13,6 +13,17 @@
     width: 20px
     height: 14px
     background-image: url(/img/envelope-green.svg)
+.sub-menu--main
+  padding: 20px 0
+  display: flex
+  justify-content: center
+  .sub-level
+    font-size: 15px
+    font-weight: 500
+    padding: 0 7px
+    &.active
+      a
+        color: $lightGreen
 .header__extra-links
   height: 100%
   display: flex
@@ -245,6 +256,8 @@
       margin-left: 10px
   .global-menu
     display: block
+  .sub-menu--main
+    display: none
 @media screen and (max-width: 736px)
   .header__contact
     .email
