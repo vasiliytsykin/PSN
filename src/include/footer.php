@@ -42,8 +42,8 @@
                 </div>
                 <div class="footer__socials">
                     <div class="footer__social footer__socials--fb"></div>
-                    <div class="footer__social footer__socials--tw"></div>
                     <div class="footer__social footer__socials--vk"></div>
+                    <div class="footer__social footer__socials--ok"></div>
                     <div class="footer__social footer__socials--ins"></div>
                 </div>
                 <div class="footer__info">

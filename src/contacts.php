@@ -9,17 +9,17 @@
                 <div class="main-info__content">
                     <div class="main-info__txt-block">
                         <div class="h4">офис продаж</div>
-                        <p>Москва, Феодосийская ул., вл. 1/9</p>
+                        <p>г. Москва,  ул. Феодосийская, дом 1, корпус 10</p>
                         <div class="phone dark-green">+7 495 800 41 48</div>
                         <div class="email dark-green">sales@jk-grinada.ru</div>
                     </div>
                     <div class="main-info__txt-block">
                         <div class="h4">режим работы</div>
                         <p>
-                            <span class="gray">понедельник – пятница</span><br>
-                            с 09:00 до 20:00<br>
-                            <span class="gray">суббота, восресенье</span><br>
-                            с 10:00 до 20:00
+                            <span class="gray">ежедневно</span><br>
+                            с 09:00 до 21:00<br>
+<!--                            <span class="gray">суббота, восресенье</span><br>-->
+<!--                            с 10:00 до 20:00-->
                         </p>
                     </div>
                     <div class="main-info__txt-block hidden-sm hidden-xs">
@@ -32,12 +32,9 @@
                     <div class="main-info__txt-block hidden-sm hidden-xs">
                         <h2>Схема проезда</h2>
                         <p>
-                            Proin gravida nibh vel velit auctor aliquet.
-                            Aenean sollicitudin, lorem quis bibendum auctor,
-                            nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
-                            auctor a&nbsp;ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            Первый вагон станции метро «Бульвар Дмитрия Донского». Из стеклянных дверей налево и выход на улицу по лестнице справой стороны.
+                            Далее прямо до первого перекрестка улицы Грина и Бульвара Дмитрия Донского, где нужно повернуть направо.
+                            По улице Грина спускаться около 700 метров и повернуть направо после остановки. Ориентиром является дом с правой стороны с рисунком сюжета Алых&nbsp;Парусов.
                         </p>
                     </div>
                     <div class="main-info__txt-block hidden-sm hidden-xs">
@@ -56,7 +53,8 @@
         </div>
         <div class="route-guide">
             <div class="big-figure wave-left"></div>
-            <div class="wrapper-inner">
+            <div class="wrapper-main">
+            <div class="wrapper-outer">
                 <div class="route-guide__slider-over">
                     <div class="route-guide__controls">
                         <h2>Подробное описание<br>схемы проезда</h2>
@@ -68,23 +66,24 @@
                     <div class="big-slider gallery__tab active" id="transport">
                         <div class="slider__item">
                             <div class="slider__item__txt">
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                                Первый вагон станции метро «Бульвар Дмитрия Донского». Из стеклянных дверей налево и выход на улицу по лестнице справой стороны.
                             </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/guide-img-1.jpg);"></div>
+                            <div class="slider__item__img" style="background-image: url(/img/contacts/transport-1.jpg);"></div>
                         </div>
                         <div class="slider__item">
                             <div class="slider__item__txt">
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                                Далее прямо до первого перекрестка улицы Грина и&nbsp;Бульвара Дмитрия Донского, где нужно повернуть направо.
                             </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/guide-img-1.jpg);"></div>
+                            <div class="slider__item__img" style="background-image: url(/img/contacts/transport-3.jpg);"></div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item__txt">
+                                По улице Грина спускаться около 700 метров и повернуть направо после остановки. Ориентиром является дом справой стороны с рисунком сюжета Алых&nbsp;Парусов.
+                            </div>
+                            <div class="slider__item__img" style="background-image: url(/img/contacts/transport-2.jpg);"></div>
                         </div>
                     </div>
-                    <div class="big-slider gallery__tab id="car">
+                    <div class="big-slider gallery__tab" id="car">
                         <div class="slider__item">
                             <div class="slider__item__txt">
                                 Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
@@ -104,6 +103,7 @@
                     </div>
                     
                 </div>
+            </div>
             </div>
         </div>
         <div class="wrapper-main">

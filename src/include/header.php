@@ -74,7 +74,13 @@
                         <span class="code">+7 (495) </span>
                         <span class="number">800 41 48</span>
                     </div>
-                    <a href="#" class="btn-default btn-green">Заказать звонок</a>
+                    <a href="#" class="btn-default btn-medium btn-green">Заказать звонок</a>
+                    <div class="socials">
+                        <div class="social socials--fb"></div>
+                        <div class="social socials--vk"></div>
+                        <div class="social socials--ok"></div>
+                        <div class="social socials--ins"></div>
+                    </div>
                 </div>
             </div>
         </div>

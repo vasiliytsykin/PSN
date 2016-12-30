@@ -4,7 +4,7 @@ function initMap() {
 
     function init() {
 
-        var psn = new google.maps.LatLng(55.5599,37.576),
+        var psn = new google.maps.LatLng(55.55935,37.5773),
             subway = new google.maps.LatLng(55.569497,37.5765),
             center = new google.maps.LatLng(55.564624,37.5753931);
 
@@ -115,9 +115,18 @@ $(function () {
     engageOwlCarousel($('.route-guide .big-slider'), {
 
         items: 1,
-        nav: true,
         loop: true,
-        navText: ['', '']
+        navText: ['', ''],
+        responsive: {
+
+            0: {
+                nav: false
+            },
+            736: {
+                nav: true
+            }
+
+        }
 
     })
     

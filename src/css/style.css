@@ -659,6 +659,27 @@ p {
                 transform: translateY(-50%);
         border-radius: 50%;
         background-color: #95d600; }
+  .global-menu .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0;
+    width: 260px; }
+  .global-menu .social {
+    width: 46px;
+    height: 46px;
+    background: no-repeat center; }
+  .global-menu .socials--fb {
+    background-image: url(/img/icon-fb-white.svg); }
+  .global-menu .socials--vk {
+    background-image: url(/img/icon-vk-white.svg); }
+  .global-menu .socials--ok {
+    background-image: url(/img/icon-ok-white.svg); }
+  .global-menu .socials--ins {
+    background-image: url(/img/icon-inst-white.svg); }
 
 .global-menu__control {
   height: 70px;
@@ -680,8 +701,6 @@ p {
   .global-menu__contact .phone {
     padding: 10px 0 20px;
     font-size: 24px; }
-  .global-menu__contact .btn-default {
-    font-size: 18px; }
 
 .header__logo {
   width: 139px;
@@ -848,8 +867,8 @@ p {
 .footer__socials--fb {
   background-image: url(/img/icon-fb.svg); }
 
-.footer__socials--tw {
-  background-image: url(/img/icon-tw.svg); }
+.footer__socials--ok {
+  background-image: url(/img/icon-ok.svg); }
 
 .footer__socials--vk {
   background-image: url(/img/icon-vk.svg); }
@@ -2591,11 +2610,12 @@ p {
       right: 0;
       top: 72%; }
   .contact-page .route-guide__slider-over {
-    position: relative; }
+    position: relative;
+    padding: 0 40px; }
   .contact-page .route-guide__controls {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 40px;
     padding: 50px 90px 40px;
     z-index: 2; }
     .contact-page .route-guide__controls .switch {
@@ -2619,7 +2639,7 @@ p {
     .contact-page .big-slider .slider__item__img {
       width: 50%;
       min-height: 518px;
-      background-repeat: no-repeat;
+      background: no-repeat center;
       background-size: cover; }
     .contact-page .big-slider .owl-nav {
       padding: 0;
@@ -2666,7 +2686,8 @@ p {
     right: 30px; }
   .contact-page .route-guide__slider-over {
     width: 75%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0; }
   .contact-page .big-slider .slider__item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -2691,7 +2712,8 @@ p {
     -ms-flex-line-pack: stretch;
         align-content: stretch; }
   .contact-page .route-guide__controls {
-    padding: 50px 40px 40px; }
+    padding: 50px 40px 40px;
+    left: 0; }
   .contact-page .circle {
     display: none; }
   .contact-page .pattern-1 {
