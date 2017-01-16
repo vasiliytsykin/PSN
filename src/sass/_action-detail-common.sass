@@ -1,0 +1,253 @@
+/*--------ACTION DETAIL COMMON---------*/
+.action-detail
+  font-size: 0
+  p
+    font-size: 16px
+    font-weight: 400
+  h2
+    padding-bottom: 15px
+    max-width: 90%
+  h5
+    color: $lightGray
+    padding-bottom: 55px
+    font-weight: 400
+  .main-block, .side-block
+    display: inline-block
+    vertical-align: top
+    position: relative
+  .main-block
+    width: 68%
+    padding-right: 7%
+    padding-left: 90px
+  .side-block
+    width: 32%
+  .notice
+    font-size: 20px
+    line-height: 30px
+    padding-left: 80px
+    color: $lightGray
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      background-image: url(/img/action/separator_ver.svg)
+      height: 100%
+      width: 20px
+      top: 0
+      left: 30px
+    .pattern
+      right: 100%
+      margin-right: 90px
+      top: 70%
+  .hot-action
+    text-align: center
+    padding: 50px
+    line-height: 1
+    max-width: 390px
+    position: relative
+  .hot-action__txt
+    padding-bottom: 30px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 202px
+      height: 19px
+      top: 100%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-image: url(/img/action/separator_hor.svg)
+    .top-line
+      font-size: 45px
+      font-weight: 400
+      padding-bottom: 10px
+    .bottom-line
+      font-size: 22px
+      font-weight: 600
+      text-transform: uppercase
+  .hot-action__timer
+    padding-top: 35px
+    color: $orange
+    max-width: 80%
+    margin: 0 auto
+    .timer__txt
+      font-size: 15px
+      text-transform: uppercase
+      padding-bottom: 20px
+      font-weight: 600
+    .timer__board
+      display: flex
+      justify-content: space-between
+      align-items: baseline
+    .timer-section__digits
+      font-size: 45px
+    .timer-section__txt
+      font-size: 15px
+    .dots
+      font-size: 40px
+.action-detail__nav
+  .control
+    display: block
+    line-height: 1
+    padding-bottom: 12px
+    span
+      font-size: 15px
+      color: $lightGray
+      display: inline-block
+      white-space: nowrap
+.action-detail__nav--small
+  position: absolute
+  top: 0
+  left: 100%
+  z-index: 1
+  .control
+    padding-bottom: 12px
+    span
+      padding-bottom: 3px
+      border-bottom: 1px dashed $lightGray
+    &:not(.all)
+      span
+        &::before, &::after
+          content: ''
+          display: inline-block
+          vertical-align: middle
+    &.prev
+      span
+        &::before
+          background-image: url(/img/action/small_arrow_prev.svg)
+          margin-right: 5px
+          width: 6px
+          height: 9px
+    &.next
+      span
+        &::after
+          background-image: url(/img/action/small_arrow_next.svg)
+          margin-left: 5px
+          width: 6px
+          height: 9px
+    &:hover
+      span
+        border-bottom-color: transparent
+.action-detail__nav--big
+  padding-top: 250px
+  max-width: 310px
+  .control
+    padding-bottom: 90px
+    span
+      &::before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 65px
+        height: 65px
+        margin-right: 15px
+        margin-left: -8px
+    &.prev
+      span
+        &::before
+          background-image: url(/img/action/big_arrow_prev.svg)
+    &.next
+      span
+        &::before
+          background-image: url(/img/action/big_arrow_next.svg)
+  .pattern
+    top: 100%
+    left: 100%
+    margin-top: -80px
+    margin-left: -80px
+  .action-detail__nav__txt
+    font-size: 20px
+    line-height: 30px
+    padding-top: 25px
+.action-detail__img
+  padding-bottom: 58%
+  background: no-repeat center
+  background-size: cover
+  margin-left: -90px
+  .carrot
+    opacity: 0.3
+    bottom: 100%
+    right: 100%
+@media screen and (max-width: 1024px)
+  .action-detail
+    max-width: 70%
+    margin: 0 auto
+    h2
+      max-width: none
+    .main-block
+      width: 100%
+      padding-right: 0
+      padding-left: 0
+    .side-block
+      width: auto
+      margin: 35px -10% 0
+      display: block
+    .hot-action
+      margin: 0 auto
+    .notice
+      .pattern
+        margin-right: 50px
+        top: -200%
+  .action-detail__nav--small
+    position: static
+    display: flex
+    justify-content: space-between
+    padding-right: 35px
+    padding-bottom: 60px
+    .prev
+      order: 0
+    .all
+      order: 1
+    .next
+      order: 2
+  .action-detail__nav--big
+    padding-top: 70px
+    max-width: none
+    display: flex
+    justify-content: space-between
+    .control
+      max-width: 250px
+      padding-bottom: 20px
+    .prev
+      order: 0
+    .next
+      order: 1
+    .pattern
+      display: none
+  .action-detail__img
+    margin: 0 -10%
+    padding-bottom: 375px
+    .pattern
+      bottom: 100%
+      right: auto
+      left: 100%
+      margin-left: 10%
+      margin-bottom: 110px
+@media screen and (max-width: 736px)
+  .action-detail
+    max-width: 100%
+    p
+      font-size: 20px
+    .main-block
+      padding: 0
+    .side-block
+      padding-top: 30px
+      max-width: 390px
+      margin: 0 auto
+      display: block
+    .notice
+      padding-left: 40px
+      &::before
+        left: 0
+        transform: translateX(-50%)
+  .action-detail__img
+    margin: 0 -30px
+  .action-detail__nav--small
+    padding-right: 0
+  .action-detail__nav--big
+    display: block
+    padding-top: 50px
+    .control
+      max-width: none
+    .next
+      padding-bottom: 60px

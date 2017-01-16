@@ -1,0 +1,176 @@
+/*--------NEWS---------*/
+.news-page
+  position: relative
+  overflow: hidden
+  .circle
+    left: 0
+    margin-left: -300px
+    top: 30%
+  .wave-right
+    right: 0
+    margin-right: -360px
+    top: 60%
+  h1
+    text-align: center
+  .gallery
+    padding-top: 40px
+    padding-bottom: 70px
+  .gallery__switch
+    max-width: 740px
+    margin: 0 auto
+    &::before
+      position: absolute
+      content: ''
+      width: 20px
+      height: 80px
+      background: url(/img/tab_separator.svg) no-repeat center
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+  .switch__tab
+    width: 50%
+    padding: 0 20px
+  .info-block
+    display: flex
+    margin: 50px 0
+    box-shadow: 0 0 35px rgba(0,0,0,0.06)
+    &:hover
+      .info-block__date-over
+        background-color: $yellow
+  .info-block__img-over, .info-block__txt
+    width: 50%
+  .info-block__txt
+    padding: 50px 70px 50px 8.759%
+    p
+      margin-bottom: 0
+  .info-block__img-over
+    display: flex
+  .info-block__date-over
+    display: flex
+    align-items: center
+    justify-content: center
+  .info-block__img
+    width: 370px
+  .info-block__date-over
+    width: 258px
+  .info-block__date
+    color: $orange
+    font-size: 60px
+    line-height: 1
+    text-align: center
+    .top-line
+      padding-bottom: 20px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        left: 50%
+        width: 142px
+        bottom: 0
+        transform: translate(-50%, 50%)
+        height: 16px
+        background-image: url(/img/svg-library/separator_hor.svg)
+    .day
+      padding-bottom: 12px
+    .month
+      font-size: 25px
+      text-transform: uppercase
+      font-weight: 600
+    .year
+      padding-top: 20px
+      color: $lightGreen
+  .show-more
+    text-align: center
+@media screen and (max-width: 1340px)
+  .news-page
+    padding-top: 50px
+    .circle
+      margin-left: -350px
+@media screen and (max-width: 1024px)
+  .news-page
+    .big-figure
+      display: none
+    .info-block__img-over
+      width: 35%
+      display: block
+      position: relative
+    .info-block__txt
+      width: 65%
+      padding: 70px 40px 60px
+    .info-block__date-over
+      width: 100%
+      padding: 30px 0
+    .info-block__date
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 210px
+      font-size: 50px
+      .top-line
+        padding-bottom: 0
+        padding-right: 25px
+        &::after
+          left: 100%
+          top: 50%
+          transform: translate(-50%, -50%)
+          height: 80px
+          width: 14px
+          background-image: url(/img/svg-library/separator_ver.svg)
+      .day
+        padding-bottom: 3px
+      .month
+        font-size: 18px
+      .year
+        padding-top: 0
+    .info-block__img
+      width: 100%
+      height: auto
+      position: absolute
+      left: 0
+      right: 0
+      top: 131px
+      bottom: 0
+@media screen and (max-width: 736px)
+  .news-page
+    .wrapper-inner
+      padding: 0
+    .info-block
+      display: block
+      margin: 80px 0
+      box-shadow: none
+    .info-block__img-over, .info-block__txt
+      width: 100%
+      padding: 0
+    .info-block__txt
+      padding-top: 45px
+    .info-block__img-over
+      display: flex
+      height: 220px
+    .info-block__img
+      width: 57%
+      position: static
+    .info-block__date-over
+      width: 43%
+      justify-content: flex-start
+    .info-block__date
+      display: block
+      width: auto
+      font-size: 60px
+      .top-line
+        padding-right: 0
+        padding-bottom: 18px
+        &::after
+          content: ''
+          position: absolute
+          left: 50%
+          width: 142px
+          bottom: 0
+          top: auto
+          transform: translate(-50%, 50%)
+          height: 16px
+          background-image: url(/img/svg-library/separator_hor.svg)
+      .month
+        font-size: 25px
+      .year
+        padding-top: 15px
+/*--------END NEWS---------*/

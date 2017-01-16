@@ -69,7 +69,7 @@ $menu = array(
     'news' => array(
 
         'name' => 'Новости',
-        'url' => '#',
+        'url' => 'news.php',
         'items' => array(
 
             array('name' => 'Новости проекта', 'url' => '#'),

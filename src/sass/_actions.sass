@@ -45,66 +45,6 @@
       background: url(/img/actions/svg/arrow.svg) no-repeat center
   .show-more
     padding-bottom: 70px
-  .sign-in
-    height: 350px
-    padding-top: 50px
-    background: url(/img/actions/podpiska.jpg) no-repeat center
-    background-size: cover
-    margin-bottom: 90px
-    h3
-      max-width: 650px
-      margin: 0 auto
-      text-align: center
-  .sign-in__form
-    max-width: 430px
-    margin: 0 auto
-    color: $lightGray
-    font-size: 15px
-    padding-top: 25px
-    text-align: center
-    input
-      &[type="email"]
-        display: block
-        width: 100%
-        background-color: transparent
-        border: none
-        border-bottom: 1px solid #e1e0e0
-        font-size: 15px
-        padding: 0 0 15px 0
-        outline: none
-        color: $lightGray
-      &[type="checkbox"]
-        display: none
-        &:checked
-          + label
-            &::before
-              background-position: -20px 0
-    .terms
-      cursor: pointer
-      border-bottom: 1px dashed $lightGray
-      &:hover
-        border-bottom: none
-    label
-      line-height: 1
-      margin-top: 15px
-      padding-left: 30px
-      display: inline-block
-      position: relative
-      margin-bottom: 40px
-      &[for="agreement"]
-        &::before
-          content: ''
-          position: absolute
-          left: 0
-          top: 50%
-          transform: translate(0, -50%)
-          width: 20px
-          height: 20px
-          background-image: url(/img/actions/select.svg)
-          background-repeat: no-repeat
-          background-position: 0 0
-          background-size: cover
-          cursor: pointer
 @media screen and (max-width: 1024px)
   .actions-page
     .circle
@@ -134,8 +74,6 @@
         transform: translateY(-50%)!important
     .info-block__content
       flex-wrap: wrap
-    .sign-in
-      background-image: url(/img/actions/t_podpiska.jpg)
 @media screen and (max-width: 736px)
   .actions-page
     .big-figure, .pattern
@@ -150,9 +88,4 @@
       margin: 0 -30px
     .info-block__txt-over
       padding: 40px 30px 30px
-    .sign-in
-      height: 610px
-      background-image: url(/img/actions/m_podpiska.jpg)
-      h3
-        max-width: 410px
 /*-----END ACTIONS---------*/
