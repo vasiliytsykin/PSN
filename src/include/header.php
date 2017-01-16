@@ -86,14 +86,16 @@
         </div>
 
         <div class="content">
-            <ul class="sub-menu--main">
-                <?
-                $currentPage = str_replace(array('/', '.php'), '', $_SERVER['REQUEST_URI']);
-                if(isset($itemsToMenu[$currentPage])){
-                    $subMenu = $menu[$itemsToMenu[$currentPage]];
-                    foreach ($subMenu['items'] as $subItem){
+            <div class="wrapper-main">
+                <ul class="sub-menu--main">
+                    <?
+                    $currentPage = str_replace(array('/', '.php'), '', $_SERVER['REQUEST_URI']);
+                    if(isset($itemsToMenu[$currentPage])){
+                        $subMenu = $menu[$itemsToMenu[$currentPage]];
+                        foreach ($subMenu['items'] as $subItem){
 
-                        $active = strpos($subItem['url'], $currentPage) !== false ? 'active' : '';
-                        ?>
-                        <li class="sub-level <?=$active?>"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li><?}}?>
-            </ul>
+                            $active = strpos($subItem['url'], $currentPage) !== false ? 'active' : '';
+                            ?>
+                            <li class="sub-level <?=$active?>"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li><?}}?>
+                </ul>
+            </div>

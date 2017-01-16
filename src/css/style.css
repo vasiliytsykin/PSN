@@ -476,7 +476,8 @@ p {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-top: 1px solid #cccccc; }
   .sub-menu--main .sub-level {
     font-size: 15px;
     font-weight: 500;
