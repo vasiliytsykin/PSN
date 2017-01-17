@@ -394,6 +394,35 @@ $(function () {
         
     }());
 
+    /*--------END PARTNERS--------------*/
+
+    /*------------HOUSE PLAN------------*/
+    
+    (function () {
+
+        var $flats = $('.house-plan-page .flat'),
+            $floors = $('.floor-list__item'),
+            $flatInfo = $('.flat-info');
+        
+        $flats.on('mouseenter', function () {
+            
+            var $self = $(this),
+                floorNum = $self.closest('.floor-row').data('floor');
+
+            $flatInfo.removeClass('show');
+            $self.find('.flat-info').addClass('show');
+
+            $floors.removeClass('hover');
+            $('.floor-' + floorNum).addClass('hover');
+            
+        }).on('mouseleave', function () {
+            $floors.removeClass('hover');
+            $flatInfo.removeClass('show');
+        });
+    }());
+    
+    /*--------END HOUSE PLAN------------*/
+
 });
 
 
