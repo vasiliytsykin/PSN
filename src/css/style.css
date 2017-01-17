@@ -137,6 +137,14 @@ p {
   background-color: #95d600;
   color: #fff; }
 
+.btn-white {
+  border-color: white;
+  color: white; }
+
+.btn-white:hover {
+  background-color: white;
+  color: #95d600; }
+
 .btn-close {
   cursor: pointer;
   width: 28px;
@@ -5330,3 +5338,141 @@ p {
 @media screen and (max-width: 736px) {
   .news-detail-page .action-detail__nav--big {
     padding-top: 0; } }
+
+/*------------PARKING----------*/
+.parking-page {
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden; }
+  .parking-page .circle {
+    right: 0;
+    margin-right: -150px;
+    top: 60%; }
+  .parking-page .wave-vertical {
+    left: 0;
+    top: 80%; }
+  .parking-page h1 {
+    text-align: center;
+    padding-bottom: 40px; }
+  .parking-page .top-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -40px; }
+  .parking-page .top-banner__txt-over {
+    width: 470px;
+    background-color: #95d600;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .parking-page .top-banner__txt {
+    max-width: 310px; }
+    .parking-page .top-banner__txt h2, .parking-page .top-banner__txt h5 {
+      font-weight: 400; }
+    .parking-page .top-banner__txt h5 {
+      padding: 30px 0; }
+  .parking-page .top-banner__img {
+    height: 450px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-image: url(/img/parking/parking.jpg); }
+  .parking-page .text-block-over {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 70px 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .parking-page .text-block {
+    max-width: 520px; }
+  .parking-page .plans-over {
+    width: 390px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.06);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 50px 0 30px; }
+  .parking-page .plans {
+    text-align: center; }
+    .parking-page .plans h4 {
+      font-size: 22px;
+      text-transform: uppercase; }
+  .parking-page .plan {
+    margin: 20px 0;
+    display: block; }
+    .parking-page .plan::before {
+      content: '';
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      background-image: url(/img/parking/pdf-logo.png);
+      vertical-align: middle; }
+  .parking-page .plan__txt {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px; }
+  .parking-page .plan__file {
+    font-size: 15px; }
+  .parking-page .contacts {
+    padding: 0 0 90px; }
+
+@media screen and (max-width: 1024px) {
+  .parking-page {
+    padding-top: 50px; } }
+
+@media screen and (max-width: 1024px) {
+  .parking-page .circle {
+    margin-right: -250px; }
+  .parking-page .wave-vertical {
+    margin-left: -130px; }
+  .parking-page .top-banner {
+    display: block;
+    margin: 0 -30px; }
+  .parking-page .top-banner__img {
+    height: 310px; }
+  .parking-page .top-banner__txt-over {
+    width: 100%;
+    padding: 50px 30px; }
+  .parking-page .top-banner__txt {
+    width: 75%;
+    max-width: none; }
+  .parking-page .text-block-over {
+    display: block;
+    padding-bottom: 70px; }
+  .parking-page .text-block {
+    max-width: 75%;
+    margin: 0 auto;
+    padding-bottom: 30px; }
+  .parking-page .plans-over {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 736px) {
+  .parking-page .big-figure {
+    display: none; }
+  .parking-page .top-banner__txt-over {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .parking-page .top-banner__txt {
+    max-width: 310px; }
+    .parking-page .top-banner__txt h5 {
+      font-size: 20px;
+      line-height: 30px; }
+  .parking-page .text-block {
+    max-width: none; } }

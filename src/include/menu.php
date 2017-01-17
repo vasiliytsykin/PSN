@@ -14,6 +14,7 @@ $itemsToMenu = array(
     'plan-filter' => 'main-plan',
     'plan-filter-detail' => 'main-plan',
     'flat-detail' => 'main-plan',
+    'parking' => 'main-plan',
     'actions' => 'actions',
     'action-detail' => 'actions',
     'contacts' => 'contacts',
@@ -49,7 +50,7 @@ $menu = array(
             array('name' => 'Генплан', 'url' => 'main-plan.php'),
             array('name' => 'Выбрать по параметрам', 'url' => 'param-filter.php'),
             array('name' => 'Выбрать по планировке', 'url' => 'plan-filter.php'),
-            array('name' => 'Выбрать машиноместо', 'url' => '#'),
+            array('name' => 'Выбрать машиноместо', 'url' => 'parking.php'),
             array('name' => 'Коммерческие помещения', 'url' => '#')
         )
     ),
