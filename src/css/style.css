@@ -498,6 +498,117 @@ p {
         background-size: cover;
         cursor: pointer; }
 
+.mortgage-calc .input-group {
+  padding-bottom: 20px;
+  position: relative; }
+
+.mortgage-calc label {
+  display: block;
+  font-size: 15px;
+  color: #999999; }
+
+.mortgage-calc input, .mortgage-calc .caption {
+  font-size: 30px;
+  line-height: 1;
+  height: 48px;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 2px solid #eaeaea;
+  outline: none;
+  background-color: transparent; }
+  .mortgage-calc input:focus, .mortgage-calc .caption:focus {
+    border-bottom-color: #95d600; }
+
+.mortgage-calc .result {
+  font-size: 30px;
+  line-height: 1;
+  padding-top: 15px; }
+
+.mortgage-calc .notice {
+  font-size: 10px;
+  line-height: 12px;
+  padding-top: 0;
+  color: #999999; }
+
+.mortgage-calc .select-box {
+  position: relative; }
+  .mortgage-calc .select-box .caption {
+    cursor: pointer;
+    position: relative; }
+    .mortgage-calc .select-box .caption::after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      width: 18px;
+      height: 10px;
+      background-image: url(/img/flat/arrow_down.svg); }
+  .mortgage-calc .select-box .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: none; }
+  .mortgage-calc .select-box.open .caption::after {
+    background-image: url(/img/flat/arrow_up.svg); }
+  .mortgage-calc .select-box.open .options {
+    display: block; }
+  .mortgage-calc .select-box .option {
+    height: 70px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    padding-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mortgage-calc .select-box .option:hover {
+      background-color: #ededed; }
+      .mortgage-calc .select-box .option:hover .sub-options {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+  .mortgage-calc .select-box .sub-options {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 37%;
+    background-color: #95d600;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: none; }
+  .mortgage-calc .select-box .sub-option {
+    cursor: pointer;
+    font-size: 20px; }
+    .mortgage-calc .select-box .sub-option:hover {
+      color: #fff; }
+  .mortgage-calc .select-box .bank-logo {
+    width: 205px;
+    height: 40px;
+    background: no-repeat center; }
+    .mortgage-calc .select-box .bank-logo.psb {
+      background-image: url(/img/flat/logo_prom.png); }
+    .mortgage-calc .select-box .bank-logo.sber {
+      background-image: url(/img/flat/logo_sber.png); }
+    .mortgage-calc .select-box .bank-logo.otk {
+      background-image: url(/img/flat/logo_otkr.png); }
+
 @media screen and (max-width: 1340px) {
   .content {
     padding-top: 140px; } }
@@ -3090,111 +3201,9 @@ p {
   .flat-page .mortgage-calc {
     text-align: left;
     width: 100%; }
-    .flat-page .mortgage-calc .input-group {
-      padding-bottom: 20px;
-      position: relative; }
-    .flat-page .mortgage-calc label {
-      display: block;
-      font-size: 15px;
-      color: #999999; }
     .flat-page .mortgage-calc input, .flat-page .mortgage-calc .caption {
       display: block;
-      font-size: 30px;
-      line-height: 1;
-      height: 48px;
-      padding: 5px 0;
-      border: none;
-      border-bottom: 2px solid #eaeaea;
-      outline: none;
       width: 100%; }
-      .flat-page .mortgage-calc input:focus, .flat-page .mortgage-calc .caption:focus {
-        border-bottom-color: #95d600; }
-    .flat-page .mortgage-calc .result {
-      font-size: 30px;
-      line-height: 1;
-      padding-top: 15px; }
-    .flat-page .mortgage-calc .notice {
-      font-size: 10px;
-      line-height: 12px;
-      padding-top: 0; }
-    .flat-page .mortgage-calc .select-box {
-      position: relative; }
-      .flat-page .mortgage-calc .select-box .caption {
-        cursor: pointer;
-        position: relative; }
-        .flat-page .mortgage-calc .select-box .caption::after {
-          content: '';
-          position: absolute;
-          right: 20px;
-          top: 50%;
-          -webkit-transform: translate(0, -50%);
-                  transform: translate(0, -50%);
-          width: 18px;
-          height: 10px;
-          background-image: url(/img/flat/arrow_down.svg); }
-      .flat-page .mortgage-calc .select-box .options {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        display: none; }
-      .flat-page .mortgage-calc .select-box.open .caption::after {
-        background-image: url(/img/flat/arrow_up.svg); }
-      .flat-page .mortgage-calc .select-box.open .options {
-        display: block; }
-      .flat-page .mortgage-calc .select-box .option {
-        height: 70px;
-        background-color: #f6f6f6;
-        cursor: pointer;
-        padding-left: 20px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .flat-page .mortgage-calc .select-box .option:hover {
-          background-color: #ededed; }
-          .flat-page .mortgage-calc .select-box .option:hover .sub-options {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex; }
-      .flat-page .mortgage-calc .select-box .sub-options {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 37%;
-        background-color: #95d600;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        display: none; }
-      .flat-page .mortgage-calc .select-box .sub-option {
-        cursor: pointer;
-        font-size: 20px; }
-        .flat-page .mortgage-calc .select-box .sub-option:hover {
-          color: #fff; }
-      .flat-page .mortgage-calc .select-box .bank-logo {
-        width: 205px;
-        height: 40px;
-        background: no-repeat center; }
-        .flat-page .mortgage-calc .select-box .bank-logo.psb {
-          background-image: url(/img/flat/logo_prom.png); }
-        .flat-page .mortgage-calc .select-box .bank-logo.sber {
-          background-image: url(/img/flat/logo_sber.png); }
-        .flat-page .mortgage-calc .select-box .bank-logo.otk {
-          background-image: url(/img/flat/logo_otkr.png); }
   .flat-page .extra-info {
     width: 85%;
     display: -webkit-box;
@@ -5383,7 +5392,8 @@ p {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    background-image: url(/img/parking/parking.jpg); }
+    background: url(/img/parking/parking.jpg) no-repeat center;
+    background-size: cover; }
   .parking-page .text-block-over {
     max-width: 1080px;
     margin: 0 auto;
@@ -5462,6 +5472,10 @@ p {
   .parking-page .plans-over {
     margin: 0 auto; } }
 
+@media screen and (max-width: 800px) {
+  .parking-page .top-banner__img {
+    background-image: url(/img/parking/t_parking.jpg); } }
+
 @media screen and (max-width: 736px) {
   .parking-page .big-figure {
     display: none; }
@@ -5469,6 +5483,8 @@ p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .parking-page .top-banner__img {
+    background-image: url(/img/parking/m_parking.jpg); }
   .parking-page .top-banner__txt {
     max-width: 310px; }
     .parking-page .top-banner__txt h5 {
@@ -5476,3 +5492,215 @@ p {
       line-height: 30px; }
   .parking-page .text-block {
     max-width: none; } }
+
+.mortgage-page {
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden; }
+  .mortgage-page .circle {
+    right: 0;
+    margin-right: -250px;
+    top: 50%; }
+  .mortgage-page .wave-right {
+    left: 0;
+    top: 80%;
+    margin-left: -400px; }
+  .mortgage-page h1 {
+    text-align: center;
+    padding-bottom: 40px; }
+  .mortgage-page .top-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -40px; }
+  .mortgage-page .top-banner__txt-over {
+    width: 470px;
+    background-color: #95d600;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .mortgage-page .top-banner__txt {
+    max-width: 310px; }
+    .mortgage-page .top-banner__txt h2, .mortgage-page .top-banner__txt h5 {
+      font-weight: 400; }
+    .mortgage-page .top-banner__txt h5 {
+      padding: 30px 0; }
+  .mortgage-page .top-banner__img {
+    height: 450px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-image: url(/img/mortgage/ipoteka.jpg); }
+  .mortgage-page .contacts {
+    padding: 90px 0; }
+  .mortgage-page .bank-table-over {
+    max-width: 1080px;
+    margin: 0 auto; }
+  .mortgage-page .bank-table {
+    width: 100%;
+    padding: 100px 0 70px;
+    display: table;
+    text-align: center;
+    font-size: 20px; }
+    .mortgage-page .bank-table .cell {
+      display: table-cell;
+      vertical-align: middle; }
+  .mortgage-page .bank-table__row {
+    height: 90px;
+    display: table-row; }
+    .mortgage-page .bank-table__row:nth-child(2n + 1) {
+      background-color: #f7f7f7; }
+    .mortgage-page .bank-table__row .bank-logo {
+      width: 300px;
+      height: 40px;
+      background: no-repeat center; }
+    .mortgage-page .bank-table__row.sbr .bank-logo {
+      background-image: url(/img/mortgage/sbr.png); }
+    .mortgage-page .bank-table__row.otk .bank-logo {
+      background-image: url(/img/mortgage/otk.png); }
+    .mortgage-page .bank-table__row.vtb .bank-logo {
+      background-image: url(/img/mortgage/vtb.png); }
+  .mortgage-page .bank-table__head {
+    background-color: #fff !important;
+    height: auto;
+    font-weight: 600; }
+    .mortgage-page .bank-table__head .cell {
+      padding-bottom: 10px;
+      vertical-align: top; }
+  .mortgage-page .mortgage-calc-over {
+    padding: 50px 180px 50px 130px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.06); }
+  .mortgage-page .mortgage-calc h2 {
+    padding-bottom: 5px; }
+  .mortgage-page .mortgage-calc h5 {
+    color: #595959; }
+  .mortgage-page .mortgage-calc .inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-top: 40px; }
+  .mortgage-page .mortgage-calc .input-group {
+    padding-bottom: 35px;
+    width: 430px; }
+    .mortgage-page .mortgage-calc .input-group:nth-last-child(1), .mortgage-page .mortgage-calc .input-group:nth-last-child(2) {
+      padding-bottom: 20px; }
+  .mortgage-page .mortgage-calc input, .mortgage-page .mortgage-calc .caption {
+    width: 100%; }
+
+@media screen and (max-width: 1340px) {
+  .mortgage-page {
+    padding-top: 50px; } }
+
+@media screen and (max-width: 1024px) {
+  .mortgage-page .circle {
+    margin-right: -340px; }
+  .mortgage-page .wave-right {
+    margin-left: -480px; }
+  .mortgage-page .top-banner {
+    display: block;
+    margin: 0 -30px; }
+    .mortgage-page .top-banner .btn-default {
+      display: none; }
+  .mortgage-page .top-banner__img {
+    height: 310px;
+    background-image: url(/img/mortgage/t_ipoteka.jpg); }
+  .mortgage-page .top-banner__txt-over {
+    width: 100%;
+    padding: 50px 30px; }
+  .mortgage-page .top-banner__txt {
+    max-width: 560px; }
+    .mortgage-page .top-banner__txt h5 {
+      padding-bottom: 0; }
+  .mortgage-page .bank-table__row .bank-logo {
+    width: 220px; }
+  .mortgage-page .bank-table__head .cell {
+    font-size: 18px;
+    line-height: 24px; }
+  .mortgage-page .mortgage-calc-over {
+    max-width: 650px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 50px 0; }
+  .mortgage-page .mortgage-calc {
+    max-width: 430px; }
+    .mortgage-page .mortgage-calc .input-group {
+      padding-bottom: 20px; }
+      .mortgage-page .mortgage-calc .input-group:last-child {
+        display: none; } }
+
+@media screen and (max-width: 736px) {
+  .mortgage-page .wrapper-inner {
+    padding: 0; }
+  .mortgage-page .big-figure {
+    display: none; }
+  .mortgage-page .top-banner__txt-over {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .mortgage-page .top-banner__img {
+    background-image: url(/img/mortgage/m_ipoteka.jpg); }
+  .mortgage-page .top-banner__txt {
+    max-width: 380px; }
+    .mortgage-page .top-banner__txt h5 {
+      font-size: 20px;
+      line-height: 30px; }
+  .mortgage-page .bank-table-over {
+    margin: 0 -30px; }
+  .mortgage-page .bank-table {
+    padding: 0 0 50px; }
+  .mortgage-page .bank-table__row {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 30px;
+    position: relative; }
+    .mortgage-page .bank-table__row .cell {
+      display: block; }
+      .mortgage-page .bank-table__row .cell:nth-child(3) {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .mortgage-page .bank-table__row .cell__header {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      min-height: 40px;
+      margin-bottom: 20px; }
+    .mortgage-page .bank-table__row .bank-logo {
+      width: 100%;
+      margin-bottom: 30px; }
+  .mortgage-page .bank-table__head {
+    display: none; }
+  .mortgage-page .mortgage-calc-over {
+    box-shadow: none;
+    padding: 0; }
+  .mortgage-page .mortgage-calc .input-group {
+    width: 100%; } }

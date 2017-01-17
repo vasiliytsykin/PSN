@@ -32,7 +32,8 @@
   .top-banner__img
     height: 450px
     flex-grow: 1
-    background-image: url(/img/parking/parking.jpg)
+    background: url(/img/parking/parking.jpg) no-repeat center
+    background-size: cover
   .text-block-over
     max-width: 1080px
     margin: 0 auto
@@ -100,12 +101,18 @@
       padding-bottom: 30px
     .plans-over
       margin: 0 auto
+@media screen and (max-width: 800px)
+  .parking-page
+    .top-banner__img
+      background-image: url(/img/parking/t_parking.jpg)
 @media screen and (max-width: 736px)
   .parking-page
     .big-figure
       display: none
     .top-banner__txt-over
       justify-content: flex-start
+    .top-banner__img
+      background-image: url(/img/parking/m_parking.jpg)
     .top-banner__txt
       max-width: 310px
       h5

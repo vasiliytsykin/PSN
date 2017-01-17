@@ -17,6 +17,7 @@ $itemsToMenu = array(
     'parking' => 'main-plan',
     'actions' => 'actions',
     'action-detail' => 'actions',
+    'mortgage' => 'actions',
     'contacts' => 'contacts',
 );
 
@@ -61,7 +62,7 @@ $menu = array(
         'url' => 'actions.php',
         'items' => array(
 
-            array('name' => 'Ипотека', 'url' => '#'),
+            array('name' => 'Ипотека', 'url' => 'mortgage.php'),
             array('name' => 'Акции', 'url' => 'actions.php'),
         )
     ),
