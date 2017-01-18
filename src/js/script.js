@@ -403,22 +403,33 @@ $(function () {
         var $flats = $('.house-plan-page .flat'),
             $floors = $('.floor-list__item'),
             $flatInfo = $('.flat-info');
-        
-        $flats.on('mouseenter', function () {
-            
-            var $self = $(this),
-                floorNum = $self.closest('.floor-row').data('floor');
 
-            $flatInfo.removeClass('show');
-            $self.find('.flat-info').addClass('show');
+        $(window).on('resize', function () {
 
-            $floors.removeClass('hover');
-            $('.floor-' + floorNum).addClass('hover');
+            var width = $(window).width();
+
+            if(width > 1024)
+            {
+                $flats.on('mouseenter', function () {
+
+                    var $self = $(this),
+                        floorNum = $self.closest('.floor-row').data('floor');
+
+                    $flatInfo.removeClass('show');
+                    $self.find('.flat-info').addClass('show');
+
+                    $floors.removeClass('hover');
+                    $('.floor-' + floorNum).addClass('hover');
+
+                }).on('mouseleave', function () {
+                    $floors.removeClass('hover');
+                    $flatInfo.removeClass('show');
+                });
+            }
+
             
-        }).on('mouseleave', function () {
-            $floors.removeClass('hover');
-            $flatInfo.removeClass('show');
-        });
+
+        }).resize();
     }());
     
     /*--------END HOUSE PLAN------------*/

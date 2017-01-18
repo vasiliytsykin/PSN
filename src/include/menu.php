@@ -15,6 +15,7 @@ $itemsToMenu = array(
     'plan-filter-detail' => 'main-plan',
     'flat-detail' => 'main-plan',
     'parking' => 'main-plan',
+    'house-plan' => 'main-plan',
     'actions' => 'actions',
     'action-detail' => 'actions',
     'mortgage' => 'actions',

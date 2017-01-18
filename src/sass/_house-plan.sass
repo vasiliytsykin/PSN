@@ -1,6 +1,29 @@
 /*---------HOUSE PLAN----------*/
 .house-plan-page
-  padding-top: 60px
+  padding-top: 75px
+  position: relative
+  overflow: hidden
+  .circle
+    left: 0
+    top: 80%
+    margin-left: -200px
+  .wave-right
+    right: 0
+    margin-right: -400px
+    top: 55%
+  .big-pattern
+    right: 40px
+    bottom: 100px
+  .bird
+    position: absolute
+    opacity: 0.3
+    bottom: 100%
+    left: 235px
+    margin-bottom: -15px
+    height: 100px
+    width: 100px
+    background: url(/img/svg-library/adv-bird.svg) no-repeat center
+    background-size: contain
   .content-wrapper
     max-width: 1200px
     padding-top: 60px
@@ -43,6 +66,7 @@
     padding: 8px 0
     display: flex
     margin: 0 -8px
+    position: relative
   .flat
     width: 70px
     height: 70px
@@ -57,15 +81,21 @@
       background-color: $darkGreen
       color: white
   .flat-info
-    width: 430px
+    width: 400px
     padding: 40px 0
     box-shadow: 0 0 35px rgba(0,0,0,0.06)
     position: absolute
-    top: 8px
     left: 100%
+    margin-left: 70px
     color: #000
-    font-size: 20px
+    font-size: 18px
     display: none
+    background-color: #fff
+    z-index: 3
+    top: 50%
+    transform: translateY(-50%)
+    sup
+      font-size: 12px
   .flat-info__params
     padding: 0 80px 35px
     .param
@@ -81,12 +111,165 @@
     .value
       font-weight: 500
   .flat-info__img
-    width: 324px
-    height: 275px
+    width: 200px
+    height: 170px
     background: url(/img/house-plan/flat-plan.png) no-repeat center
+    background-size: contain
     margin: 0 auto
   .flat-info__compass
     width: 57px
     height: 61px
     background: url(/img/house-plan/compass.png) no-repeat center
     margin-left: 65px
+  .navigation-block
+    color: $darkGreen
+    width: 300px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    padding-top: 2px
+    .nav
+      padding-bottom: 70px
+    h4
+      text-transform: uppercase
+    .nav-controls
+      width: 150px
+      display: flex
+      justify-content: space-between
+      padding: 15px 0 35px
+      margin: 0 auto
+    .caption
+      font-size: 40px
+      line-height: 1
+    .arrow
+      width: 22px
+      height: 40px
+      background: no-repeat center
+    .arrow-prev
+      background-image: url(/img/house-plan/arrow_prev.svg)
+    .arrow-next
+      background-image: url(/img/house-plan/arrow_next.svg)
+    .nav-img-over
+      overflow: hidden
+      position: relative
+    .nav-img
+      background: no-repeat center
+      background-size: contain
+      margin: 0 auto
+    .house-nav
+      .nav-img
+        width: 258px
+        height: 147px
+    .section-nav
+      .nav-img
+        width: 180px
+        height: 70px
+      .finish
+        color: $darkGray
+        position: relative
+        padding: 25px 0 25px 25px
+        &::before
+          content: ''
+          position: absolute
+          width: 15px
+          height: 30px
+          background: url(/img/house-plan/paint-small.svg) no-repeat center
+          background-size: contain
+          top: 50%
+          left: 0
+          transform: translate(0, -50%)
+  .scroll-top
+    padding-top: 150px
+@media screen and (max-width: 1280px)
+  .house-plan-page
+    .content-wrapper
+      justify-content: space-around
+    .floor-list-over
+      width: auto
+@media screen and (max-width: 1280px)
+  .house-plan-page
+    .flat-info
+      margin-left: 0
+@media screen and (max-width: 1024px)
+  .house-plan-page
+    .big-figure, .big-pattern
+      display: none
+    .bird
+      left: 180px
+      width: 90px
+      height: 90px
+    .content-wrapper
+      flex-wrap: wrap
+    .section-plan-wrapper
+      order: 1
+      width: 100%
+    .navigation-block
+      width: 100%
+      flex-direction: row
+      justify-content: space-around
+      padding-top: 0
+      padding-bottom: 140px
+      align-items: flex-start
+      .nav
+        padding-bottom: 0
+    .floor-list-over
+      width: 130px
+      justify-content: center
+    .floor-list
+      h2
+        font-size: 27px
+    .floor-list__item
+      font-size: 36px
+      width: 60px
+      height: 60px
+    .flat
+      width: 60px
+      height: 60px
+      font-size: 27px
+    .scroll-top
+      padding-top: 90px
+@media screen and (max-width: 736px)
+  .house-plan-page
+    .bird
+      left: 100px
+      width: 70px
+      height: 70px
+      margin-bottom: -7px
+    .navigation-block
+      justify-content: space-between
+      .house-nav
+        .nav-img-over
+          width: 170px
+          height: 105px
+        .nav-img
+          position: absolute
+          top: 34%
+          left: 50%
+          transform: translate(-50%, -50%)
+      .section-nav
+    .floor-list-over
+      width: auto
+    .floor-list
+      h2
+        font-size: 16px
+        line-height: 1
+        padding-bottom: 5px
+    .section-plan-wrapper
+      justify-content: space-between
+    .section-plan-over
+      padding: 2px 15px 0
+    .section-plan
+      padding: 20px 17px 2px
+    .floor-row
+      padding: 5px 0
+    .floor-list__item
+      font-size: 22px
+      width: 37px
+      height: 37px
+      margin: 10px auto
+    .flat
+      width: 37px
+      height: 37px
+      font-size: 16px
+      margin: 0 5px
