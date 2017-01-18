@@ -434,6 +434,29 @@ $(function () {
     
     /*--------END HOUSE PLAN------------*/
 
+    /*--------------HISTORY------------*/
+    
+    
+    (function () {
+        
+        
+        $('.history-page .txt-trigger').on('click', function () {
+            
+            var $self = $(this),
+                $parent = $self.closest('.event__txt');
+            
+            $parent.toggleClass('open');
+            
+            $parent.find('.desc').slideToggle();
+            
+        })
+        
+        
+    }());
+    
+    
+    /*----------END HISTORY------------*/
+
 });
 
 
