@@ -457,6 +457,84 @@ $(function () {
     
     /*----------END HISTORY------------*/
 
+
+    /*----------------LOG---------------*/
+
+    (function () {
+
+
+        var $items = $('.log-page .gallery__item');
+
+        $items.each(function (ind, item) {
+
+            var $item = $(item),
+                $percent = $item.find('.percent'),
+                id = '#' + $item.find('.progress-bar').attr('id'),
+                progress = $item.data('progress') / 100;
+
+            var bar = new ProgressBar.Circle(id, {
+                strokeWidth: 1,
+                duration: 1400,
+                color: '#fff',
+                trailColor: 'transparent',
+                trailWidth: 1,
+                svgStyle: null,
+                step: function(state, circle) {
+                    
+                    var value = Math.round(circle.value() * 100);
+                    $percent.html(value + '%')
+
+                }
+            });
+            bar.animate(progress);
+        });
+
+        var $preview = $('.log-page .preview__item');
+
+        $preview.last().addClass('hover');
+
+        $preview.on('mouseenter', function () {
+
+            $preview.removeClass('hover');
+            $(this).addClass('hover');
+
+        });
+
+
+        $('.log-page .preview__items').slick({
+            dots: false,
+            infinite: false,
+            arrows: false,
+            speed: 300,
+            slidesToShow: 1,
+            variableWidth: true
+        });
+
+
+        engageOwlCarousel($('.log-gallery__popup .popup__items'), {
+
+            items: 1,
+            loop: true,
+            stagePadding: 250,
+            // lazyLoad: true,
+            nav: true,
+            navText: ['', ''],
+            autoWidth: true,
+            center: true
+
+        });
+
+        $preview.magnificPopup({
+
+            type: 'inline',
+            mainClass: 'log-gallery-mfp'
+
+        })
+
+    }());
+
+    /*------------END LOG---------------*/
+
 });
 
 

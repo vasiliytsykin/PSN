@@ -10,6 +10,7 @@ $itemsToMenu = array(
     'developer' => 'about',
     'partners' => 'about',
     'history' => 'about',
+    'log' => 'about',
     'main-plan' => 'main-plan',
     'param-filter' => 'main-plan',
     'plan-filter' => 'main-plan',
@@ -39,7 +40,7 @@ $menu = array(
             array('name' => 'Документация проекта', 'url' => 'docs.php'),
             array('name' => 'О застройщике', 'url' => 'developer.php'),
             array('name' => 'Участники проекта', 'url' => 'partners.php'),
-            array('name' => 'Дневники стройки', 'url' => '#'),
+            array('name' => 'Дневники стройки', 'url' => 'log.php'),
             array('name' => 'История района', 'url' => 'history.php')
         )
     ),
