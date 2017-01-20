@@ -40,7 +40,7 @@ $menu = array(
             array('name' => 'Документация проекта', 'url' => 'docs.php'),
             array('name' => 'О застройщике', 'url' => 'developer.php'),
             array('name' => 'Участники проекта', 'url' => 'partners.php'),
-            array('name' => 'Дневники стройки', 'url' => 'log.php'),
+            array('name' => 'Дневник стройки', 'url' => 'log.php'),
             array('name' => 'История района', 'url' => 'history.php')
         )
     ),

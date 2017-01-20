@@ -489,47 +489,90 @@ $(function () {
             bar.animate(progress);
         });
 
-        var $preview = $('.log-page .preview__item');
 
-        $preview.last().addClass('hover');
+        var $previews = $('.log-page .preview__items'),
+            $preview = $('.log-page .preview__item');
 
-        $preview.on('mouseenter', function () {
+        $previews.each(function (ind, el) {
 
-            $preview.removeClass('hover');
-            $(this).addClass('hover');
+            var $self = $(el),
+                $preview = $self.find('.preview__item');
+
+
+            $preview.first().addClass('hover');
+
+            $preview.on('mouseenter', function () {
+
+                $preview.removeClass('hover');
+                $(this).addClass('hover');
+
+            });
 
         });
 
 
-        $('.log-page .preview__items').slick({
+        $previews.slick({
             dots: false,
             infinite: false,
             arrows: false,
             speed: 300,
             slidesToShow: 1,
-            variableWidth: true
+            slidesToScroll: 1,
+            variableWidth: true,
+            swipeToSlide: true
         });
 
 
-        engageOwlCarousel($('.log-gallery__popup .popup__items'), {
+        $preview.on('click', function () {
 
-            items: 1,
-            loop: true,
-            stagePadding: 250,
-            // lazyLoad: true,
-            nav: true,
-            navText: ['', ''],
-            autoWidth: true,
-            center: true
+            var $self = $(this),
+                $items = $self.find('.popup__items'),
+                $popup = $self.find('.log-gallery__popup');
+
+            $.magnificPopup.open({
+                items: {
+                    src: $popup,
+                    type: 'inline'
+                },
+                mainClass: 'log-gallery-mfp',
+                callbacks: {
+                    open: function() {
+
+                        engageOwlCarousel($items, {
+
+                            items: 1,
+                            loop: true,
+                            stagePadding: 250,
+                            autoWidth: true,
+                            // lazyLoad: true,
+                            navText: ['', ''],
+                            center: true,
+                            responsive: {
+
+                                0: {
+                                    nav: false
+                                },
+
+                                1025: {
+                                    nav: true
+                                }
+
+                            }
+
+                        });
+
+                    },
+                    close: function() {
+
+                        destroyOwlCarousel($items);
+
+                    }
+                }
+            });
+            
+            return false;
 
         });
-
-        $preview.magnificPopup({
-
-            type: 'inline',
-            mainClass: 'log-gallery-mfp'
-
-        })
 
     }());
 

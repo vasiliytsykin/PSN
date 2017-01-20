@@ -6245,6 +6245,18 @@ p {
   padding-top: 30px;
   position: relative;
   overflow: hidden; }
+  .log-page .circle {
+    top: 60%;
+    right: 0;
+    margin-right: -280px; }
+  .log-page .wave-left {
+    left: 0;
+    top: 95%; }
+  .log-page .big-pattern {
+    left: -140px;
+    top: 100%;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%); }
   .log-page h1 {
     text-align: center;
     padding-bottom: 40px; }
@@ -6264,29 +6276,39 @@ p {
       -webkit-transform: translate(-50%, -50%) rotateY(180deg);
               transform: translate(-50%, -50%) rotateY(180deg); }
   .log-page .gallery__tabs {
-    padding-top: 70px; }
+    padding-top: 70px;
+    position: relative; }
+  .log-page .camera {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 140px;
+    height: 140px;
+    background: url(/img/log/camera.png) no-repeat center;
+    z-index: 1; }
   .log-page .gallery__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    position: relative; }
     .log-page .gallery__item:not(:last-child) {
       padding-bottom: 150px; }
     .log-page .gallery__item .item__graphics, .log-page .gallery__item .item__txt {
       width: 50%; }
-    .log-page .gallery__item .item__txt h2 {
-      padding-bottom: 25px; }
-    .log-page .gallery__item .item__txt h5 {
+    .log-page .gallery__item h2 {
+      padding-bottom: 20px; }
+    .log-page .gallery__item h5 {
       color: #595959; }
     .log-page .gallery__item .item__txt p:first-of-type {
       margin-top: 10px; }
+    .log-page .gallery__item .item__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .log-page .gallery__item .item__txt-inner {
       max-width: 520px; }
     .log-page .gallery__item .item__graphics-inner {
       width: 520px;
       height: 520px;
       background: no-repeat center;
+      background-size: cover;
       position: relative; }
     .log-page .gallery__item .item__graphics .progress, .log-page .gallery__item .item__graphics .progress-bar {
       position: absolute;
@@ -6299,7 +6321,6 @@ p {
       width: 280px;
       height: 280px;
       background-color: rgba(255, 255, 255, 0.9);
-      color: #81be00;
       line-height: 1;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -6322,7 +6343,7 @@ p {
     .log-page .gallery__item .item__graphics .progress-bar {
       width: 500px;
       height: 500px; }
-    .log-page .gallery__item .preview-over {
+    .log-page .gallery__item .item__gallery {
       width: 780px;
       height: 240px;
       padding: 40px;
@@ -6413,16 +6434,15 @@ p {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  line-height: 1; }
+  line-height: 1;
+  position: relative; }
   .log-gallery__popup .date {
     font-size: 18px;
     padding: 30px 0 10px; }
   .log-gallery__popup .popup__item {
-    height: 730px;
-    width: 600px;
-    background: no-repeat center;
-    background-size: cover;
     position: relative; }
+    .log-gallery__popup .popup__item img {
+      height: 730px; }
     .log-gallery__popup .popup__item::after {
       content: '';
       position: absolute;
@@ -6435,6 +6455,104 @@ p {
     display: none; }
   .log-gallery__popup .owl-dots {
     bottom: 30px; }
+  .log-gallery__popup .mfp-close {
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    background: url(/img/btn-close-white.svg) no-repeat center;
+    top: 20px;
+    right: 30px;
+    opacity: 1; }
 
 .log-gallery-mfp {
   z-index: 10000; }
+
+@media screen and (max-width: 1024px) {
+  .log-page .circle {
+    width: 312px;
+    height: 312px;
+    margin-right: -156px; }
+  .log-page .wave-left {
+    display: none; }
+  .log-page .big-pattern {
+    left: auto;
+    right: 0;
+    -webkit-transform: translate(65%, -30%);
+            transform: translate(65%, -30%); }
+  .log-page .gallery__item:not(:last-child) {
+    padding-bottom: 70px; }
+  .log-page .gallery__item .item__info {
+    display: block;
+    max-width: 560px;
+    margin: 0 auto; }
+  .log-page .gallery__item .item__graphics {
+    width: 100%; }
+    .log-page .gallery__item .item__graphics .progress {
+      width: 185px;
+      height: 185px; }
+      .log-page .gallery__item .item__graphics .progress h4 {
+        font-size: 13px;
+        line-height: 1; }
+      .log-page .gallery__item .item__graphics .progress .percent {
+        font-size: 36px; }
+    .log-page .gallery__item .item__graphics .progress-bar {
+      width: 330px;
+      height: 330px; }
+  .log-page .gallery__item .item__txt {
+    width: 100%;
+    padding-top: 50px; }
+  .log-page .gallery__item .item__graphics-inner {
+    width: 350px;
+    height: 350px; }
+  .log-page .gallery__item .item__gallery {
+    height: 255px;
+    width: auto;
+    margin: 65px -30px 0; }
+  .log-page .gallery__item .preview {
+    width: auto;
+    margin: 0 -40px; }
+  .log-page .gallery__item .preview__item {
+    width: 140px;
+    max-width: 140px;
+    height: 90px; }
+    .log-page .gallery__item .preview__item .mask {
+      display: none; }
+    .log-page .gallery__item .preview__item .date {
+      display: block;
+      color: #999999; }
+    .log-page .gallery__item .preview__item.hover {
+      width: 140px; }
+      .log-page .gallery__item .preview__item.hover .date {
+        color: #000; }
+  .log-page .camera {
+    top: 90px; }
+  .log-gallery__popup .popup__item img {
+    height: 500px; } }
+
+@media screen and (max-width: 736px) {
+  .log-page .big-figure, .log-page .big-pattern {
+    display: none; }
+  .log-page .gallery__item h2 {
+    padding-bottom: 15px; }
+  .log-page .gallery__item .item__info {
+    max-width: none; }
+  .log-page .gallery__item .item__graphics {
+    padding-top: 20px; }
+    .log-page .gallery__item .item__graphics .progress {
+      width: 212px;
+      height: 212px; }
+      .log-page .gallery__item .item__graphics .progress h4 {
+        font-size: 16px; }
+      .log-page .gallery__item .item__graphics .progress .percent {
+        font-size: 42px; }
+    .log-page .gallery__item .item__graphics .progress-bar {
+      width: 375px;
+      height: 375px; }
+  .log-page .gallery__item .item__graphics-inner {
+    width: 395px;
+    height: 395px;
+    margin: 0 auto; }
+  .log-page .gallery__item .item__txt {
+    padding-top: 35px; }
+  .log-page .camera {
+    top: 155px; } }
