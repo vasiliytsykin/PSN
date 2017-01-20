@@ -97,7 +97,7 @@
                             $subMenu = $menu[$itemsToMenu[$currentPage]];
                             foreach ($subMenu['items'] as $subItem){
     
-                                $active = strpos($subItem['url'], $currentPage) !== false ? 'active' : '';
+                                $active = strpos($subItem['url'], $currentPage) === 0 ? 'active' : '';
                                 ?>
                                 <li class="sub-level <?=$active?>"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li><?}}?>
                     </ul>

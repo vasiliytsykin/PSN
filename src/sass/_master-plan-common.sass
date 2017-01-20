@@ -1,5 +1,5 @@
-/*-----------MAIN PLAN-----------*/
-.main-plan-page
+/*-----------MASTER PLAN COMMON-----------*/
+.master-plan
   padding-top: 30px
   position: relative
   overflow: hidden
@@ -13,7 +13,6 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-around
-    max-width: 740px
     margin: 0 auto
     padding-bottom: 50px
     padding-top: 20px
@@ -108,7 +107,6 @@
       font-size: 22px
     .extra-marker
       position: absolute
-      display: inline-block
       line-height: 1
       padding: 8px 15px
       text-align: center
@@ -187,51 +185,25 @@
       color: #5c7f0d
       max-width: 120px
       display: inline-block
-    .flat-type
+    .sidebar__section
       display: block
       padding: 40px 0
       position: relative
       &:not(:last-child)
         border-bottom: 3px solid #abf01b
-      .h4
-        color: #fff
-        line-height: 1
-        position: relative
-        max-width: none
-        padding-right: 25px
-        sup
-          font-size: 18px
-          position: absolute
-          right: 0
-          top: -10px
-          padding-left: 2px
-      &::before
-        content: ''
-        width: 0
-        height: 0
-        background-color: #9de011
-        border-radius: 50%
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        transition: all 0.3s ease
-      &:hover
-        &::before
-          width: 90px
-          height: 90px
   .info-block
     max-width: 1000px
     margin: 0 auto
     padding: 70px 0 90px
     display: flex
     align-items: center
+    justify-content: space-between
   .info-block__txt
     max-width: 475px
-  .pattern-1
+  .big-pattern
     position: static
 @media screen and (max-width: 1024px)
-  .main-plan-page
+  .master-plan
     .big-figure
       display: none
     .main-plan
@@ -239,21 +211,7 @@
     .main-plan__sidebar
       position: static
       width: 100%
-      display: flex
-      flex-wrap: wrap
-      justify-content: center
       padding-top: 50px
-      .h4
-        max-width: none
-        width: 100%
-        padding-bottom: 15px
-      .flat-type
-        width: 33%
-        .h4
-          width: auto
-          padding-bottom: 0
-        &:nth-last-child(2)
-          border-bottom: none
     .info-block
       max-width: 75%
       display: block
@@ -261,24 +219,12 @@
       display: none
     .compass
       display: none
-@media screen and (max-width: 800px)
-  .main-plan-page
-    .info-block__txt
-      max-width: none
 @media screen and (max-width: 736px)
-  .main-plan-page
-    .legend
-      padding: 30px 0
-    .legend__item
-      padding-bottom: 20px
-    .main-plan__sidebar
-      display: block
-      padding-top: 70px
-      .flat-type
-        width: 100%
-        &:nth-last-child(2)
-          border-bottom: 3px solid #abf01b
+  .master-plan
     .info-block
       max-width: none
-    .pattern-1
+    .big-pattern
       display: none
+    .panorama
+      display: none
+

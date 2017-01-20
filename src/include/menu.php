@@ -11,13 +11,14 @@ $itemsToMenu = array(
     'partners' => 'about',
     'history' => 'about',
     'log' => 'about',
-    'main-plan' => 'main-plan',
-    'param-filter' => 'main-plan',
-    'plan-filter' => 'main-plan',
-    'plan-filter-detail' => 'main-plan',
-    'flat-detail' => 'main-plan',
-    'parking' => 'main-plan',
-    'house-plan' => 'main-plan',
+    'master-plan-about' => 'about',
+    'master-plan-filter' => 'filter',
+    'param-filter' => 'filter',
+    'plan-filter' => 'filter',
+    'plan-filter-detail' => 'filter',
+    'flat-detail' => 'filter',
+    'parking' => 'filter',
+    'house-plan' => 'filter',
     'actions' => 'actions',
     'action-detail' => 'actions',
     'mortgage' => 'actions',
@@ -34,7 +35,7 @@ $menu = array(
         'items' => array(
 
             array('name' => 'О жилом квартале', 'url' => 'about.php'),
-            array('name' => 'План ЖК', 'url' => '#'),
+            array('name' => 'План ЖК', 'url' => 'master-plan-about.php'),
             array('name' => 'Инфраструктура', 'url' => 'infrastructure.php'),
             array('name' => 'Панорама', 'url' => 'panorama.php'),
             array('name' => 'Документация проекта', 'url' => 'docs.php'),
@@ -45,13 +46,13 @@ $menu = array(
         )
     ),
 
-    'main-plan' => array(
+    'filter' => array(
 
         'name' => 'Выбрать квартиру',
-        'url' => 'main-plan.php',
+        'url' => 'master-plan-filter.php',
         'items' => array(
 
-            array('name' => 'Генплан', 'url' => 'main-plan.php'),
+            array('name' => 'Генплан', 'url' => 'master-plan-filter.php'),
             array('name' => 'Выбрать по параметрам', 'url' => 'param-filter.php'),
             array('name' => 'Выбрать по планировке', 'url' => 'plan-filter.php'),
             array('name' => 'Выбрать машиноместо', 'url' => 'parking.php'),
@@ -75,11 +76,7 @@ $menu = array(
 
         'name' => 'Новости',
         'url' => 'news.php',
-        'items' => array(
-
-            array('name' => 'Новости проекта', 'url' => '#'),
-            array('name' => 'Новости компании', 'url' => '#'),
-        )
+        'items' => array()
     ),
 
     'contacts' => array(

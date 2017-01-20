@@ -1,10 +1,11 @@
 <? include 'include/header.php'?>
-    <div class="main-plan-page">
-        <h1 class="dark-green">Выберите дом</h1>
+    <div class="master-plan master-plan--about">
+        <div class="wrapper-main">
+            <h1 class="dark-green">План жилого квартала</h1>
+        </div>
         <ul class="legend">
             <li class="legend__item mono">Монолитные дома</li>
             <li class="legend__item panel">Панельные дома</li>
-            <li class="legend__item finish">Секции с отделкой</li>
         </ul>
         <div class="main-plan">
             <div class="main-plan__map-over" id="main-map-over">
@@ -27,6 +28,26 @@
                             корпус
                             <div class="house-number">2</div>
                         </div>
+                        <div class="infra-markers">
+                            <div class="infra-marker kindergarten">
+                                <div class="extra-marker infra-marker__txt">Детский сад</div>
+                            </div>
+                            <div class="infra-marker school">
+                                <div class="extra-marker infra-marker__txt">Школа</div>
+                            </div>
+                            <div class="infra-marker garden">
+                                <div class="extra-marker infra-marker__txt">Летняя оранжерея</div>
+                            </div>
+                            <div class="infra-marker park">
+                                <div class="extra-marker infra-marker__txt">Веревочный парк</div>
+                            </div>
+                            <div class="infra-marker shop shop-1">
+                                <div class="extra-marker infra-marker__txt">Магазин</div>
+                            </div>
+                            <div class="infra-marker shop shop-2">
+                                <div class="extra-marker infra-marker__txt">Магазин</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="compass"></div>
@@ -40,22 +61,29 @@
                 </a>
             </div>
             <div class="main-plan__sidebar">
-                <div class="h4">Форматы квартир</div>
-                <a href="#" class="flat-type">
-                    <div class="h4">Студии <sup>96</sup></div>
-                </a>
-                <a href="#" class="flat-type">
-                    <div class="h4">1-комнатные <sup>96</sup></div>
-                </a>
-                <a href="#" class="flat-type">
-                    <div class="h4">2-комнатные <sup>96</sup></div>
-                </a>
-                <a href="#" class="flat-type">
-                    <div class="h4">3-комнатные <sup>96</sup></div>
-                </a>
-                <a href="#" class="flat-type">
-                    <div class="h4">4-комнатные <sup>96</sup></div>
-                </a>
+                <div class="sidebar__section">
+                    <div class="h4">1 очередь</div>
+                    <div class="sidebar__section__txt">
+                        <h5>корпус 1</h5>
+                        I кв. 2017 - III кв. 2018
+                    </div>
+                    <div class="sidebar__section__txt">
+                        <h5>корпус 2</h5>
+                        I кв. 2017 - III кв. 2018
+                    </div>
+                </div>
+                <div class="sidebar__section">
+                    <div class="h4">2 очередь</div>
+                    <div class="sidebar__section__txt">
+                        <h5>корпус 3</h5>
+                    </div>
+                    <div class="sidebar__section__txt">
+                        <h5>корпус 4</h5>
+                    </div>
+                    <div class="sidebar__section__txt">
+                        <h5>корпус 5</h5>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="wrapper-main">
