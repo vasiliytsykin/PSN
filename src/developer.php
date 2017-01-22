@@ -5,7 +5,7 @@
             <div class="wrapper-main text--primary">
                 <div class="text-block">
                     <h2>Девелопер</h2>
-                    <div class="developer-logo"></div>
+                    <a href="http://www.psngroup.ru/projects/development/development-feodosiyskaya" target="_blank" class="developer-logo"></a>
                     <p>
                         «Группа ПСН» более 15 лет работает на рынке недвижимости
                         и является одной из самых крупных частных компаний в России.<br class="hidden-xs">
@@ -46,18 +46,18 @@
                 <div class="gallery">
                     <div class="gallery__switch-over">
                         <div class="gallery__switch">
-                            <div class="switch__tab tab-1" data-tab="tab-1">комфорткласс</div>
-                            <div class="switch__tab tab-2 active" data-tab="tab-2">бизнес-класс</div>
+                            <div class="switch__tab tab-1 active" data-tab="tab-1">комфорткласс</div>
+                            <div class="switch__tab tab-2" data-tab="tab-2">бизнес-класс</div>
                         </div>
                     </div>
-                    <div class="gallery__tab tab-1">
+                    <div class="gallery__tab tab-1 active">
                         <div class="gallery__slider big-slider">
                             <div class="gallery__slide dom" style="background-image: url(/img/developer/projects/dom.jpg);">
                                 <div class="gallery__slide__txt">
                                     <div class="logo" style="background-image: url(/img/developer/projects/dom_logo.png)"></div>
                                     <div class="h2">Микрорайон Домашний</div>
                                     <div class="h5">Донецкая.,30</div>
-                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 27-102 м²</div>
                                     <a href="http://домашний.рф" target="_blank" class="link">домашний.рф</a>
                                 </div>
                                 <div class="awards">
@@ -69,7 +69,7 @@
                                     <div class="logo" style="background-image: url(/img/developer/projects/sreda_logo.png);"></div>
                                     <div class="h2">Жилой квартал SREDA</div>
                                     <div class="h5">Рязанский проспект, 2</div>
-                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 23-104 м²</div>
                                     <a href="http://sreda-kvartal.ru" target="_blank" class="link">sreda-kvartal.ru</a>
                                 </div>
                                 <div class="awards">
@@ -78,14 +78,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__tab tab-2 active">
+                    <div class="gallery__tab tab-2">
                         <div class="gallery__slider big-slider">
                             <div class="gallery__slide im" style="background-image: url(/img/developer/projects/im.jpg);">
                                 <div class="gallery__slide__txt">
                                     <div class="logo" style="background-image: url(/img/developer/projects/im_logo.png)"></div>
                                     <div class="h2">Жилой квартал I’M</div>
                                     <div class="h5">Кожевнический проезд, владение 4</div>
-                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 37-138 м²</div>
                                     <a href="http://im-moscow.ru" target="_blank" class="link">IM-Moscow.ru</a>
                                 </div>
                                 <div class="awards">
@@ -100,7 +100,7 @@
                                     <div class="logo" style="background-image: url(/img/developer/projects/pol_logo.png);"></div>
                                     <div class="h2">Комплекс «Полянка/44»</div>
                                     <div class="h5">Большая Полянка, 44/2</div>
-                                    <div class="h5">Площадь квартир и апартаментов: 50–250 м²</div>
+                                    <div class="h5">Площадь квартир и апартаментов: 48-241 м²</div>
                                     <a href="http://polyanka44.com" target="_blank" class="link">polyanka44.com</a>
                                 </div>
                                 <div class="awards">

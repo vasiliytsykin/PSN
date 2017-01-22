@@ -125,9 +125,9 @@
                             </div>
                         </div>
                     </div>
-<!--                    <div class="show-more">-->
-<!--                        <a href="#" class="btn-default btn-medium btn-green">Показать еще</a>-->
-<!--                    </div>-->
+                    <div class="show-more">
+                        <a href="about.php" class="btn-default btn-medium btn-green">Показать еще</a>
+                    </div>
                 </div>
                 <div class="main-offer">
                     <h2>Предложение дня</h2>

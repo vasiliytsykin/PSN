@@ -166,6 +166,12 @@ $(function () {
 
     });
 
+    $('.footer__policy').magnificPopup({
+
+        type: 'inline',
+        mainClass: 'policy-popup'
+
+    });
 
     /*------------INDEX---------------*/
 

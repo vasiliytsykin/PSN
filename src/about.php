@@ -202,30 +202,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gallery__tab tab-2">
-                        <div class="gallery__slider big-slider">
-                            <div class="gallery__slide" style="background-image: url(img/main-slider-render-2.jpg);">
-                                <div class="gallery__slide__txt">
-                                    <div class="h1">Корпус 2</div>
-                                    <h5>Общий вид</h5>
-                                </div>
-                            </div>
-                            <div class="gallery__slide" style="background-image: url(img/main-slider-render-1.jpg);">
-                                <div class="gallery__slide__txt">
-                                    <div class="h1">Корпус 1</div>
-                                    <h5>Общий вид</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery__switch">
-                        <div class="switch__tab tab-1 active" data-tab="tab-1">
-                            Архитектура
-                        </div>
-                        <div class="switch__tab tab-2" data-tab="tab-2">
-                            Подъезды
-                        </div>
-                    </div>
+<!--                    <div class="gallery__tab tab-2">-->
+<!--                        <div class="gallery__slider big-slider">-->
+<!--                            <div class="gallery__slide" style="background-image: url(img/main-slider-render-2.jpg);">-->
+<!--                                <div class="gallery__slide__txt">-->
+<!--                                    <div class="h1">Корпус 2</div>-->
+<!--                                    <h5>Общий вид</h5>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="gallery__slide" style="background-image: url(img/main-slider-render-1.jpg);">-->
+<!--                                <div class="gallery__slide__txt">-->
+<!--                                    <div class="h1">Корпус 1</div>-->
+<!--                                    <h5>Общий вид</h5>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="gallery__switch">-->
+<!--                        <div class="switch__tab tab-1 active" data-tab="tab-1">-->
+<!--                            Архитектура-->
+<!--                        </div>-->
+<!--                        <div class="switch__tab tab-2" data-tab="tab-2">-->
+<!--                            Подъезды-->
+<!--                        </div>-->
+<!--                    </div>-->
                     <div class="big-figure circle static"></div>
                     <div class="big-figure wave-right"></div>
                 </div>

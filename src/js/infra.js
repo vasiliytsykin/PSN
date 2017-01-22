@@ -63,7 +63,7 @@ var gMap = {
 
             styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"}),
             mapOptions = {
-                zoom:14,
+                zoom:15,
                 center: new google.maps.LatLng(mapCenter['lat'],mapCenter['lng']),
                 scrollwheel:false,
                 mapTypeControl: false,

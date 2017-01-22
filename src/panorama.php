@@ -1,4 +1,21 @@
-<? include 'include/header.php'?>
+<? include 'include/header.php';
+
+$photoText = array(
+
+    'Качаловские<br>пруды',
+    'Храм<br>Дмитрия Донского',
+    'Парк у Храма<br>Дмитрия Донского',
+    'Бутовский лесопарк',
+    'Бутовский лесопарк',
+    'Бутовский лесопарк',
+    'Панорама района',
+    'Панорама района',
+    'Яблоневые сады<br>на территории участка',
+    'Качаловский парк'
+
+)
+
+?>
     <div class="panorama-page">
         <div class="big-figure circle green"></div>
         <div class="big-figure wave-yellow"></div>
@@ -13,18 +30,14 @@
         <div class="photos">
             <div class="h1 dark-green">Фотографии района</div>
             <div class="photos__slider big-slider">
-                <div class="slide" style="background-image: url(img/panorama/photo-1.jpg);">
-                    <div class="slide__txt">
-                        <div class="h1">Фото района 1</div>
-                        <div class="h5">5 минут пешком</div>
+                <?for ($i = 0; $i < 10; $i++){?>
+                    <div class="slide" style="background-image: url(img/panorama/photo-<?=$i + 1?>.jpg);">
+                        <div class="slide__txt">
+                            <div class="h1"><?=$photoText[$i]?></div>
+<!--                            <div class="h5">5 минут пешком</div>-->
+                        </div>
                     </div>
-                </div>
-                <div class="slide" style="background-image: url(img/panorama/photo-2.jpg);">
-                    <div class="slide__txt">
-                        <div class="h1">Фото района 2</div>
-                        <div class="h5">5 минут пешком</div>
-                    </div>
-                </div>
+                <?}?>
             </div>
         </div>
         <div class="scroll-top "><a href="#">вернуться наверх</a></div>

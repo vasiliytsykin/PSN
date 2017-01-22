@@ -85,15 +85,41 @@
   a
     color: #fff
     font-size: 14px
-.footer__copyright
-  font-size: 12px
-  width: 29%
-  min-width: 320px
-  white-space: nowrap
+  .footer__copyright
+    font-size: 12px
+    width: 29%
+    min-width: 320px
+    white-space: nowrap
+    color: #7a797e
 .footer__pdf
   width: 51%
-.footer__politics
+.footer__policy
   white-space: nowrap
+.policy-popup
+  z-index: 10000
+  .mfp-close
+    position: fixed
+    font-size: 0
+    top: 30px
+    right: 40px
+    width: 70px
+    height: 70px
+    opacity: 1
+    background: url(/img/video_close.svg) no-repeat center
+#policy-popup
+  background-color: rgba(255,255,255, 0.95)
+  overflow: scroll
+  padding: 110px 0
+.policy-popup-txt
+  max-width: 740px
+  padding: 0 30px
+  margin: 0 auto
+  ul
+    padding-left: 40px
+    list-style: circle
+    margin: 35px 0
+  li
+    margin: 15px 0
 @media screen and (max-width: 1200px)
   .footer-pattern
     background-size: cover
@@ -114,21 +140,23 @@
     position: relative
     width: 50%
     bottom: 167px
-  .footer__copyright
-    position: absolute
-    bottom: -60px
-    left: 100%
-    padding-left: 20px
-    width: auto
+    .footer__copyright
+      position: absolute
+      bottom: -60px
+      left: 100%
+      padding-left: 20px
+      width: auto
   .footer__pdf
     width: auto
     max-width: 260px
     padding-top: 10px
     line-height: 19px
-  .footer__politics
+  .footer__policy
     position: absolute
     top: 0
     left: 0
+  .policy-popup-txt
+    max-width: 620px
 @media screen and (max-width: 736px)
   .footer
     padding: 40px 30px 100px
@@ -172,13 +200,13 @@
       line-height: 30px
       padding: 0 0 25px
       max-width: none
-  .footer__copyright
-    bottom: -130px
-    left: 0
-    padding-left: 0
-    width: auto
-    font-size: 15px
-  .footer__politics
+    .footer__copyright
+      bottom: -130px
+      left: 0
+      padding-left: 0
+      width: auto
+      font-size: 15px
+  .footer__policy
     position: static
 /*---------END FOOTER-------*/
 

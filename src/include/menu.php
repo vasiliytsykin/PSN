@@ -55,8 +55,8 @@ $menu = array(
             array('name' => 'Генплан', 'url' => 'master-plan-filter.php'),
             array('name' => 'Выбрать по параметрам', 'url' => 'param-filter.php'),
             array('name' => 'Выбрать по планировке', 'url' => 'plan-filter.php'),
-            array('name' => 'Выбрать машиноместо', 'url' => 'parking.php'),
-            array('name' => 'Коммерческие помещения', 'url' => '#')
+//            array('name' => 'Выбрать машиноместо', 'url' => 'parking.php'),
+//            array('name' => 'Коммерческие помещения', 'url' => '#')
         )
     ),
 

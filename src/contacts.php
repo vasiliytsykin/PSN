@@ -1,4 +1,58 @@
-<? include 'include/header.php'?>
+<? include 'include/header.php';
+
+$routeGuide = array(
+
+        'transport' => array(
+
+            array(
+                    'img' => '/img/contacts/transport-1.jpg',
+                    'txt' => 'Первый вагон станции метро «Бульвар Дмитрия Донского». Из стеклянных дверей налево и выход на&nbsp;улицу по лестнице справой стороны.'
+            ),
+            array(
+                'img' => '/img/contacts/transport-2.jpg',
+                'txt' => 'Далее прямо до первого перекрестка улицы Грина и&nbsp;Бульвара Дмитрия Донского, где нужно повернуть направо.'
+            ),
+            array(
+                'img' => '/img/contacts/transport-3.jpg',
+                'txt' => 'По улице Грина спускаться около 700 метров и&nbsp;повернуть направо после остановки. Ориентиром является дом справой стороны с рисунком сюжета Алых&nbsp;Парусов.'
+            ),
+            array(
+                'img' => '/img/contacts/transport-4.jpg',
+                'txt' => 'Далее прямо до зеленого здания НИИ Радиосвязи с&nbsp;фактическим адресом Феодосийская ул. дом 1. За&nbsp;шлагбаумом Вас будет ожидать шаттл, который провезет Вас по территории строительной площадки и&nbsp;доставит до офиса продаж.'
+            )
+
+        ),
+        'car' => array(
+
+            array(
+                'img' => '/img/contacts/car-1.jpg',
+                'txt' => 'Съезд на Варшавского шоссе и 33 км МКАДа в сторону области.'
+            ),
+            array(
+                'img' => '/img/contacts/car-2.jpg',
+                'txt' => 'Продолжать движение по Варшавскому шоссе и съехать направо.'
+            ),
+            array(
+                'img' => '/img/contacts/car-3.jpg',
+                'txt' => 'На пересечении Варшавского шоссе и улицы Коктебельской продолжать движения прямо.'
+            ),
+            array(
+                'img' => '/img/contacts/car-4.jpg',
+                'txt' => 'Съезд с Варшавского шоссе на Новобутовскую улицу.'
+            ),
+            array(
+                'img' => '/img/contacts/car-5.jpg',
+                'txt' => 'Далее повернуть налево на Новобутовскую улицу и проехать прямо до пункта назначения около 350 метров.'
+            ),
+            array(
+                'img' => '/img/contacts/car-6.jpg',
+                'txt' => 'Справой стороны за шлагбаумом Вы можете припарковать свой автомобиль и пройти к офису продаж.'
+            ),
+
+        ),
+)
+
+?>
 
     <div class="contact-page">
         <div class="pattern big-pattern pattern-1 dark-green anim-pattern" data-pattern="pattern-1"></div>
@@ -64,44 +118,25 @@
                         </div>
                     </div>
                     <div class="big-slider gallery__tab active" id="transport">
-                        <div class="slider__item">
-                            <div class="slider__item__txt">
-                                Первый вагон станции метро «Бульвар Дмитрия Донского». Из стеклянных дверей налево и выход на улицу по лестнице справой стороны.
+                        <?foreach ($routeGuide['transport'] as $item){?>
+                            <div class="slider__item">
+                                <div class="slider__item__txt">
+                                    <?=$item['txt']?>
+                                </div>
+                                <div class="slider__item__img" style="background-image: url(<?=$item['img']?>);"></div>
                             </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/transport-1.jpg);"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item__txt">
-                                Далее прямо до первого перекрестка улицы Грина и&nbsp;Бульвара Дмитрия Донского, где нужно повернуть направо.
-                            </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/transport-3.jpg);"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item__txt">
-                                По улице Грина спускаться около 700 метров и повернуть направо после остановки. Ориентиром является дом справой стороны с рисунком сюжета Алых&nbsp;Парусов.
-                            </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/transport-2.jpg);"></div>
-                        </div>
+                        <?}?>
                     </div>
                     <div class="big-slider gallery__tab" id="car">
-                        <div class="slider__item">
-                            <div class="slider__item__txt">
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                        <?foreach ($routeGuide['car'] as $item){?>
+                            <div class="slider__item">
+                                <div class="slider__item__txt">
+                                    <?=$item['txt']?>
+                                </div>
+                                <div class="slider__item__img" style="background-image: url(<?=$item['img']?>);"></div>
                             </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/guide-img-1.jpg);"></div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__item__txt">
-                                Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-                                lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-                            </div>
-                            <div class="slider__item__img" style="background-image: url(/img/contacts/guide-img-1.jpg);"></div>
-                        </div>
+                        <?}?>
                     </div>
-                    
                 </div>
             </div>
             </div>
