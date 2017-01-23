@@ -6188,7 +6188,7 @@ p {
     top: 950px;
     left: 400px; }
   .history-page .buggy {
-    top: 1000px;
+    top: 1300px;
     right: 130px; }
   .history-page .bird {
     top: 1380px;
@@ -6226,8 +6226,7 @@ p {
       width: 3px;
       margin-left: -1px;
       background-color: #e0e0e0; }
-    .history-page .event::after {
-      content: '';
+    .history-page .event .icon {
       width: 60px;
       height: 60px;
       position: absolute;
@@ -6237,10 +6236,6 @@ p {
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
-    .history-page .event:nth-child(2n + 1)::after {
-      background-image: url(/img/svg-library/adv-flower.svg); }
-    .history-page .event:nth-child(2n + 2)::after {
-      background-image: url(/img/svg-library/adv-bird.svg); }
   .history-page .event__img-over {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6286,7 +6281,7 @@ p {
       top: 930px;
       left: 10px; }
     .history-page .buggy {
-      top: 1150px;
+      top: 1050px;
       right: 0; }
     .history-page .bird {
       top: 50%;
@@ -6308,12 +6303,12 @@ p {
           -ms-flex-align: end;
               align-items: flex-end;
       padding-bottom: 30px; }
-      .history-page .event::before, .history-page .event::after {
+      .history-page .event::before, .history-page .event .icon {
         left: 0; }
       .history-page .event::before {
         top: 170px;
         bottom: -90px; }
-      .history-page .event::after {
+      .history-page .event .icon {
         top: 95px; }
     .history-page .event__txt {
       width: 430px; }
@@ -6329,6 +6324,7 @@ p {
   .history-page .shower, .history-page .bird {
     display: none; }
   .history-page .buggy {
+    top: 970px;
     right: -50px; }
   .history-page .carrot {
     right: 15px; }
@@ -6338,9 +6334,9 @@ p {
     height: 260px; }
   .history-page .event {
     padding: 70px 0; }
-    .history-page .event::before, .history-page .event::after {
+    .history-page .event::before, .history-page .event .icon {
       top: 0; }
-    .history-page .event::after {
+    .history-page .event .icon {
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%); }
     .history-page .event::before {
