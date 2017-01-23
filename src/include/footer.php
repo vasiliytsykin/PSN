@@ -206,6 +206,7 @@
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
         <script src="pano/tour.js"></script>
         <script src="js/vivus.js"></script>
+        <script src="js/svg.min.js"></script>
         <script src="js/patterns.js"></script>
         <script src="js/infra.js"></script>
         <script src="js/script.js"></script>
