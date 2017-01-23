@@ -22,11 +22,11 @@
                                             <label for="house-1">1</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="house-3">
+                                            <input type="checkbox" id="house-3" disabled>
                                             <label for="house-3">3</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="house-4">
+                                            <input type="checkbox" id="house-4" disabled>
                                             <label for="house-4">4</label>
                                         </li>
                                     </ul>
@@ -37,11 +37,11 @@
                                             <label for="house-2">2</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="house-5">
+                                            <input type="checkbox" id="house-5" disabled>
                                             <label for="house-5">5</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="house-6">
+                                            <input type="checkbox" id="house-6" disabled>
                                             <label for="house-6">6</label>
                                         </li>
                                     </ul>

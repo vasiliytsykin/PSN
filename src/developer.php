@@ -61,7 +61,10 @@
                                     <a href="http://домашний.рф" target="_blank" class="link">домашний.рф</a>
                                 </div>
                                 <div class="awards">
-                                    <div class="award" style="background-image: url(/img/developer/urban.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/domashnii_1.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/domashnii_2.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/domashnii_3.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/domashnii_4.png);"></div>
                                 </div>
                             </div>
                             <div class="gallery__slide sreda" style="background-image: url(/img/developer/projects/sreda.jpg);">
@@ -73,7 +76,11 @@
                                     <a href="http://sreda-kvartal.ru" target="_blank" class="link">sreda-kvartal.ru</a>
                                 </div>
                                 <div class="awards">
-                                    <div class="award" style="background-image: url(/img/developer/urban.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/sreda_1.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/sreda_2.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/sreda_3.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/sreda_4.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/sreda_5.png);"></div>
                                 </div>
                             </div>
                         </div>
@@ -89,10 +96,7 @@
                                     <a href="http://im-moscow.ru" target="_blank" class="link">IM-Moscow.ru</a>
                                 </div>
                                 <div class="awards">
-                                    <div class="award" style="background-image: url(/img/developer/best_2016.png);"></div>
-                                    <div class="award" style="background-image: url(/img/developer/top5.png);"></div>
-                                    <div class="award" style="background-image: url(/img/developer/top5_green.png);"></div>
-                                    <div class="award" style="background-image: url(/img/developer/urban.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/im.png);"></div>
                                 </div>
                             </div>
                             <div class="gallery__slide pol" style="background-image: url(/img/developer/projects/pol.jpg);">
@@ -104,7 +108,8 @@
                                     <a href="http://polyanka44.com" target="_blank" class="link">polyanka44.com</a>
                                 </div>
                                 <div class="awards">
-                                    <div class="award" style="background-image: url(/img/developer/urban.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/polyanka_1.png);"></div>
+                                    <div class="award" style="background-image: url(/img/developer/awards/polyanka_2.png);"></div>
                                 </div>
                             </div>
                         </div>

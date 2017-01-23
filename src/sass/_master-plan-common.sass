@@ -96,12 +96,20 @@
       line-height: 1
       &.mono
         background-color: rgba(0,172,200,0.8)
-        top: 440px
-        right: 420px
       &.panel
         background-color: rgba(149,214,0,0.8)
+      &.house-1
         top: 250px
         right: 340px
+      &.house-2
+        top: 440px
+        right: 420px
+      &.house-3
+        top: 125px
+        left: 500px
+      &.house-4
+        top: 160px
+        left: 70px
     .house-number
       padding-top: 5px
       font-size: 22px
@@ -171,6 +179,42 @@
               vertical-align: top
               background: url(/img/main-plan/subway-icon.svg) no-repeat center
               margin-right: 5px
+    .bubble
+      position: absolute
+      font-size: 22px
+      font-weight: 500
+      color: #fff
+      width: 44px
+      height: 65px
+      background: url(/img/main-plan/pin-blue.png) no-repeat center
+      display: flex
+      justify-content: center
+      align-items: center
+      padding-bottom: 7px
+      &.finish
+        background-image: url(/img/main-plan/pin-finish.png)
+        top: 290px
+        left: 245px
+        &:hover
+          .tooltip
+            display: block
+      &.section-7
+        top: 300px
+        left: 480px
+      .tooltip
+        width: 90px
+        height: 90px
+        background-color: #fff
+        border-radius: 50%
+        color: $darkGray
+        font-size: 12px
+        line-height: 1
+        text-align: center
+        padding-top: 12px
+        position: absolute
+        top: -50px
+        right: -75px
+        display: none
   .main-plan__sidebar
     width: 300px
     position: absolute

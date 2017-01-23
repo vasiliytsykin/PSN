@@ -285,6 +285,20 @@ $(function () {
         });
     }
 
+    $('.master-plan--about .sidebar__section__txt').on('mouseenter', function () {
+
+        var house = $(this).data('house');
+        $('.' + house).addClass('show');
+
+
+    }).on('mouseleave', function () {
+
+        var house = $(this).data('house');
+        $('.' + house).removeClass('show');
+
+
+    });
+
     /*-----END MAIN PLAN-------------*/
 
     /*----------------INFRA------------*/
@@ -297,7 +311,12 @@ $(function () {
             Markers['ind1000'] = {'name':'ЖК', 'group':'main', 'coord':{lat:55.560989, lng:37.576975}};
             gMap.markers = Markers;
             gMap.init('moscow', 'white');
-            $('.infra-group__title a').click(function(){
+
+            var $group = $('.infra-group__title a'),
+                $subGroup = $('.infra-subsection-title a'),
+                $item = $('.infra-list__item');
+
+            $group.click(function(){
                 var group_show={};
                 $(this).closest('.infra-group').find('.infra-subsection-title a').each(function(ind, el){
                     var  group_code = $(el).attr('href').replace('#','');
@@ -308,7 +327,7 @@ $(function () {
                 gMap.filterByGroup(group_show);
                 return false;
             });
-            $('.infra-subsection-title a').click(function(){
+            $subGroup.click(function(){
                 $('.infra-subsection-title, .infra-group').removeClass('active');
                 $(this).parent().addClass('active');
                 var group_show={};
@@ -317,6 +336,16 @@ $(function () {
                 gMap.filterByGroup(group_show);
                 return false;
             });
+            $item.on('click', function () {
+
+                var id = $(this).data('id');
+                gMap.filterByItem(id);
+
+            });
+
+            scrollTop($group, 180);
+            scrollTop($subGroup, 180);
+            scrollTop($item, 180);
 
 
             (function setIcons(pathPrefix) {

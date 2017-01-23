@@ -19,13 +19,30 @@
                             <div class="extra-marker">Бутовский лесопарк</div>
                             <div class="extra-marker"><span>Бульвар Д. Донского</span></div>
                         </div>
-                        <div class="house-marker panel">
+                        <div class="bubbles">
+                            <div class="bubble mono section-7">7</div>
+                            <div class="bubble finish">
+                                <div class="tooltip">
+                                    <div class="h4">335</div>
+                                    квартир с&nbsp;отделкой
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-marker panel house-1">
                             корпус
                             <div class="house-number">1</div>
                         </div>
-                        <div class="house-marker mono">
+                        <div class="house-marker mono house-2">
                             корпус
                             <div class="house-number">2</div>
+                        </div>
+                        <div class="house-marker panel house-3">
+                            корпус
+                            <div class="house-number">3</div>
+                        </div>
+                        <div class="house-marker panel house-4">
+                            корпус
+                            <div class="house-number">4</div>
                         </div>
                     </div>
                 </div>

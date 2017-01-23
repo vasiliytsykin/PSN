@@ -25,11 +25,11 @@
                                     <label for="house-1">1</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="house-3">
+                                    <input type="checkbox" id="house-3" disabled>
                                     <label for="house-3">3</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="house-4">
+                                    <input type="checkbox" id="house-4" disabled>
                                     <label for="house-4">4</label>
                                 </li>
                             </ul>
@@ -40,11 +40,11 @@
                                     <label for="house-2">2</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="house-5">
+                                    <input type="checkbox" id="house-5" disabled>
                                     <label for="house-5">5</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="house-6">
+                                    <input type="checkbox" id="house-6" disabled>
                                     <label for="house-6">6</label>
                                 </li>
                             </ul>
@@ -91,18 +91,18 @@
                                 <label for="finish">с отделкой</label>
                             </li>
                         </ul>
-                        <a href="/" class="link--dashed reset-filter visible-md visible-lg"><span>Сбросить параметры</span></a>
+                        <a href="javascript:window.location.reload(true)" class="link--dashed reset-filter visible-md visible-lg"><span>Сбросить параметры</span></a>
                     </div>
-                    <a href="/" class="link--dashed reset-filter visible-sm visible-xs"><span>Сбросить параметры</span></a>
+                    <a href="javascript:window.location.reload(true)" class="link--dashed reset-filter visible-sm visible-xs"><span>Сбросить параметры</span></a>
                 </div>
                 <div class="filter__results-over">
                     <div class="filter__results">
                         <a href="plan-filter-detail.php" class="item">
-                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_1.jpg);"></div>
+                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_1.svg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.4.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№1, №2</div></div>
-                                <div class="h4">стоимость<div class="value">от 12 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">стоимость<div class="value price">от 12 460 000 <span class="ruble">a</span></div></div>
                                 <div class="h4">Площадь<div class="value">40,67 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
@@ -111,11 +111,11 @@
                             </div>
                         </a>
                         <a href="plan-filter-detail.php" class="item">
-                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_2.jpg);"></div>
+                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_2.svg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.3.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№3, №4</div></div>
-                                <div class="h4">стоимость<div class="value">от 10 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">стоимость<div class="value price">от 10 460 000 <span class="ruble">a</span></div></div>
                                 <div class="h4">Площадь<div class="value">50,6 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
@@ -124,11 +124,11 @@
                             </div>
                         </a>
                         <a href="plan-filter-detail.php" class="item">
-                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_3.jpg);"></div>
+                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_3.svg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.4.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№1, №2</div></div>
-                                <div class="h4">стоимость<div class="value">от 12 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">стоимость<div class="value price">от 12 460 000 <span class="ruble">a</span></div></div>
                                 <div class="h4">Площадь<div class="value">40,67 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">
@@ -137,11 +137,11 @@
                             </div>
                         </a>
                         <a href="plan-filter-detail.php" class="item">
-                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_4.jpg);"></div>
+                            <div class="item__img" style="background-image: url(/img/plan-filter/plan_4.svg);"></div>
                             <div class="item__desc">
                                 <div class="plan-type h4 dark-green">планировка<br>1М.3.а</div>
                                 <div class="h4">доступна в&nbsp;корпусах:<div class="value">№3, №4</div></div>
-                                <div class="h4">стоимость<div class="value">от 10 460 000 <span class="ruble">a</span></div></div>
+                                <div class="h4">стоимость<div class="value price">от 10 460 000 <span class="ruble">a</span></div></div>
                                 <div class="h4">Площадь<div class="value">50,6 м<sup>2</sup></div></div>
                             </div>
                             <div class="hover-block">

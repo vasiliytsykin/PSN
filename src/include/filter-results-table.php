@@ -65,8 +65,8 @@
             <div class="tooltip box-shadow">
                 <h4>корпус 1</h4>
                 <h6>Панельный дом</h6>
-                <img src="/img/flat/floor-plan-green.png" alt="floor-plan">
-                <img src="/img/flat/genplan-map-green.png" alt="floor-plan">
+                <img src="/img/flat/floor-plan.svg" alt="floor-plan">
+                <img src="/img/flat/genplan-map.svg" alt="genplan">
             </div>
         </a>
         <a href="flat-detail.php" class="item">
@@ -118,8 +118,8 @@
             <div class="tooltip box-shadow">
                 <h4>корпус 1</h4>
                 <h6>Панельный дом</h6>
-                <img src="/img/flat/floor-plan-green.png" alt="floor-plan">
-                <img src="/img/flat/genplan-map-green.png" alt="floor-plan">
+                <img src="/img/flat/floor-plan.svg" alt="floor-plan">
+                <img src="/img/flat/genplan-map.svg" alt="genplan">
             </div>
         </a>
     </div>

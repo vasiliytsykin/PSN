@@ -274,37 +274,44 @@ $(document).ready(function(){
     }, 1000);
 
 
-    if($(window).width() > 1024){
-        setTimeout(function(){
-            if(!intro_showing){
-                start_intro();
-                intro_showing = true;
-            }
-        },3000);
+    (function () {
+
+        var intro = $('.g-intro');
+
+        if($(window).width() > 1024 && intro.length != 0){
+            setTimeout(function(){
+                if(!intro_showing){
+                    start_intro();
+                    intro_showing = true;
+                }
+            },3000);
 
 
-    }else{
-        $('.g-intro').hide();
-    }
+        }else{
+            intro.hide();
+        }
 
 
-    function start_intro(){
+        function start_intro(){
 
-        var draw = SVG('intro-svg');
-        console.log(draw);
-        var sub = draw.get(2),
-            video =  document.getElementById("video-main");
-        console.log(sub);
-        var circle = sub.get(0).get(0);
-        circle.animate(1000).radius(1800);
+            var draw = SVG('intro-svg');
+            console.log(draw);
+            var sub = draw.get(2),
+                video =  document.getElementById("video-main");
+            console.log(sub);
+            var circle = sub.get(0).get(0);
+            circle.animate(1000).radius(1800);
 
-        setTimeout(function(){
-            $('.g-intro').animate({opacity:0},500,function(){
-                $('.g-intro').hide();
-                video.play();
-            });
-        },1000);
+            setTimeout(function(){
+                $('.g-intro').animate({opacity:0},500,function(){
+                    $('.g-intro').hide();
+                    video.play();
+                });
+            },1000);
 
-    }
+        }
+
+    }());
+
 
 });

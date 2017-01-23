@@ -6,11 +6,11 @@
                 <a href="#" class="btn-back hidden-sm hidden-xs">Вернуться назад</a>
                 <div class="general-plans">
                     <div class="plan" id="general-plan">
-                        <a href="main-plan.php">Генплан</a>
+                        <a href="master-plan-filter.php">Генплан</a>
                         <div class="plan__img" style="background-image: url(/img/flat/genplan-map.svg);"></div>
                     </div>
                     <div class="plan" id="floor-plan">
-                        <a href="#">План этажа</a>
+                        <a href="house-plan.php">План этажа</a>
                         <div class="plan__img" style="background-image: url(/img/flat/floor-plan.svg);"></div>
                     </div>
                     <div class="plan" id="section-plan">

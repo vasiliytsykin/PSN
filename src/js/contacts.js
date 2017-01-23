@@ -73,6 +73,37 @@ function initMap() {
 
         psnPin.setMap(map);
         subwayPin.setMap(map);
+
+
+        var directionsService = new google.maps.DirectionsService,
+            directionsDisplay = new google.maps.DirectionsRenderer({preserveViewport: true});
+
+        google.maps.event.addListener(map, 'click', function (event) {
+            var request = {
+                origin: event.latLng,
+                destination: psn,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+
+            directionsService.route(request, function (response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    directionsDisplay.setDirections(response);
+                }
+            });
+
+            directionsDisplay.setMap(null);
+
+            directionsDisplay.setDirections({routes: [], preserveViewport: true});
+            directionsDisplay.setOptions({
+                polylineOptions: {
+                    strokeColor: '#f5a600',
+                    strokeWeight: 4
+                }
+            });
+
+            directionsDisplay.setMap(map);
+        });
+        
     }
 }
 

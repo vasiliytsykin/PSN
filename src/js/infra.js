@@ -182,6 +182,20 @@ var gMap = {
             }
         });
         gMap.centerMap(markersToCenter);
+    },
+    filterByItem: function (itemId) {
+
+        var markersToCenter = {};
+        $.each(gMap.markers, function(ind, el){
+            if(el.id == itemId){
+                el.marker.setVisible(true);
+                markersToCenter[ind] = el;
+            }else{
+                el.marker.setVisible(false);
+            }
+        });
+        gMap.centerMap(markersToCenter);
+        
     }
 };
 

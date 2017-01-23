@@ -174,7 +174,8 @@
             if(isset($arSection['items'])){
                 foreach($arSection['items'] as $idMarker =>$arMarker){
                     $coord = explode(',', $arMarker['coord']);
-                    $arMarkers['m'.$idMarker] =array(
+                    $arMarkers['m'.$idMarker] = array(
+                        'id' => $idMarker,
                         'name'=>$arMarker['name'],
                         'group'=>$codeSection,
                         'coord'=>array(

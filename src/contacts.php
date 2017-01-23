@@ -72,28 +72,7 @@ $routeGuide = array(
                         <p>
                             <span class="gray">ежедневно</span><br>
                             с 09:00 до 21:00<br>
-<!--                            <span class="gray">суббота, восресенье</span><br>-->
-<!--                            с 10:00 до 20:00-->
                         </p>
-                    </div>
-                    <div class="main-info__txt-block hidden-sm hidden-xs">
-                        <div class="h4">для прессы</div>
-                        <p>
-                            Чернавская Ольга,<br>менеджер проекта
-                        </p>
-                        <div class="email dark-green">chernavskaya@psn-group.ru</div>
-                    </div>
-                    <div class="main-info__txt-block hidden-sm hidden-xs">
-                        <h2>Схема проезда</h2>
-                        <p>
-                            Первый вагон станции метро «Бульвар Дмитрия Донского». Из стеклянных дверей налево и выход на улицу по лестнице справой стороны.
-                            Далее прямо до первого перекрестка улицы Грина и Бульвара Дмитрия Донского, где нужно повернуть направо.
-                            По улице Грина спускаться около 700 метров и повернуть направо после остановки. Ориентиром является дом с правой стороны с рисунком сюжета Алых&nbsp;Парусов.
-                        </p>
-                    </div>
-                    <div class="main-info__txt-block hidden-sm hidden-xs">
-                        <h4>Мы рады вашим<br>отзывам!</h4>
-                        <div class="email dark-green">chernavskaya@psn-group.ru</div>
                     </div>
                 </div>
             </div>
@@ -142,7 +121,7 @@ $routeGuide = array(
             </div>
         </div>
         <div class="wrapper-main">
-            <div class="main-info mobile visible-sm visible-xs">
+            <div class="main-info bottom">
                 <div class="main-info__content">
                     <div class="main-info__txt-block">
                         <h4>Мы рады вашим отзывам!</h4>
