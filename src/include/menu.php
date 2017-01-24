@@ -12,6 +12,7 @@ $itemsToMenu = array(
     'history' => 'about',
     'log' => 'about',
     'master-plan-about' => 'about',
+    '404' => 'about',
     'master-plan-filter' => 'filter',
     'param-filter' => 'filter',
     'plan-filter' => 'filter',

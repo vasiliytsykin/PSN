@@ -25,7 +25,7 @@
                 </div>
                 <div class="param">
                     <div class="param__name">Секция</div>
-                    <div class="param__value">4</div>
+                    <div class="param__value">6</div>
                 </div>
                 <div class="param">
                     <div class="param__name">Этаж</div>
@@ -65,8 +65,8 @@
             <div class="tooltip box-shadow">
                 <h4>корпус 1</h4>
                 <h6>Панельный дом</h6>
-                <img src="/img/flat/floor-plan.svg" alt="floor-plan">
-                <img src="/img/flat/genplan-map.svg" alt="genplan">
+                <img src="/img/flat/floor-plan-green.svg" alt="floor-plan">
+                <img src="/img/flat/genplan-map-green.svg" alt="genplan">
             </div>
         </a>
         <a href="flat-detail.php" class="item">
@@ -74,11 +74,11 @@
             <div class="general-params">
                 <div class="param">
                     <div class="param__name">Корпус</div>
-                    <div class="param__value">1</div>
+                    <div class="param__value">3</div>
                 </div>
                 <div class="param">
                     <div class="param__name">Секция</div>
-                    <div class="param__value">4</div>
+                    <div class="param__value">6</div>
                 </div>
                 <div class="param">
                     <div class="param__name">Этаж</div>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="param">
                     <div class="param__name">№ кв.</div>
-                    <div class="param__value">1106</div>
+                    <div class="param__value">1156</div>
                 </div>
                 <div class="param room">
                     <div class="param__name">Комнат</div>
@@ -117,7 +117,7 @@
             </div>
             <div class="tooltip box-shadow">
                 <h4>корпус 1</h4>
-                <h6>Панельный дом</h6>
+                <h6>Монолитный дом</h6>
                 <img src="/img/flat/floor-plan.svg" alt="floor-plan">
                 <img src="/img/flat/genplan-map.svg" alt="genplan">
             </div>
