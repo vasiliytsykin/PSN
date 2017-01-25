@@ -13,18 +13,26 @@
     width: 20px
     height: 14px
     background-image: url(/img/envelope-green.svg)
+
 .sub-menu--main
-  padding: 20px 0
-  display: flex
-  justify-content: center
-  border-top: 1px solid #cccccc
-  .sub-level
-    font-size: 15px
-    font-weight: 500
-    padding: 0 7px
-    &.active
-      a
-        color: $lightGreen
+  position: fixed
+  width: 100%
+  background-color: #fff
+  top: 100px
+  z-index: 9999
+  transition: all 0.3s ease
+  .sub-menu__items
+    //padding: 20px 0
+    display: flex
+    justify-content: center
+    border-top: 1px solid #cccccc
+    .sub-level
+      font-size: 15px
+      font-weight: 500
+      padding: 20px 7px
+      &.active
+        a
+          color: $lightGreen
 .header__extra-links
   height: 100%
   display: flex

@@ -346,7 +346,9 @@ p
     &.light-green
       fill: $lightGreen
 .content
-  padding-top: 100px
+  padding-top: 170px
+  &.main
+    padding-top: 100px
 .show-more
   text-align: center
 .contacts
@@ -389,33 +391,33 @@ p
   display: flex
   position: relative
   z-index: 1
-.switch__tab
-  position: relative
-  display: flex
-  justify-content: center
-  align-items: center
-  font-size: 20px
-  font-weight: 500
-  color: #fff
-  text-transform: uppercase
-  cursor: pointer
-  &::before
-    content: ''
-    position: absolute
-    width: 0
-    height: 0
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    border: 0 solid #00acc8
-    border-radius: 50%
-    transition: all 0.3s ease
-    z-index: -1
-  &.active, &:hover
+  .switch__tab
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 20px
+    font-weight: 500
+    color: #fff
+    text-transform: uppercase
+    cursor: pointer
     &::before
-      width: 190px
-      height: 190px
-      border: 60px solid #00acc8
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      border: 0 solid #00acc8
+      border-radius: 50%
+      transition: all 0.3s ease
+      z-index: -1
+    &.active, &:hover
+      &::before
+        width: 190px
+        height: 190px
+        border: 60px solid #00acc8
 .sign-in
   height: 350px
   padding-top: 50px
@@ -572,6 +574,8 @@ p
 @media screen and (max-width: 1340px)
   .content
     padding-top: 140px
+    &.main
+      padding-top: 140px
 @media screen and (max-width: 1024px)
   .wrapper-main
     padding-left: 30px

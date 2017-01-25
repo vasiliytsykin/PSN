@@ -336,3 +336,179 @@
   .actions-modal__controls
     top: 0
 /*-------END ACTIONS MODAL-------*/
+
+
+/*-------FEEDBACK MODAL---------*/
+
+.feedback-mfp
+  z-index: 10000
+  .mfp-close
+    font-size: 0
+    top: 25px
+    right: 25px
+    width: 30px
+    height: 30px
+    opacity: 1
+    background: url(/img/svg-library/close.svg) no-repeat center
+.feedback-modal
+  max-width: 580px
+  margin: 0 auto
+  background-color: #fff
+  position: relative
+  text-align: center
+  .h5
+    color: $darkGray
+  .tab
+    padding: 40px 80px 30px
+    display: none
+    &.active
+      display: block
+    &.mail
+      .feedback-form
+        padding-bottom: 30px
+  .switch__tab
+    height: 60px
+    background-color: $darkGreen
+    display: none
+    color: #fff
+    font-size: 18px
+    line-height: 1
+    text-align: center
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    &.active
+      display: flex
+    &:hover
+      .switch__tab__txt
+        border-bottom: none
+    &.call
+      .switch__tab__txt
+        &::before
+          width: 25px
+          height: 18px
+          background-image: url(/img/svg-library/popup-letter.svg)
+    &.mail
+      .switch__tab__txt
+        &::before
+          width: 22px
+          height: 27px
+          background-image: url(/img/svg-library/popup-phone.svg)
+    .switch__tab__txt
+      padding-bottom: 2px
+      border-bottom: 1px dashed #fff
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        right: 100%
+        margin-right: 10px
+        top: 50%
+        transform: translate(0, -50%)
+        background: no-repeat center
+  .feedback-form
+    text-align: left
+    padding: 30px 0 80px
+    .input-group
+      margin-bottom: 20px
+      position: relative
+    input
+      &[type="text"]
+        display: block
+        width: 100%
+        font-size: 18px
+        line-height: 1
+        height: 48px
+        padding: 5px 0
+        border: none
+        border-bottom: 2px solid #eaeaea
+        outline: none
+        background-color: transparent
+        &:focus
+          border-bottom-color: $lightGreen
+    textarea
+      resize: none
+      font-size: 18px
+      line-height: 1
+      border: none
+      width: 100%
+      height: 84px
+      border-bottom: 2px solid
+      outline: none
+      padding: 0
+      border-bottom: 2px solid #eaeaea
+      &:focus
+        border-bottom-color: $lightGreen
+    .notice
+      font-size: 15px
+      color: $lightGray
+      padding-bottom: 20px
+  .calendar
+    line-height: 1
+    label
+      font-size: 18px
+      color: #000
+      cursor: pointer
+      &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 18px
+        height: 10px
+        margin-left: 10px
+        background-image: url(/img/flat/arrow_down.svg)
+    &.open
+      label
+        &::after
+          background-image: url(/img/flat/arrow_up.svg)
+  .time
+    .caption-over
+      display: flex
+      justify-content: space-between
+      padding: 0 5px
+    .caption
+      font-size: 18px
+      line-height: 1
+    .caption__time
+      border-bottom: 2px solid #e0e0e0
+      min-width: 52px
+      display: inline-block
+      text-align: center
+      padding-bottom: 3px
+    .irs
+      min-width: 210px
+      margin-top: 25px
+      margin-bottom: 0
+  .call-time
+    display: flex
+    justify-content: space-between
+.popup-datepicker
+  z-index: 10000
+  &.pickmeup
+    background-color: #fff
+    border-radius: 0
+    box-shadow: 0 0 35px rgba(0,0,0,0.06)
+    .pmu-instance
+      height: auto
+      .pmu-day-of-week
+        color: $darkGray
+      .pmu-selected
+        background-color: $lightGreen
+        color: #fff
+        &:hover
+          color: #fff
+      .pmu-today
+        background-color: transparent
+        color: #000
+        border: 1px solid $lightGreen
+        font-weight: 500
+    .pmu-button, .pmu-month
+      color: #000
+    .pmu-button
+      &:hover
+        color: #000
+      &.pmu-not-in-month
+        color: $lightGray
+      &.pmu-prev, &.pmu-next
+        color: $darkGreen
+

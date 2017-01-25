@@ -173,6 +173,41 @@ $(function () {
 
     });
 
+
+    (function () {
+
+        var lastScrollTop = 0,
+            $subMenuMain = $('.sub-menu--main');
+
+        $(window).on('scroll', function() {
+            var st = $(this).scrollTop();
+            if(st < lastScrollTop) {
+
+                $subMenuMain.css({
+
+                    'opacity': 1
+
+                });
+
+                console.log('up 1');
+            }
+            else {
+
+                $subMenuMain.css({
+
+                    'opacity': 0
+
+                });
+
+                console.log('down 1');
+            }
+            lastScrollTop = st;
+        });
+
+
+    }());
+
+
     /*------------INDEX---------------*/
 
     engageOwlCarousel($('.main-slider'), {
@@ -612,6 +647,118 @@ $(function () {
     }());
 
     /*------------END LOG---------------*/
+
+
+    /*----------FEEDBACK MODAL-------------*/
+
+
+    (function () {
+
+        $('.feedback-open').on('click', function () {
+
+
+            $.magnificPopup.open({
+                items: {
+                    src: '#feedback-modal',
+                    type: 'inline'
+                },
+                mainClass: 'feedback-mfp'
+            });
+
+            return false;
+
+        });
+
+        var $feedModal = $('.feedback-modal'),
+            $feedTabs = $feedModal.find('.tab'),
+            $feedSwitch = $feedModal.find('.switch__tab'),
+            active = 'active';
+
+        $feedSwitch.on('click', function () {
+
+            $feedTabs.toggleClass(active);
+            $feedSwitch.toggleClass(active);
+
+        });
+
+
+        (function setupCalendar() {
+
+            var calLalel = document.getElementById("feedback-call__label"),
+                open = 'open',
+                $calendar = $('.calendar'),
+                $calLabel = $calendar.find('label'),
+                $calInput = $('#feedback-call__date'),
+                today = new Date(),
+                dd = today.getDate(),
+                ddFormated = dd > 9 ? dd : '0' + dd,
+                mm = today.getMonth() + 1,
+                mmFormated = mm > 9 ? mm : '0' + mm,
+                yy = today.getFullYear(),
+                todayStr = ddFormated + '-' + mmFormated + '-' + yy;
+
+
+            $calInput.val(todayStr);
+
+
+            pickmeup.defaults.locales['ru'] = {
+                days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+                daysShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек']
+            };
+
+            pickmeup(calLalel, {
+
+                hide_on_select: true,
+                class_name: 'popup-datepicker',
+                locale: 'ru'
+
+            });
+
+            calLalel.addEventListener('pickmeup-change', function (e) {
+
+                var formatedDate = e.detail.formatted_date;
+
+                if(formatedDate != todayStr)
+                {
+                    $calLabel.html(e.detail.formatted_date);
+                    $calInput.val(e.detail.formatted_date);
+                }
+                else
+                {
+                    $calLabel.html('Сегодня');
+                    $calInput.val(todayStr);
+                }
+
+                $calendar.removeClass(open);
+
+            });
+
+            calLalel.addEventListener('pickmeup-hide', function (e) {
+
+                $calendar.removeClass(open);
+
+            });
+
+            $calLabel.on('click', function () {
+
+                $calendar.toggleClass(open);
+
+                if(!$calendar.hasClass(open))
+                    pickmeup(calLalel).hide();
+
+            });
+
+
+        }());
+
+
+    }());
+
+
+    /*------END FEEDBACK MODAL-------------*/
 
 });
 

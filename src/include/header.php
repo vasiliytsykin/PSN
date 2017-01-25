@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="lib/slick-carousel/slick/slick.css">
         <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.css">
         <link rel="stylesheet" href="css/rangeSlider.css">
+        <link rel="stylesheet" href="lib/pickmeup/css/pickmeup.css">
         <link rel="stylesheet" href="lib/dragdealer/dragdealer.css">
         <link rel="stylesheet" href="lib/magnific-popup/dist/magnific-popup.css">
         <link rel="stylesheet" href="css/style.css">
@@ -44,7 +45,7 @@
                         <span class="code">+7 (495) </span>
                         <span class="number">800 41 48</span>
                     </div>
-                    <a href="#" class="btn-default btn-green">Заказать звонок</a>
+                    <a href="#" class="btn-default btn-green feedback-open">Заказать звонок</a>
                     <a href="#" class="email"></a>
                 </div>
             </div>
@@ -84,22 +85,24 @@
                 </div>
             </div>
         </div>
-
-        <div class="content">
+        <div class="sub-menu--main">
             <div class="wrapper-main">
                 <?
-                    $currentPage = str_replace(array('/', '.php'), '', $_SERVER['REQUEST_URI']);
-                    if($currentPage != ''){
-                ?>
-                    <ul class="sub-menu--main">
+                $currentPage = str_replace(array('/', '.php'), '', $_SERVER['REQUEST_URI']);
+                if($currentPage != ''){
+                    ?>
+                    <ul class="sub-menu__items">
                         <?
                         if(isset($itemsToMenu[$currentPage])){
                             $subMenu = $menu[$itemsToMenu[$currentPage]];
                             foreach ($subMenu['items'] as $subItem){
-    
+
                                 $active = strpos($subItem['url'], $currentPage) === 0 ? 'active' : '';
                                 ?>
-                                <li class="sub-level <?=$active?>"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li><?}}?>
+                            <li class="sub-level <?=$active?>"><a href="<?=$subItem['url']?>"><?=$subItem['name']?></a></li><?}}?>
                     </ul>
                 <?}?>
             </div>
+        </div>
+        <div class="content <?if($currentPage == '') echo 'main'?>">
+

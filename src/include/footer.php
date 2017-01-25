@@ -194,6 +194,54 @@
                     <div class="btn-close"></div>
                 </div>
             </div>
+            <div class="feedback-modal" id="feedback-modal">
+                <div class="tab call active">
+                    <div class="h2">Закажите звонок</div>
+                    <div class="h5">Мы обязательно вам перезвоним!</div>
+                    <form class="feedback-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="notice">Вы можете выбрать удобное время для звонка</div>
+                        <div class="input-group call-time">
+                            <div class="calendar">
+                                <input type="hidden" name="date" class="feedback-call__date" id="feedback-call__date">
+                                <label for="feedback-call__date" id="feedback-call__label">Сегодня</label>
+                            </div>
+                            <div class="time">
+                                <div class="caption-over">
+                                    <div class="caption">с <span class="caption__time"><span class="min"></span>.00</span></div>
+                                    <div class="caption">до <span class="caption__time"><span class="max"></span>.00</span></div>
+                                </div>
+                                <input type="text" id="time" class="range-slider" data-from="9.00" data-to="21.00" data-step="1"/>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="#" class="btn-default btn-medium btn-green">Перезвоните мне</a>
+                </div>
+                <div class="tab mail">
+                    <div class="h2">Остались вопросы?</div>
+                    <div class="h5">Мы обязательно вам ответим!</div>
+                    <form class="feedback-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="email" placeholder="E-mail">
+                        </div>
+                        <div class="notice">Напишите сообщение и мы в ближайшее время с вами свяжемся</div>
+                        <textarea name="message" id="" cols="30" rows="4"></textarea>
+                    </form>
+                    <a href="#" class="btn-default btn-medium btn-green">Отправить сообщение</a>
+                </div>
+                <div class="switch">
+                    <div class="switch__tab call active"><span class="switch__tab__txt">Или напишите нам письмо</span></div>
+                    <div class="switch__tab mail"><span class="switch__tab__txt">Или закажите обратный звонок</span></div>
+                </div>
+            </div>
         </footer>
 
         <script src="lib/jquery/dist/jquery.min.js"></script>
@@ -203,6 +251,7 @@
         <script src="lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
         <script src="lib/dragdealer/dragdealer.js"></script>
         <script src="lib/progressbar.js/dist/progressbar.js"></script>
+        <script src="lib/pickmeup/dist/pickmeup.min.js"></script>
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAjpIIkyyZMHBvf1bpQgabz5QithzXaAfU&amp;sensor=true"></script>
         <script src="pano/tour.js"></script>
         <script src="js/vivus.js"></script>
