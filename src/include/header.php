@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="lib/owl.carousel/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="lib/slick-carousel/slick/slick.css">
         <link rel="stylesheet" href="lib/ion.rangeSlider/css/ion.rangeSlider.css">
-        <link rel="stylesheet" href="css/rangeSlider.css">
         <link rel="stylesheet" href="lib/pickmeup/css/pickmeup.css">
         <link rel="stylesheet" href="lib/dragdealer/dragdealer.css">
         <link rel="stylesheet" href="lib/magnific-popup/dist/magnific-popup.css">
+        <link rel="stylesheet" href="css/rangeSlider.css">
         <link rel="stylesheet" href="css/style.css">
         <title>PSN</title>
     </head>
@@ -45,8 +45,8 @@
                         <span class="code">+7 (495) </span>
                         <span class="number">800 41 48</span>
                     </div>
-                    <a href="#" class="btn-default btn-green feedback-open">Заказать звонок</a>
-                    <a href="#" class="email"></a>
+                    <a href="#" class="btn-default btn-green feedback-open call">Заказать звонок</a>
+                    <a href="#" class="feedback-open email"></a>
                 </div>
             </div>
         </header>
@@ -75,7 +75,7 @@
                         <span class="code">+7 (495) </span>
                         <span class="number">800 41 48</span>
                     </div>
-                    <a href="#" class="btn-default btn-medium btn-green">Заказать звонок</a>
+                    <a href="#" class="btn-default btn-medium btn-green feedback-open call">Заказать звонок</a>
                     <div class="socials">
                         <div class="social socials--fb"></div>
                         <div class="social socials--vk"></div>

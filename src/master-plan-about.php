@@ -18,7 +18,7 @@
                             <div class="extra-marker">Феодосийская улица</div>
                             <div class="extra-marker">Новобутовская улица</div>
                             <div class="extra-marker">Бутовский лесопарк</div>
-                            <div class="extra-marker"><span>Бульвар Д. Донского</span></div>
+                            <div class="extra-marker"><span>Б-р Д. Донского (10 мин. пешком)</span></div>
                         </div>
                         <div class="house-marker panel house-1">
                             корпус

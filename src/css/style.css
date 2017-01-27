@@ -1397,7 +1397,7 @@ p {
 /*-------END ACTIONS MODAL-------*/
 /*-------FEEDBACK MODAL---------*/
 .feedback-mfp {
-  z-index: 10000; }
+  z-index: 10001; }
   .feedback-mfp .mfp-close {
     font-size: 0;
     top: 25px;
@@ -1420,7 +1420,7 @@ p {
     display: none; }
     .feedback-modal .tab.active {
       display: block; }
-    .feedback-modal .tab.mail .feedback-form {
+    .feedback-modal .tab.email .feedback-form {
       padding-bottom: 30px; }
   .feedback-modal .switch__tab {
     height: 60px;
@@ -1447,7 +1447,7 @@ p {
       width: 25px;
       height: 18px;
       background-image: url(/img/svg-library/popup-letter.svg); }
-    .feedback-modal .switch__tab.mail .switch__tab__txt::before {
+    .feedback-modal .switch__tab.email .switch__tab__txt::before {
       width: 22px;
       height: 27px;
       background-image: url(/img/svg-library/popup-phone.svg); }
@@ -1546,7 +1546,7 @@ p {
             justify-content: space-between; }
 
 .popup-datepicker {
-  z-index: 10000; }
+  z-index: 10001; }
   .popup-datepicker.pickmeup {
     background-color: #fff;
     border-radius: 0;
@@ -1574,6 +1574,17 @@ p {
     .popup-datepicker.pickmeup .pmu-button.pmu-prev, .popup-datepicker.pickmeup .pmu-button.pmu-next {
       color: #00acc8; }
 
+@media screen and (max-width: 736px) {
+  .feedback-modal .feedback-form {
+    padding: 30px 0 50px; }
+  .feedback-modal .call-time {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .feedback-modal .time {
+    width: 100%;
+    padding-top: 50px; } }
+
+/*----END FEEDBACK MODAL---------*/
 /*------------INDEX------------*/
 .main-page {
   overflow: hidden; }
@@ -2995,6 +3006,7 @@ p {
     .action-detail__nav--big .next {
       padding-bottom: 60px; } }
 
+/*-----END ACTION DETAIL COMMON---------*/
 /*--------CONTACTS---------*/
 .contact-page {
   overflow: hidden;
@@ -4916,24 +4928,22 @@ p {
       left: 155px; }
   .master-plan .main-plan__map .streets .extra-marker {
     font-size: 17px;
-    color: #00acc8;
-    background-color: rgba(0, 0, 0, 0.7); }
+    color: #595959;
+    background-color: #fff; }
     .master-plan .main-plan__map .streets .extra-marker::before {
       content: '';
       position: absolute;
       top: 100%;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%);
-      border-top: 6px solid rgba(0, 0, 0, 0.7);
+      left: 20%;
+      border-top: 6px solid #fff;
       border-left: 6px solid transparent;
       border-right: 6px solid transparent; }
     .master-plan .main-plan__map .streets .extra-marker:nth-child(1) {
-      left: 338px;
+      left: 400px;
       top: 20px; }
     .master-plan .main-plan__map .streets .extra-marker:nth-child(2) {
-      right: 350px;
-      top: 80px; }
+      right: 60px;
+      top: 250px; }
     .master-plan .main-plan__map .streets .extra-marker:nth-child(3) {
       right: 10px;
       bottom: 180px; }
@@ -4943,7 +4953,9 @@ p {
       top: 20px;
       left: 50px;
       color: #fff;
-      background-color: #df2400; }
+      background-color: #df2400;
+      font-size: 15px;
+      font-weight: 400; }
       .master-plan .main-plan__map .streets .extra-marker:nth-child(4)::before {
         border-top: 6px solid transparent;
         border-bottom: 6px solid transparent;
@@ -5066,6 +5078,7 @@ p {
   .master-plan .panorama {
     display: none; } }
 
+/*--------END MASTER PLAN COMMON-----------*/
 /*-----------MASTER PLAN--FILTER-----------*/
 .master-plan--filter .legend {
   max-width: 740px; }
@@ -5231,6 +5244,8 @@ p {
   .master-plan--about .main-plan__sidebar .sidebar__section__txt:not(:last-of-type) {
     padding-bottom: 40px; } }
 
+/*--------END MASTER PLAN--ABOUT-----------*/
+/*----------INFRASTRUCTURE-----------*/
 .infra-page {
   padding-top: 45px;
   position: relative;
@@ -5428,6 +5443,7 @@ p {
     .infra-page .infra-list .infra-group {
       padding: 70px 0 0; } }
 
+/*------END INFRASTRUCTURE-----------*/
 /*-----------PARTNERS----------*/
 .partners-page {
   overflow: hidden;
@@ -5596,6 +5612,7 @@ p {
   .partners-page .slide-block__header {
     padding: 0 30px; } }
 
+/*-------END PARTNERS----------*/
 /*--------NEWS---------*/
 .news-page {
   position: relative;
@@ -5836,6 +5853,7 @@ p {
   .news-detail-page .action-detail__nav--big {
     padding-top: 0; } }
 
+/*----END NEWS DETAIL---------*/
 /*------------PARKING----------*/
 .parking-page {
   padding-top: 30px;
@@ -6611,6 +6629,10 @@ p {
   .history-page .event__txt {
     padding-top: 60px;
     max-width: 500px; }
+    .history-page .event__txt h2 {
+      padding-bottom: 15px; }
+    .history-page .event__txt p {
+      display: none; }
     .history-page .event__txt.open .txt-trigger::after {
       background-image: url(/img/flat/arrow_up.svg); }
   .history-page .txt-trigger {
@@ -6666,11 +6688,8 @@ p {
         top: 95px; }
     .history-page .event__txt {
       width: 430px; }
-      .history-page .event__txt h2 {
-        padding-bottom: 15px; }
       .history-page .event__txt p {
-        margin-top: 20px;
-        display: none; } }
+        margin-top: 20px; } }
 
 @media screen and (max-width: 736px) {
   .history-page .big-figure {

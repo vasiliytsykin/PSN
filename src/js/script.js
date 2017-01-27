@@ -654,8 +654,34 @@ $(function () {
 
     (function () {
 
+
+        var $feedModal = $('.feedback-modal'),
+            $feedTabs = $feedModal.find('.tab'),
+            $feedSwitch = $feedModal.find('.switch'),
+            $feedSwitchTab = $feedModal.find('.switch__tab'),
+            active = 'active',
+            email = 'email',
+            call = 'call';
+
+        $feedSwitchTab.on('click', function () {
+
+            $feedTabs.toggleClass(active);
+            $feedSwitchTab.toggleClass(active);
+
+        });
+
         $('.feedback-open').on('click', function () {
 
+            var $self = $(this);
+
+            $feedTabs.removeClass(active);
+            $feedSwitchTab.removeClass(active);
+
+            if($self.hasClass(email))
+                $feedModal.find('.' + email).addClass(active);
+
+            if($self.hasClass(call))
+                $feedModal.find('.' + call).addClass(active);
 
             $.magnificPopup.open({
                 items: {
@@ -665,21 +691,11 @@ $(function () {
                 mainClass: 'feedback-mfp'
             });
 
+
             return false;
 
         });
 
-        var $feedModal = $('.feedback-modal'),
-            $feedTabs = $feedModal.find('.tab'),
-            $feedSwitch = $feedModal.find('.switch__tab'),
-            active = 'active';
-
-        $feedSwitch.on('click', function () {
-
-            $feedTabs.toggleClass(active);
-            $feedSwitch.toggleClass(active);
-
-        });
 
 
         (function setupCalendar() {

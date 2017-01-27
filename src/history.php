@@ -69,7 +69,7 @@ $events = array(
                             </div>
                             <div class="event__txt">
                                 <h2><?=$event['header']?></h2>
-                                <div class="txt-trigger visible-sm visible-xs">Описание</div>
+                                <div class="txt-trigger">Описание</div>
                                 <p class="desc"><?=$event['desc']?></p>
                             </div>
                             <div class="icon" style="background-image: url(/img/history/<?=$date?>.svg);"></div>

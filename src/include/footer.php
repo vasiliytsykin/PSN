@@ -37,7 +37,7 @@
                             <span class="code">+7 (495) </span>
                             <span class="number">800 41 48</span>
                         </li>
-                        <li><a href="#" class="btn-default btn-green">Заказать звонок</a></li>
+                        <li><a href="#" class="btn-default btn-green feedback-open call">Заказать звонок</a></li>
                     </ul>
                 </div>
                 <div class="footer__socials">
@@ -194,7 +194,7 @@
                     <div class="btn-close"></div>
                 </div>
             </div>
-            <div class="feedback-modal" id="feedback-modal">
+            <div class="feedback-modal mfp-hide" id="feedback-modal">
                 <div class="tab call active">
                     <div class="h2">Закажите звонок</div>
                     <div class="h5">Мы обязательно вам перезвоним!</div>
@@ -216,13 +216,13 @@
                                     <div class="caption">с <span class="caption__time"><span class="min"></span>.00</span></div>
                                     <div class="caption">до <span class="caption__time"><span class="max"></span>.00</span></div>
                                 </div>
-                                <input type="text" id="time" class="range-slider" data-from="9.00" data-to="21.00" data-step="1"/>
+                                <input type="text" id="time" class="range-slider" data-from="9" data-to="21" data-step="1"/>
                             </div>
                         </div>
                     </form>
                     <a href="#" class="btn-default btn-medium btn-green">Перезвоните мне</a>
                 </div>
-                <div class="tab mail">
+                <div class="tab email">
                     <div class="h2">Остались вопросы?</div>
                     <div class="h5">Мы обязательно вам ответим!</div>
                     <form class="feedback-form">
@@ -239,7 +239,7 @@
                 </div>
                 <div class="switch">
                     <div class="switch__tab call active"><span class="switch__tab__txt">Или напишите нам письмо</span></div>
-                    <div class="switch__tab mail"><span class="switch__tab__txt">Или закажите обратный звонок</span></div>
+                    <div class="switch__tab email"><span class="switch__tab__txt">Или закажите обратный звонок</span></div>
                 </div>
             </div>
         </footer>

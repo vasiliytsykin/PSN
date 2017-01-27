@@ -341,7 +341,7 @@
 /*-------FEEDBACK MODAL---------*/
 
 .feedback-mfp
-  z-index: 10000
+  z-index: 10001
   .mfp-close
     font-size: 0
     top: 25px
@@ -363,7 +363,7 @@
     display: none
     &.active
       display: block
-    &.mail
+    &.email
       .feedback-form
         padding-bottom: 30px
   .switch__tab
@@ -388,7 +388,7 @@
           width: 25px
           height: 18px
           background-image: url(/img/svg-library/popup-letter.svg)
-    &.mail
+    &.email
       .switch__tab__txt
         &::before
           width: 22px
@@ -483,7 +483,7 @@
     display: flex
     justify-content: space-between
 .popup-datepicker
-  z-index: 10000
+  z-index: 10001
   &.pickmeup
     background-color: #fff
     border-radius: 0
@@ -511,4 +511,13 @@
         color: $lightGray
       &.pmu-prev, &.pmu-next
         color: $darkGreen
-
+@media screen and (max-width: 736px)
+  .feedback-modal
+    .feedback-form
+      padding: 30px 0 50px
+    .call-time
+      flex-wrap: wrap
+    .time
+      width: 100%
+      padding-top: 50px
+/*----END FEEDBACK MODAL---------*/

@@ -47,7 +47,7 @@
                     <div class="gallery__switch-over">
                         <div class="gallery__switch">
                             <div class="switch__tab tab-1 active" data-tab="tab-1">комфорткласс</div>
-                            <div class="switch__tab tab-2" data-tab="tab-2">бизнес-класс</div>
+                            <div class="switch__tab tab-2" data-tab="tab-2">элитный класс</div>
                         </div>
                     </div>
                     <div class="gallery__tab tab-1 active">
