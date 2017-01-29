@@ -177,29 +177,19 @@ $(function () {
     (function () {
 
         var lastScrollTop = 0,
-            $subMenuMain = $('.sub-menu--main');
+            $subMenuMain = $('.sub-menu--main'),
+            dismiss = 'dismiss';
 
         $(window).on('scroll', function() {
             var st = $(this).scrollTop();
             if(st < lastScrollTop) {
 
-                $subMenuMain.css({
-
-                    'opacity': 1
-
-                });
-
-                console.log('up 1');
+                $subMenuMain.removeClass(dismiss);
             }
             else {
 
-                $subMenuMain.css({
+                $subMenuMain.addClass(dismiss);
 
-                    'opacity': 0
-
-                });
-
-                console.log('down 1');
             }
             lastScrollTop = st;
         });

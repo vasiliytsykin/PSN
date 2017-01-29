@@ -76,7 +76,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pattern big-pattern pattern-2 dark-green anim-pattern" data-pattern="pattern-2"></div>
                             </div>
                             <div class="gallery__item" data-progress="50">
                                 <div class="item__info">
@@ -140,6 +139,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pattern big-pattern pattern-2 dark-green anim-pattern" data-pattern="pattern-2"></div>
                     </div>
                 </div>
             </div>

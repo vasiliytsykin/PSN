@@ -20,9 +20,11 @@
   background-color: #fff
   top: 100px
   z-index: 9999
-  transition: all 0.3s ease
+  transition: all 0.3s ease-in
+  &.dismiss
+    visibility: hidden
+    opacity: 0
   .sub-menu__items
-    //padding: 20px 0
     display: flex
     justify-content: center
     border-top: 1px solid #cccccc
@@ -30,7 +32,7 @@
       font-size: 15px
       font-weight: 500
       padding: 20px 7px
-      &.active
+      &.active, &:hover
         a
           color: $lightGreen
 .header__extra-links
