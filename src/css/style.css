@@ -6024,6 +6024,8 @@ p {
     display: -ms-flexbox;
     display: flex;
     margin: 0 -40px; }
+    .mortgage-page .top-banner .btn-default {
+      display: none; }
   .mortgage-page .top-banner__txt-over {
     width: 470px;
     background-color: #95d600;
@@ -6110,6 +6112,8 @@ p {
     width: 430px; }
     .mortgage-page .mortgage-calc .input-group:nth-last-child(1), .mortgage-page .mortgage-calc .input-group:nth-last-child(2) {
       padding-bottom: 20px; }
+    .mortgage-page .mortgage-calc .input-group:last-child {
+      display: none; }
   .mortgage-page .mortgage-calc input, .mortgage-page .mortgage-calc .caption {
     width: 100%; }
 
@@ -6155,9 +6159,7 @@ p {
   .mortgage-page .mortgage-calc {
     max-width: 430px; }
     .mortgage-page .mortgage-calc .input-group {
-      padding-bottom: 20px; }
-      .mortgage-page .mortgage-calc .input-group:last-child {
-        display: none; } }
+      padding-bottom: 20px; } }
 
 @media screen and (max-width: 736px) {
   .mortgage-page .wrapper-inner {
@@ -6840,6 +6842,10 @@ p {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      .log-page .gallery__item .item__graphics .progress.panel {
+        color: #95d600; }
+      .log-page .gallery__item .item__graphics .progress.mono {
+        color: #00acc8; }
       .log-page .gallery__item .item__graphics .progress .percent {
         font-size: 55px;
         font-weight: 600;

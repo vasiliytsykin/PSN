@@ -24,7 +24,7 @@
                                     </div>
                                     <div class="item__graphics">
                                         <div class="item__graphics-inner" style="background-image: url(/img/log/house-1.png);">
-                                            <div class="progress light-green">
+                                            <div class="progress panel">
                                                 <h4>Готовность</h4>
                                                 <div class="percent">0%</div>
                                             </div>
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="item__graphics">
                                         <div class="item__graphics-inner" style="background-image: url(/img/log/house-2.png);">
-                                            <div class="progress dark-green">
+                                            <div class="progress mono">
                                                 <h4>Готовность</h4>
                                                 <div class="percent">0%</div>
                                             </div>
